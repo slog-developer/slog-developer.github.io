@@ -1,0 +1,52 @@
+
+/* RESET */
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+
+:root {
+    /* COLOR */
+    --main-color: #325EEF;
+    --main-color-gray: #C0C3D0;
+    --main-color-dark: #161619;
+
+    --text-color: #333;
+    --text-color-gray6: #666;
+    --text-color-gray9: #999;
+    --text-color-white: #fff;
+    
+    --container-color: #fff;
+    --content-color: #F4F5FA;
+
+    /* SHADOW */
+    --box-shadow: 0 3px 6px rgba(0 0 0 / 10%);
+
+    /* FONT */
+    --biggest-font: 2.625rem; /* 42px */
+    --big-font: 1.5rem;  /* 24px */
+    --normal-font-size: 1rem; /* 16px */
+    --small-font-size: .875rem; /* 14px */
+    --smaller-font-size: .75; /* 12px */
+
+    /* SPACING */
+    --sp-2: 2rem; /* 32px */
+    --sp-1-5: 1.5rem; /* 24px */
+    --sp-1: 1rem; /* 16px */
+    --sp-0-75: .75rem; /* 12px */
+    --sp-0-5: .5rem; /* 8px */
+    --sp-0-25: .25rem; /* 4px */
+
+    /* RESET */
+    -webkit-tap-highlight-color:transparent;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+    cursor:default;
+    line-height:1.5;
+    overflow-wrap:break-word;
+    -moz-tab-size:4;
+    tab-size:4
+}
