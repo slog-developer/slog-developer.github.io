@@ -1,0 +1,117 @@
+<?
+	include_once getenv("DOCUMENT_ROOT")."/_common.php";
+?>
+<!doctype html>
+<html lang="ko">
+<head>
+<? include_once FX_SITE."/std/inc/php/head.php" ?>
+</head>
+ <body>
+ <!-- wrap -->
+ <div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<? include_once FX_SITE."/std/inc/php/header.php" ?>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container">
+		<div class="fs_article">
+			<div class="user_login_container">
+				<div class="section_title">아이디 · 비밀번호 <span>찾기</span></div>
+					<div class="idpw_wrap">
+						<div class="tabs_box">
+							<button class="idpw_tabs" onclick="openFind(event, 'find_id')" id="defaultOpen">아이디 찾기</button>
+							<button class="idpw_tabs" onclick="openFind(event, 'find_pw')" >비밀번호 찾기</button>
+						</div>
+
+						<div class="tabs_container">
+							<div class="idpw_contents">
+								<div id="find_id" class="tabs_contents">
+									<div class="find_id_title">
+										<p>회원님의 아이디는 아래와 같습니다.</p>
+									</div>
+									<div class="fs_form">
+										<div class="fs_field">
+											<div class="fs_input purple_line"><input type="text" id="txt_id" class="fs_input_text input_id white_bg" disabled /></div>
+										</div>
+										<div class="fs_btn_box">
+											<button type="button" id="btn_confirm" class="fs_full_btn">확인</button>
+										</div>
+										<div class="join_text">
+											<p><a href="/std/account/login.php">로그인하기</a> | <a href="/index.php">취소</a></p>
+										</div>
+									</div>
+								</div>
+								<div id="find_pw" class="tabs_contents">
+									<div class="find_id_title">
+									<p>회원님의 이메일 주소로 비밀번호를 변경할 수 있는 메일이 발송되었습니다.</p>
+									<p>회원님의 이메일을 확인해 주시기 바랍니다.</p>
+									</div>
+									<div class="fs_form">
+										<div class="fs_btn_box">
+											<button class="fs_full_btn">확인</button>
+										</div>
+										<div class="join_text">
+											<p><a href="/std/account/login.php">로그인하기</a> | <a href="/index.php">취소</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- tabs_container end -->
+					</div><!-- idpw_wrap end -->
+					<script>
+					function openFind(evt, findBox) {
+						// 모든 변수 선언
+						var i, tabs_contents, idpw_tabs;
+						// class = "tabs_contents"인 모든 요소를 ​​가져 와서 숨깁니다.
+						tabs_contents = document.getElementsByClassName("tabs_contents");
+						for (i = 0; i < tabs_contents.length; i++) {
+							tabs_contents[i].style.display = "none";
+						}
+						// class = "idpw_tabs"인 모든 요소를 ​​가져 와서 "active"클래스를 제거합니다.
+						idpw_tabs = document.getElementsByClassName("idpw_tabs");
+						for (i = 0; i < idpw_tabs.length; i++) {
+							idpw_tabs[i].className = idpw_tabs[i].className.replace(" active", "");
+						}
+						// 현재 탭 표시 및 탭을 연 단추에 "active"클래스 추가
+						document.getElementById(findBox).style.display = "block";
+						evt.currentTarget.className += " active";
+					}
+					// id = "defaultOpen"인 요소를 가져 와서 클릭합니다.
+					document.getElementById("defaultOpen").click();
+					</script>
+					<!-- tabs_container script end -->
+			</div>
+		</div> 
+	</div>
+	<!-- container end -->
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<? include_once FX_SITE."/std/inc/php/footer.php" ?>
+	</div>
+	<!-- footer end -->
+  </div>
+ <!-- wrap end -->
+ </body>
+</html>
+
+<script type="text/javascript" src="/std/inc/js/_common.js"></script>
+<script> 
+
+
+	$(document).ready(function(){  
+		
+		$("#btn_confirm").click(function () { 
+			location.href = "/std/account/login.php";
+		});
+	});
+	
+	var cookie_find_id_value = $.cookie('cookie_find_id');
+
+	if(cookie_find_id_value.length > 0)
+	{ 
+		$("#txt_id").val(cookie_find_id_value);
+		$.removeCookie("cookie_find_id", null);
+	}
+</script>

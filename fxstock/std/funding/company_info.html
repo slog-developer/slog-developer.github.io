@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>SUCCESTOCK</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../inc/css/style.css" />
+	<link rel="stylesheet" href="../inc/css/reset.css" />
+	<link rel="stylesheet" href="../inc/css/common.css" />
+	<link rel="stylesheet" href="../inc/css/swiper.min.css">
+
+	<!-- favicon -->
+	<link rel="icon" href="../images/favicon.ico" />
+
+	<!-- jQuery : 추가할시 jPark 에게 알려주세여 -->
+	<link rel="stylesheet" href="../inc/css/jquery-ui.css" />
+	<script type="text/javascript" src="../inc/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.alphanumeric.ex.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.timer.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.uploadPreview.js"></script>
+
+	<!-- js -->
+	<script type="text/javascript" src="../inc/js/script.js"></script>
+	<script type="text/javascript" src="../inc/js/focus.js"></script>
+	<script type="text/javascript" src="../inc/js/img_banner.js"></script>
+	<script type="text/javascript" src="../inc/js/swiper.min.js"></script>
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="gnb_section">
+			<div class="logo">
+				<a href="../../index.html"><img src="../images/logo.png" alt="logo" /></a>
+			</div>
+			<nav class="fs_gnb">
+				<ul>
+					<li><a href="join_funding.html" class="fs_lnb">펀딩참여하기</a></li>
+					<li><a href="../publish/pb_start.html" class="fs_lnb">펀딩발행하기</a></li>
+					<li><a href="company_list.html" class="fs_lnb">기업리스트</a></li>
+					<li><a href="../guide/guide_01.html" class="fs_lnb">이용가이드</a></li>
+					<li>
+						<a href="javascript:void(0);" class="fs_lnb"><i class="fas fa-ellipsis-h"></i></a>
+						<ul class="arrow_box">
+							<li><a href="javascript:void(0);">SUCCESTOCK 소개</a></li>
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">고객센터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="lojo_secetion">
+				<div class="login_link">
+					<ul class="login_lnb">
+						<li><a href="login.html" class="purple_main">김석경</a>님</a></li>
+						<li><a href="../join/select_type.html">회원가입</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container"><!-- 각 페이지 별 전체를 감싸는 div -->
+		<div class="fs_article"><!-- 슬라이드 영역 및 바로가기 링크 영역 -->
+            <!-- img slide BG -->
+			<div class="slide_bg_section">
+				<div class="row_wrap">
+					<div class="img_banner_wrap thumb_img">
+						<div class="posA tac_section tac_green" style="z-index:2;">
+							<span class="tac_tit">주식형</span>
+							<span class="tac_mark">
+								<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+							</span>
+						</div>
+						<ul>
+							<img src="../images/card_ui/sp_img_re_v1.jpg" style="width:100%;">
+						</ul>
+					</div>
+					<div class="slide_content_text_v2">
+						<span>오늘 30명이 조회한 펀딩입니다.</span>
+						<h1>퍼플독</h1>
+						<p>가장 스마트하게 와인을 즐기는 법, 매월 만나는 나를 위한 와인 버틀러 서비스</p>
+					</div>
+				</div>
+			</div><!-- slide_bg_section -->
+			<div class="sub_tab" id="sub_tab_form">
+				<ul class="sub_tab_list">
+					<li><a href="recruit_funding.html">모집내용</a></li>
+					<li class="purple_bottom"><a href="company_info.html">회사정보</a></li>
+					<li><a href="company_news_list.html">회사소식</a></li>
+					<li><a href="company_board_list.html">게시판</a></li>
+				</ul>
+			</div>
+			<div class="funding_container">
+				<div class="nav_recruit" id="nav_recruit_form">
+					<ul>
+						<li><a href=".recruit_container_1">기본정보</a></li>
+						<li><a href=".recruit_container_2">CEO 인사말</a></li>
+						<li><a href=".recruit_container_3">회사 이야기</a></li>
+						<li><a href=".recruit_container_4">구성원 인터뷰</a></li>
+						<li><a href=".recruit_container_5">회사자료</a></li>
+					</ul>
+				</div>
+
+				<div class="recruit_wrap">
+					<div class="recruit_container_1">
+						<div class="recruit_tit mgb20">
+							<h1>회사 기본정보</h1>
+						</div>
+						<div class="recruit_content">
+							<ul class="recruit_list">
+								<li><p>업종</p><span>F&B / 공간</span></li>
+								<li><p>대표자</p><span>박재정</span></li>
+								<li><p>설립일자</p><span>2014.06.03</span></li>
+								<li><p>임직원 수</p><span>6명</span></li>
+								<li class="Wfull"><p>주소</p><span>서울 송파구 송파대로 167 (문정동, 문정역테라타워)</span></li>
+								<li class="Wfull"><p>웹 사이트</p><span class="lightblue text_deco"><a href="www.purpledog.co.kr" target="_blank">www.purpledog.co.kr</a></span></li>
+								<li><p>이메일</p><span>vivien@gtogcompany.com</span></li>
+								<li><p>문의번호</p><span>02-1324-3122</span></li>
+							</ul>
+						</div><!-- recruit_content end -->
+					</div>
+					<div class="recruit_container_2">
+						<div class="recruit_tit mgb20">
+							<h1>CEO 인사말</h1>
+						</div>
+						<div class="video_section">
+							<p>사람은 누구나 고귀한 존재로 태어납니다. 그러나 누구나 그런 존재로 살아가는 것은 아닙니다. 우리는 당신에게 삶의 동반자이자 집사로서 ‘purpledog’이라는 서비스를 제공함으로써 고귀한 당신이 합리적인 비용으로 럭셔리 라이프를 영위할 수 있도록 도와줄 것입니다. Purple은 고귀한 당신을 의미하고, dog는 삶의 동반자이자 집사를 의미합니다. Purpledog은 먼저 와인 버틀러 서비스를 시작합니다. 그리고 앞으로 여행, 골프, 헬스케어 등으로 서비스가 확대될 것입니다.</p>
+						</div>
+					</div>
+					<div class="recruit_container_3">
+						<div class="recruit_tit mgb10">
+							<h1>회사이야기</h1>
+						</div>
+						<div class="recruit_content">
+							<h3 class="mgb20" style="line-height:1.5;">와인을 몰라도,</br>집을 나서지 않아도</br>와인을 즐기실 수 있습니다.</h3>
+							<p>퍼플독의 전문가들이 엄선해서 믿을 수 있습니다. 맛없는 와인에 실망하는 일은 이제 그만, 퍼플독이 엄선한 다양한 와인을 이제 즐기기만 하세요.</p>
+							<div class="recruit_img">
+								<img src="../images/card_ui/sp_img_re_v6.jpg" alt="회사이야기" />
+							</div>
+							<p><b style="display:block; font-weight:bold; font-size:16px; margin-top:20px;">컨텐츠를 입은 와인™</b>와인을 몰라도 즐길 수 있는 비결은 퍼플독의 컨텐츠 덕분입니다.고객이 별도의 시간과 비용을 들이지 않고도 와인을 알면서 즐기실 수 있도록 만들었습니다. 더욱 직관적이고, 더욱 효율적으로 말이죠.</p>
+							<div class="recruit_img">
+								<img src="../images/card_ui/sp_img_re_v7.jpg" alt="회사이야기" />
+							</div>
+						</div>
+					</div>
+					<div class="recruit_container_4">
+						<div class="recruit_tit">
+							<h1>구성원 인터뷰</h1>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>회사에 참여하게 된 동기는 무엇입니까 ?</h3>
+							<p>대부분의 직장인들은 회사를 다니면서 “우리 나중에 다 같이 조직을 꾸려 사업이나 해볼까＂라는 푸념과 농담을 주고 받습니다. 그러나 현실적인 문제에 대한 두려움, 서로에 대한 신뢰의 부족, 안정적인 직장의 달콤함으로 인하여 이를 실현하는 경우는 손에 꼽습니다. 저희 멤버들은 항상 새로운 것에 도전하는 것을 추구하였고 사업에 대한 열망이 있습니다. 결국 멤버들은 서로의 대한 신뢰를 기반으로 꿈을 실현하기 위하여 퇴사 후 멤버들만의 조직을 꾸리게 되었습니다.<br />
+							<b>- 영업팀 김석경</b>
+							</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>우리 회사를 자랑해주세요.</h3>
+							<p>대표이사와 현재 조직 구성원 중 3인은 과거 대표이사가 매일유업 법무팀장으로 재직 중 함께 근무한 법무팀 팀원들입니다. 주요 멤버들이 모두 같은 회사 출신으로 그 조직구성이 매우 단단합니다. 모두 안정적인 직장을 그만 두고 해당 조직을 구성한 만큼 목표의식은 물론 회사에 대한 주인의식이 뚜렷합니다. 일반적인 초기기업의 경우 직원을 신뢰하기 어려워 가족을 채용하여 가족기업이 되기 쉽고 추후 부작용이 발생하는 반면에 당사는 그러한 리스크가 없습니다.<br />
+							<b>- 영업팀 김길동</b>
+							</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>회사를 이끌어가는 원동력은 무엇이라고 생각하세요 ?</h3>
+							<p>멤버들은 기업의 핵심요소가 조직이라고 생각하고 있습니다. 물론 사업을 성공하기 위하여는 아이템, 자본 등 다양한 요소가 필요하지만 좋은 조직이 기반되지 않는다면 이는 사상누각과 같다 생각합니다. 당사는 좋은 조직을 넘어 서로의 신뢰가 기반이 된 위대한 조직을 추구하며 이를 기본 이념으로 사업을 진행하고 있습니다.<br />
+							<b>- 인사팀 홍길동</b>
+							</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>대표이사님의 장점은 무엇인가요 ?</h3>
+							<p>오랜 시간 함께해온 멤버이다 보니 멤버들의 표정만 봐도 건강상태와 기분을 파악합니다. 스트레스를 전혀 받지 않게 해주는 다정함과 푸근함이 절대 매력입니다. 또한, 카리스마 있는 리더쉽은 구성원들에게 자연스레 팔로워쉽을 심어줍니다.<br />
+							<b>- 교육팀 김영희</b>
+							</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>3년, 5년 후 우리 회사는 어떤 모습일까요 ?</h3>
+							<p>3년 내 B2B 서비스 월 매출 5억 달성 목표 3년 내 직영 매장 10개 이상 오픈 꿈이 아닌 현실이 될 것으로 믿고, 자부심을 가지고 있습니다. 우리 모두 프로니까요~<br />
+							<b>- 마케팅팀 강철수</b>
+							</p>
+						</div>
+					</div>
+					<div class="recruit_container_5">
+						<div class="recruit_tit">
+							<h1>회사 자료</h1>
+						</div>
+						<div class="recruit_content mgt20">
+							<div class="fs_input_v7">
+								<div class="data_txt"><h4>투자설명서</h4> <span>등록일 : 2018.12.26</span></div>
+								<div class="data_icon">
+									<a href="javascript:;" target="_blank" class="far fa-eye"></a>
+									<a href="javascript:;" download class="fas fa-download mgl20"></a>
+								</div>
+							</div>
+						</div>
+						<div class="recruit_content mgt20">
+							<div class="fs_input_v7">
+								<div class="data_txt"><h4>사업자등록증</h4> <span>등록일 : 2018.12.26</span></div>
+								<div class="data_icon">
+									<a href="javascript:;" target="_blank" class="far fa-eye"></a>
+									<a href="javascript:;" download class="fas fa-download mgl20"></a>
+								</div>
+							</div>
+						</div>
+						<div class="recruit_content mgt20">
+							<div class="fs_input_v7">
+								<div class="data_txt"><h4>법인등기부등본</h4> <span>등록일 : 2018.12.26</span></div>
+								<div class="data_icon">
+									<a href="javascript:;" target="_blank" class="far fa-eye"></a>
+									<a href="javascript:;" download class="fas fa-download mgl20"></a>
+								</div>
+							</div>
+						</div>
+						<div class="recruit_content mgt20">
+							<div class="fs_input_v7">
+								<div class="data_txt"><h4>정관</h4> <span>등록일 : 2018.12.26</span></div>
+								<div class="data_icon">
+									<a href="javascript:;" target="_blank" class="far fa-eye"></a>
+									<a href="javascript:;" download class="fas fa-download mgl20"></a>
+								</div>
+							</div>
+						</div>
+						<div class="recruit_content mgt20">
+							<div class="fs_input_v7">
+								<div class="data_txt"><h4>제무제표</h4> <span>등록일 : 2018.12.26</span></div>
+								<div class="data_icon">
+									<a href="javascript:;" target="_blank" class="far fa-eye"></a>
+									<a href="javascript:;" download class="fas fa-download mgl20"></a>
+								</div>
+							</div>
+						</div>
+						<div class="recruit_content mgt20">
+							<div class="fs_input_v7">
+								<div class="data_txt"><h4>청약서</h4> <span>등록일 : 2018.12.26</span></div>
+								<div class="data_icon">
+									<a href="javascript:;" target="_blank" class="far fa-eye"></a>
+									<a href="javascript:;" download class="fas fa-download mgl20"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- recruit_wrap end -->
+				<div class="chat_wrap" id="chat_wrap_form">
+					<h1>55명 참여</h1>
+					<div class="chat_progress_section">
+						<div class="progressBar_v3">
+							<div class="progress_v3 pg_body_v3"></div>
+						</div>
+						<div class="progress_value_v3">80%</div>
+					</div>
+					<div class="recruit_content">
+						<h4>목표금액 : 89,960,000원</h4>
+						<h4 class="floatR">13일 남음</h4>
+						<ul class="chat_list mgt15">
+							<li><p>현재모집금액</p><span>72,475,000원</span></li>
+							<li><p>연 이자율</p><span>8%</span></li>
+							<li><p>주식 당 금액</p><span>65,000원</span></li>
+							<li><p>증권 입고일</p><span>2019.02.11</span></li>
+							<li><p>투자 단계</p><span>Series A</span></li>
+							<li><p>현재 기업가치</p><span>1,300,000,000원</span></li>
+						</ul>
+						<p class="bold">(본 펀딩 발행 전 주식 수 x 주식 금액 합산)</p>
+					</div><!-- recruit_content end -->
+					<div class="fs_btn_box">
+						<button type="button" class="certi_box_v4">투자하러가기</button>
+						<button type="button" class="chat_list_btn"><i class="fas fa-list-ul white"></i></button>
+					</div>
+					<div class="chat_box">
+						<ul>
+							<li><span>김진희</span> : 와인 잘 몰라도 이용할 수 있는 서비스인가요?</li>
+							<li><span>전석경</span> : 와인 잘 모르는 사람한테 특화된 서비스네요~ 요금이 괜찮은데요???</li>
+							<li><span>권종호</span> : 성공 가능성이 높은 펀딩 같네요~</li>
+						</ul>
+						<div class="chat_input">
+							<input type="text" class="chat_text" placeholder="메시지를 입력해주세요." maxlength="50"/><i class="far fa-smile pd6"></i>
+						</div>
+					</div>
+				</div>
+				<a class="top_btn"><i class="fas fa-angle-up"></i></a>
+			</div>
+		</div><!-- fs_article end -->
+		<div class="fs_article">
+			<div class="row_wrap">
+				<div class="fs_section full_section">
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+	<!-- container end -->
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<div class="fs_section row_wrap fs_private">
+            <div class="footer_logo"><a href="/index.html"><img src="../images/logo_white.png" alt="로고" /></a></div>
+            <div class="footer_info">
+                <ul>
+                    <li><button type="button" onclick="window.location.href='../company/about_ss.html'">회사소개</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/subscription.html'">청약약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/stipulation.html'">회원이용약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/private.html'">개인정보처리방침</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/investment_note.html'">투자유의사항</button></li>
+                </ul>
+            </div>
+        </div>
+		<div class="fs_section row_wrap fs_copyright">
+			<ul class="sns_icon">
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_youtube.png" alt="유튜브 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_kakaoplus.png" alt="카톡플러스친구 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_facebook.png" alt="페이스북 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_naverblog.png" alt="네이버블로그 아이콘" /></a></li>
+			</ul>
+            <div class="copy_txt">
+                <ul class="copy_addr">
+                    <li>주식회사 스마트시큐리티 <span>ㅣ</span> <b>대표 : 조정식</b></li>
+                    <li>대표번호 : <b>00-000-0000</b> <span>ㅣ</span> FAX : <b>00-000-0000</b></li>
+                    <li><b>서울특별시 동대문구 왕산로 122 8층 829호(용두동, 한방천하 포스빌)</b></li>
+                </ul>
+                <ul class="copy_addr">
+                    <li>사업자 등록번호 : <b>000-00-00000</b> <span>ㅣ</span> 통신판매업 신고번호 : <b>2018-서울동대문 0000호</b></li>
+                    <li>COPYRIGHT 2018 FXSTOCK ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<!-- footer end -->
+  </div>
+  <!-- wrap end -->
+</body>
+</html>
+
+<script>
+
+// sub_tab script
+
+window.onscroll = function() {myFunction()};
+
+var sub_tab = document.getElementById("sub_tab_form");
+var sub_tab_v2 = document.getElementById("nav_recruit_form");
+var sub_tab_v3 = document.getElementById("chat_wrap_form");
+var sticky = sub_tab.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+	sub_tab.classList.add("sticky");
+	sub_tab_v2.classList.add("sticky_v2");
+	sub_tab_v3.classList.add("sticky_v3");
+  } else {
+	sub_tab.classList.remove("sticky");
+	sub_tab_v2.classList.remove("sticky_v2");
+	sub_tab_v3.classList.remove("sticky_v3");
+  }
+}
+
+// one page rolling script
+var speed = 700;	// 스크롤 스피드 수치로 사용할 변수
+
+	//로직
+	function scrolling(obj){
+		if (!obj){	// 예외처리, 현재는 기능적으로 필요한 부분은 아님, 관례적 사용
+			$('html, body').animate({scrollTop:0},speed);
+		}else{
+			var posTop = $(obj).offset().top -100;	// posTop = 매개변수로 들어온 컨텐츠 obj 의 offset().top - 네비게이션 높이
+			$('html, body').animate({scrollTop:posTop}, speed )	// body의 스크롤이동 : posTop
+		}
+	};
+
+	$("ul li a").click(function(){	// 네비게이션 클릭시
+		var direction = $(this).attr("href");	// direction = 클릭한 요소의 href 속성
+		scrolling( direction );	// direction 을 인자로 함수 실행
+		return false;	// 본래 이벤트 방지
+	});
+
+// top button script
+var btn = $('.top_btn');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+</script>
+
+<!-- progress script -->
+<script>
+$(document).ready(function(){
+	$('.pg_body_v3').animate({width:'80%'},2000);
+});
+</script>

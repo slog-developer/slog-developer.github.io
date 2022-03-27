@@ -1,0 +1,132 @@
+<?
+	include_once getenv("DOCUMENT_ROOT")."/_common.php";
+	include_once FX_PATH."/CLASS/Member.lib.php";
+
+	if ($_SESSION["REG_MEM_ID"] == "")
+	{
+		execJava("Invalid Access.", "", "location.replace('/std/join/select_type.php');");
+	}  
+
+
+	$sFileURL = v3chk($_GET['sFileURL'], "", 100);
+	if ($sFileURL != "" && $_SESSION["REG_MEM_ID"] != "")
+	{
+		$C_member	= new Member; 
+
+		unset($args);
+		$args['list_type']	= "row";
+		$args['mem_id']		= $_SESSION["REG_MEM_ID"];
+		$mem_view	= $C_member->get_user_info($args); 
+		
+		unset($args);
+		$args['mode']				= "PI"; 
+		$args['mem_idx']			= $mem_view['mem_idx'];
+		$args['mem_fileupload1']	= $sFileURL;
+		$err_code					= $C_member->set_user_join_fileupload($args);
+		
+		if ($err_code == 1)
+		{
+			session_destroy();
+			execJava("회원가입이 완료되었습니다.", "", "location.replace('../../index.php');");
+		}
+	}
+?>
+<!doctype html>
+<html lang="ko">
+<head>
+<? include_once FX_SITE."/std/inc/php/head.php" ?>
+</head>
+<body>
+<form id="frm" name="frm" method="post" enctype="multipart/form-data">
+<input type="hidden" name="imagepath" value="join"> 
+<input type="hidden" name="callback" value="/std/join/join_personal_end.php">
+<input type="hidden" name="callback_func" value="1">
+<input type="hidden" name="upload_path" value="join_personal_<?=$_SESSION["REG_MEM_ID"]?>"> 
+ <!-- wrap -->
+ <div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<? include_once FX_SITE."/std/inc/php/header.php" ?>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container">
+		<div class="fs_article">
+			<div class="user_login_container">
+				<div class="section_title">회원가입 <span>완료</span><p>투자자 회원(개인)</p></div>					
+					<div class="idpw_wrap">
+						<div class="tabs_container">
+							<div class="reset_contents">							
+								<div class="find_id_title">
+									<p>투자자 회원(개인) 가입이 완료 되었습니다.</p>
+									<p>회원님의 스캔본을 업로드하여 주시면 투자활동을 진행하실 수 있습니다.</p>
+								</div>
+								<div class="fileBox">
+									<div class="input_tit"><span>파일 등록하기</span></div>
+										<input type="text" id="txt_filename" class="fileName" placeholder="파일을 등록해주세요" readonly="readonly">
+										<label for="uploadBtn" class="btn_file">찾아보기</label>
+										<input type="file" name="Filedata"  id="uploadBtn" class="uploadBtn">
+										<div class="input_alert">
+											<p>스캔 파일 확장자는 JPG,PNG,BMP 파일만 등록 가능합니다.<br />신분증 스캔 파일 업로드는 향후 마이페이지에서도 가능합니다.</p>
+										</div>
+								</div><!-- fileBox end -->								
+								<div class="fs_form">
+									<div class="fs_btn_box">
+										<button class="fs_full_btn" id="btnUpload">파일 업로드</button>										
+									</div>									
+								</div>
+								<div class="fs_form">
+									<div class="fs_btn_box mgt50">
+										<button class="fs_full_btn_v2 blue_bg" onclick="/index.php">메인으로&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- tabs_container end -->
+					</div><!-- idpw_wrap end -->
+			</div>
+		</div>
+		
+	</div>
+	<!-- container end -->
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<? include_once FX_SITE."/std/inc/php/footer.php" ?>
+	</div>
+	<!-- footer end -->
+  </div>
+ <!-- wrap end -->
+ </form>
+ </body>
+</html>
+<script type="text/javascript">
+	$( function() {
+
+		var uploadFile = $('.fileBox .uploadBtn'); //파일첨부 js
+		uploadFile.on('change', function(){
+			if(window.FileReader){
+				var filename = $(this)[0].files[0].name;
+			} else {
+				var filename = $(this).val().split('/').pop().split('\\').pop();
+			}
+			$(this).siblings('.fileName').val(filename);
+		});
+	});
+
+	$(document).ready( function(){
+		
+		$("#btnUpload").click(function () {
+			var img = $('#uploadBtn');
+			var imgFile = img[0].files[0];
+			var ext = img.val().split(".").pop().toLowerCase(); 
+ 
+			if( $.inArray(ext, ["png","jpg","bmp", "pdf"]) === -1 ){
+				alert('이미지 파일만 업로드 가능합니다.');
+				$("#txt_filename").val('');
+				return false;
+			}
+
+			$("#frm").attr("action", "/se/photo_uploader/popup/file_uploader.php");
+			$('#frm').submit();
+		});
+	});
+</script>

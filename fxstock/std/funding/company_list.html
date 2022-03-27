@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>SUCCESTOCK</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../inc/css/style.css" />
+	<link rel="stylesheet" href="../inc/css/reset.css" />
+	<link rel="stylesheet" href="../inc/css/common.css" />
+	<link rel="stylesheet" href="../inc/css/swiper.min.css">
+
+	<!-- favicon -->
+	<link rel="icon" href="../images/favicon.ico" />
+
+	<!-- jQuery : 추가할시 jPark 에게 알려주세여 -->
+	<link rel="stylesheet" href="../inc/css/jquery-ui.css" />
+	<script type="text/javascript" src="../inc/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.alphanumeric.ex.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.timer.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.uploadPreview.js"></script>
+
+	<!-- js -->
+	<script type="text/javascript" src="../inc/js/script.js"></script>
+	<script type="text/javascript" src="../inc/js/focus.js"></script>
+	<script type="text/javascript" src="../inc/js/img_banner.js"></script>
+	<script type="text/javascript" src="../inc/js/swiper.min.js"></script>
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="gnb_section">
+			<div class="logo">
+				<a href="../../index.html"><img src="../images/logo.png" alt="logo" /></a>
+			</div>
+			<nav class="fs_gnb">
+				<ul>
+					<li><a href="join_funding.html" class="fs_lnb">펀딩참여하기</a></li>
+					<li><a href="../publish/pb_start.html" class="fs_lnb">펀딩발행하기</a></li>
+					<li><a href="company_list.html" class="fs_lnb">기업리스트</a></li>
+					<li><a href="../guide/guide_01.html" class="fs_lnb">이용가이드</a></li>
+					<li>
+						<a href="javascript:void(0);" class="fs_lnb"><i class="fas fa-ellipsis-h"></i></a>
+						<ul class="arrow_box">
+							<li><a href="javascript:void(0);">SUCCESTOCK 소개</a></li>
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">고객센터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="lojo_secetion">
+				<div class="login_link">
+					<ul class="login_lnb">
+						<li><a href="login.html" class="purple_main">김석경</a>님</a></li>
+						<li><a href="../join/select_type.html">회원가입</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container"><!-- 각 페이지 별 전체를 감싸는 div -->
+		<div class="fs_article"><!-- 슬라이드 영역 및 바로가기 링크 영역 -->
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <ul id="ul_banner" class="swiper-wrapper">
+                    <li class="swiper-slide">
+						<a href="../funding/recruit_funding2.php"><img src="../images/slide_img/new_slide_v02.jpg"></a>
+					</li>
+                    <li class="swiper-slide">
+						<a href="#"><img src="../images/slide_img/new_slide_v01.jpg"></a>
+					</li>
+                    <li class="swiper-slide">
+						<a href="#"><img src="../images/slide_img/new_slide_v03.jpg"></a>
+					</li>
+                </ul>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Swiper JS -->
+			<script src="../inc/js/swiper.min.js"></script>
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					spaceBetween: 30
+					, centeredSlides: true
+					, autoplay: {
+						delay: 15000
+						, disableOnInteraction: false
+					, }
+					, pagination: {
+						el: '.swiper-pagination'
+						, clickable: true
+					, }
+					, navigation: {
+						nextEl: '.swiper-button-next'
+						, prevEl: '.swiper-button-prev'
+					, }
+				, });
+			</script>
+		</div><!-- fs_article end -->
+		<div class="fs_article">
+			<div class="row_wrap">
+				<div class="fs_section">
+					<h1 class="section_full_title mgt30">기업리스트</h1>
+					<div class="fund_item_wrap mgt30">
+						<div class="cop_item">
+							<div class="co_itemimg">
+								<a href="../funding/company_info2.php"><img src="../images/cop_list_img/sample/cop_logo_v1.jpg" alt="싸이버로지텍" /></a>
+								<div class="co_tac_blue">
+									<span>이노비즈</span>
+								</div>
+							</div>
+							<div class="co_itemtext">
+								<h1>싸이버로지텍</h1>
+								<div class="b_type">
+									<span class="type_tit">업종</span>
+									<span class="type_con">공급업</span>
+								</div>
+								<div class="b_type_v2">
+									<span class="type_tit">업력</span>
+									<span class="type_con">5년 이상</span>
+								</div>
+								<div class="b_type_v3">
+									<span class="type_tit">기업가치</span>
+									<span class="type_con">2,000,000,000원</span>
+								</div>
+								<div class="b_textarea">
+									<p>Customer focus Leveraging on industry experiences and our extensive network to deliver excellent service through win-win partnerships.</p>
+								</div>
+							</div>
+							<div class="co_fauser">
+								<div class="co_fa_tit">
+									<p>관심기업 신청자</p>
+								</div>
+								<div class="co_fa_num">
+									<p>1,000명</p>
+									<span class="tac_mark">
+										<button type="button" id="star_icon" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+						</div><!-- cop_item end -->
+						<div class="cop_item">
+							<div class="co_itemimg">
+								<img src="../images/cop_list_img/sample/cop_logo_v2.jpg" alt="LG CNS" />
+								<div class="co_tac_blue">
+									<span>이노비즈</span>
+								</div>
+							</div>
+							<div class="co_itemtext">
+								<h1>LG CNS</h1>
+								<div class="b_type">
+									<span class="type_tit">업종</span>
+									<span class="type_con">컴퓨터시스템 설계</span>
+								</div>
+								<div class="b_type_v2">
+									<span class="type_tit">업력</span>
+									<span class="type_con">10년 이상</span>
+								</div>
+								<div class="b_type_v3">
+									<span class="type_tit">기업가치</span>
+									<span class="type_con">43,599,000,000원</span>
+								</div>
+								<div class="b_textarea">
+									<p>국내 최고의 금융 IT 시스템 구축 경험과 구축 방법론을 바탕으로, 금융 사업 혁신을 지원합니다.</p>
+								</div>
+							</div>
+							<div class="co_fauser">
+								<div class="co_fa_tit">
+									<p>관심기업 신청자</p>
+								</div>
+								<div class="co_fa_num">
+									<p>68명</p>
+									<span class="tac_mark">
+										<button type="button" id="star_icon" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+						</div><!-- cop_item end -->
+						<div class="cop_item">
+							<div class="co_itemimg">
+								<img src="../images/cop_list_img/sample/list_img03.png" alt="" />
+								<div class="co_tac_blue">
+									<span>이노비즈</span>
+								</div>
+							</div>
+							<div class="co_itemtext">
+								<h1>오시스 전동칫솔</h1>
+								<div class="b_type">
+									<span class="type_tit">업종</span>
+									<span class="type_con">테크·가전</span>
+								</div>
+								<div class="b_type_v2">
+									<span class="type_tit">업력</span>
+									<span class="type_con">1년 이상 ~ 3년 미만</span>
+								</div>
+								<div class="b_type_v3">
+									<span class="type_tit">기업가치</span>
+									<span class="type_con">10,242,400원</span>
+								</div>
+								<div class="b_textarea">
+									<p>양치질, 제대로 하고 계신가요? 올바른 양치 습관을 잡아주고, 플라크 제거에 일반 칫솔 대비 99.8% 더 효과적인 오시스 전동칫솔!</p>
+								</div>
+							</div>
+							<div class="co_fauser">
+								<div class="co_fa_tit">
+									<p>관심기업 신청자</p>
+								</div>
+								<div class="co_fa_num">
+									<p>1,000명</p>
+									<span class="tac_mark">
+										<button type="button" id="star_icon" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+						</div><!-- cop_item end -->
+						<div class="cop_item">
+							<div class="co_itemimg">
+								<img src="../images/cop_list_img/sample/cop_logo_v3.jpg" alt="티맥스소프트" />
+								<div class="co_tac_blue">
+									<span>이노비즈</span>
+								</div>
+							</div>
+							<div class="co_itemtext">
+								<h1>티맥스소프트</h1>
+								<div class="b_type">
+									<span class="type_tit">업종</span>
+									<span class="type_con">시스템 개발</span>
+								</div>
+								<div class="b_type_v2">
+									<span class="type_tit">업력</span>
+									<span class="type_con">15년 이상</span>
+								</div>
+								<div class="b_type_v3">
+									<span class="type_tit">기업가치</span>
+									<span class="type_con">64,030,710,000원</span>
+								</div>
+								<div class="b_textarea">
+									<p>세계적인 기술력으로 대한민국을 넘어 글로벌 SW기업으로 도약하겠습니다. 티맥스 소프트 홈페이지에 방문하신 여러분들을 환영합니다.</p>
+								</div>
+							</div>
+							<div class="co_fauser">
+								<div class="co_fa_tit">
+									<p>관심기업 신청자</p>
+								</div>
+								<div class="co_fa_num">
+									<p>103명</p>
+									<span class="tac_mark">
+										<button type="button" id="star_icon" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+						</div><!-- cop_item end -->
+						<div class="cop_item">
+							<div class="co_itemimg">
+								<img src="../images/cop_list_img/sample/cop_logo_v4.jpg" alt="현대엔지니어링" />
+								<div class="co_tac_blue">
+									<span>이노비즈</span>
+								</div>
+							</div>
+							<div class="co_itemtext">
+								<h1>현대엔지니어링</h1>
+								<div class="b_type">
+									<span class="type_tit">업종</span>
+									<span class="type_con">건설업</span>
+								</div>
+								<div class="b_type_v2">
+									<span class="type_tit">업력</span>
+									<span class="type_con">10년 이상</span>
+								</div>
+								<div class="b_type_v3">
+									<span class="type_tit">기업가치</span>
+									<span class="type_con">37,977,000,000원</span>
+								</div>
+								<div class="b_textarea">
+									<p>창의적 사고와 끝없는 도전으로 새로운 미래를 창조함으로써 인류사회의 꿈을 실현한다는 현대자동차그룹의 경영철학을 담았습니다.</p>
+								</div>
+							</div>
+							<div class="co_fauser">
+								<div class="co_fa_tit">
+									<p>관심기업 신청자</p>
+								</div>
+								<div class="co_fa_num">
+									<p>64명</p>
+									<span class="tac_mark">
+										<button type="button" id="star_icon" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+						</div><!-- cop_item end -->
+						<div class="cop_item">
+							<div class="co_itemimg">
+								<img src="../images/cop_list_img/sample/cop_logo_v5.jpg" alt="에이프로젠" />
+								<div class="co_tac_blue">
+									<span>이노비즈</span>
+								</div>
+							</div>
+							<div class="co_itemtext">
+								<h1>에이프로젠</h1>
+								<div class="b_type">
+									<span class="type_tit">업종</span>
+									<span class="type_con">공학 연구개발업</span>
+								</div>
+								<div class="b_type_v2">
+									<span class="type_tit">업력</span>
+									<span class="type_con">15년 이상</span>
+								</div>
+								<div class="b_type_v3">
+									<span class="type_tit">기업가치</span>
+									<span class="type_con">24,861,000,000원</span>
+								</div>
+								<div class="b_textarea">
+									<p>(주)에이프로젠은 KAIST의 단백질 신약 연구 역량과 한국생명공학연구원의 항체공학 기술 역량을 중심 기반 기술로 2000년에 설립되었습니다.</p>
+								</div>
+							</div>
+							<div class="co_fauser">
+								<div class="co_fa_tit">
+									<p>관심기업 신청자</p>
+								</div>
+								<div class="co_fa_num">
+									<p>1,000명</p>
+									<span class="tac_mark">
+										<button type="button" id="star_icon" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+						</div><!-- cop_item end -->
+					</div>
+					<div class="pagination mgt30 mgb20">
+						<ul class="page_num">
+							<li>
+								<a href='javascript:void(0);' class="page_btn pre_v2"></a>
+								<a href='javascript:void(0);' class="page_btn pre_v1"></a>
+							</li>
+							<li><a href="#" class='pgnt_hover'>1</a></li>
+							<li><a href="#" class='pgnt_hover'>2</a></li>
+							<li><a href="#" class='pgnt_hover'>3</a></li>
+							<li><a href="#" class='pgnt_hover'>4</a></li>
+							<li><a href="#" class='pgnt_hover'>5</a></li>
+							<li><a href="#" class='pgnt_hover'>6</a></li>
+							<li><a href="#" class='pgnt_hover'>7</a></li>
+							<li><a href="#" class='pgnt_hover'>8</a></li>
+							<li><a href="#" class='pgnt_hover'>9</a></li>
+							<li><a href="#" class='pgnt_hover'>10</a></li>
+							<li>
+								<a href='javascript:void(0);' class="page_btn next_v1"></a>
+								<a href='javascript:void(0);' class="page_btn next_v2"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- container end -->
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<div class="fs_section row_wrap fs_private">
+            <div class="footer_logo"><a href="/index.html"><img src="../images/logo_white.png" alt="로고" /></a></div>
+            <div class="footer_info">
+                <ul>
+                    <li><button type="button" onclick="window.location.href='../company/about_ss.html'">회사소개</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/subscription.html'">청약약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/stipulation.html'">회원이용약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/private.html'">개인정보처리방침</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/investment_note.html'">투자유의사항</button></li>
+                </ul>
+            </div>
+        </div>
+		<div class="fs_section row_wrap fs_copyright">
+			<ul class="sns_icon">
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_youtube.png" alt="유튜브 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_kakaoplus.png" alt="카톡플러스친구 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_facebook.png" alt="페이스북 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_naverblog.png" alt="네이버블로그 아이콘" /></a></li>
+			</ul>
+            <div class="copy_txt">
+                <ul class="copy_addr">
+                    <li>주식회사 스마트시큐리티 <span>ㅣ</span> <b>대표 : 조정식</b></li>
+                    <li>대표번호 : <b>00-000-0000</b> <span>ㅣ</span> FAX : <b>00-000-0000</b></li>
+                    <li><b>서울특별시 동대문구 왕산로 122 8층 829호(용두동, 한방천하 포스빌)</b></li>
+                </ul>
+                <ul class="copy_addr">
+                    <li>사업자 등록번호 : <b>000-00-00000</b> <span>ㅣ</span> 통신판매업 신고번호 : <b>2018-서울동대문 0000호</b></li>
+                    <li>COPYRIGHT 2018 FXSTOCK ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<!-- footer end -->
+  </div>
+  <!-- wrap end -->
+</body>
+</html>
+<!-- progress script -->
+<script>
+    $(document).ready(function(){
+        $('.percent').animate({width:'82%'},2000);
+    });
+</script>

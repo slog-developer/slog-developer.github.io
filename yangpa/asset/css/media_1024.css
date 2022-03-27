@@ -1,0 +1,60 @@
+@media screen and (max-width: 1024px) {
+    /* common */
+    .row_wrap{
+        margin: 0 10px;
+    }
+	.gnb ul li{
+		padding: 0 30px;
+	}
+
+    /* main */
+    .slide_txt{
+        font-size: 13px;
+    }
+
+    /* company */
+    .vision_cont .txt_box{
+        margin-right: 5%;
+    }
+    .purpose_cont .txt_box{
+        margin-left: 5%;
+    }
+    .location_cont .txt_box{
+        margin-right: 5%;
+    }
+    .intro_cont{
+        font-size: 14px;
+    }
+
+	/* support */
+	.sup_cont01 .txt_cont{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.sup_cont01 .txt_cont img{
+		position: static;
+		text-align: center;
+		transform: scale(1);
+		margin: 0 auto;
+		width: 30vw;
+	}
+	.sup_cont01 .txt_cont h2,
+	.sup_cont01 .txt_cont p{
+		width: 100%;
+		padding: 0 30px;
+		box-sizing: border-box;
+	}
+	.sup_cont01 .txt_cont h2{
+		font-size: 4vw;
+	}
+	.sup_cont01 .txt_cont p{
+		font-size: 3vw;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+    .report_cont{
+        width: auto;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>재단홈페이지</title>
+
+	<!--  css  -->
+	<link rel="stylesheet" href="asset/css/style.css">
+	<link rel="stylesheet" href="asset/css/common.css">
+	<link rel="stylesheet" href="asset/css/reset.css">
+	<link rel="stylesheet" href="asset/css/needpopup.min.css">
+	<link rel="stylesheet" href="asset/css/swiper.min.css">
+	<link rel="stylesheet" href="asset/css/wSelect.css">
+
+	<!-- mediaquery -->
+	<link rel="stylesheet" href="asset/css/media_1600.css" />
+	<link rel="stylesheet" href="asset/css/media_1024.css" />
+	<link rel="stylesheet" href="asset/css/media_960.css" />
+	<link rel="stylesheet" href="asset/css/media_768.css" />
+	<link rel="stylesheet" href="asset/css/media_480.css" />
+	<link rel="stylesheet" href="asset/css/media_380.css" />
+
+	<!-- js -->
+	<script type="text/javascript" src="asset/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="asset/js/wSelect.min.js"></script>
+	<script type="text/javascript" src="asset/js/asidebar.jquery.js"></script>
+</head>
+<body>
+<div id="wrap" class="wrap02">
+    <div id="header02">
+        <a href="index.html" class="logo_icon"><img src="asset/img/logo/logo.png" alt="logo"></a>
+		<div class="m_nav_btn">
+			<a href="#">menu</a>
+		</div>
+        <ul class="nav_section">
+            <li><a href="#">엔젤파트너</a></li>
+            <li><a href="#">캠페인</a></li>
+            <li><a href="spon.html">후원참여</a></li>
+            <li><a href="#">재단소개</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">문의하기</a></li>
+        </ul>
+        <div class="acc_section">
+            <a href="#" class="login">로그인</a>
+            <a href="join.html">회원가입</a>
+        </div>
+    </div>
+    <div id="container02">
+		<div class="verti_banner join_banner"></div>
+		<div class="sub_side_cont">
+			<h1 class="sub_tit_02">회원가입</h1>
+			<div class="join2_cont">
+				<ul class="page_depth clear_fix">
+					<li>1</li>
+					<li class="active">2</li>
+					<li>3</li>
+				</ul>
+				<h2 class="depth_tit">회원정보입력</h2>
+				<div class="input_section">
+					<label for="name" class="top">이름</label>
+					<input type="text" name="name" id="name">
+				</div>
+				<div class="input_section">
+					<label for="phone" class="top">휴대폰번호</label>
+					<input type="text" name="phone" id="phone">
+				</div>
+				<div class="input_section">
+					<label for="id" class="top">아이디</label>
+					<input type="text" name="id" id="id">
+					<p class="check"><span class="red">*이미 사용중인 아이디입니다.</span></p>
+				</div>
+				<div class="input_section">
+					<label for="pw" class="top">비밀번호(영문, 특수문자를 조합한 8자리 이상)</label>
+					<input type="password" name="pw" id="pw">
+					<p class="check"><i class="far fa-circle green"></i></p>
+				</div>
+				<div class="input_section">
+					<label for="pw2" class="top">비밀번호 확인</label>
+					<input type="password" name="pw2" id="pw2">
+					<p class="check"><i class="fas fa-times red"></i></p>
+				</div>
+				<div class="input_section">
+					<label for="email" class="top">이메일주소</label>
+					<input type="text" name="email" id="email">
+					<p class="check"><a href="#">인증메일발송</a></p>
+				</div>
+				<div class="input_section">
+					<label for="email2" class="top">발송코드를 입력하세요</label>
+					<input type="text" name="email2" id="email2">
+					<p class="check"><a href="#">인증확인</a></p>
+				</div>
+				<div class="btn_area_left btn_dark_check">
+					<a href="#">다음</a>
+				</div>
+			</div>
+			<div id="footer02">
+				<div class="ft_link">
+					<a href="#">엔젤파트너안내</a>
+					<a href="#">찾아오시는길</a>
+					<a href="#" class="bold">이용약관</a>
+					<a href="#" class="blue blod">개인정보처리방침</a>
+					<a href="#">이메일무단수집거부</a>
+				</div>
+				<ul>
+					<li>
+						<span>대표 : 조정식</span>
+						<span>주소 : 서울시 강남구 학동로 309 6층</span>
+						<span>사업자번호 : 415-00-01005</span>
+					</li>
+					<li>
+						<span>전화 : 1899-7564</span>
+						<span>팩스 : 02-547-4740</span>
+						<span>이메일 : yangpa@yangpa.com</span>
+					</li>
+					<li>copyright 2019 yangpa. all rights reserved.</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</div>
+<script type="text/javascript" src="asset/js/swiper.min.js"></script><!-- Swiper JS -->
+
+<script type="text/javascript">
+    // 네비게이션 - header
+    $('.nav_section > li').hover(function(){
+        $('.nav_section > li').css('opacity','0.3');
+        $('.nav_section > li:hover').css('opacity','1');
+    }, function(){
+        $('.nav_section > li').css('opacity','1');
+    });
+	// 모바일네비게이션 - header
+	$('.m_nav_btn > a').click(function(){
+		if($('#header02, .nav_section, .acc_section').hasClass('n_open')){
+			$('#header02, .nav_section, .acc_section').removeClass('n_open');
+		} else {
+			$('#header02, .nav_section, .acc_section').addClass('n_open');
+		}
+		$(this).toggleClass('n_close');
+	});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>SUCCESTOCK</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../inc/css/style.css" />
+	<link rel="stylesheet" href="../inc/css/reset.css" />
+	<link rel="stylesheet" href="../inc/css/common.css" />
+	<link rel="stylesheet" href="../inc/css/swiper.min.css">
+
+	<!-- favicon -->
+	<link rel="icon" href="../images/favicon.ico" />
+
+	<!-- jQuery : 추가할시 jPark 에게 알려주세여 -->
+	<link rel="stylesheet" href="../inc/css/jquery-ui.css" />
+	<script type="text/javascript" src="../inc/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.alphanumeric.ex.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.timer.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.uploadPreview.js"></script>
+
+	<!-- js -->
+	<script type="text/javascript" src="../inc/js/script.js"></script>
+	<script type="text/javascript" src="../inc/js/focus.js"></script>
+	<script type="text/javascript" src="../inc/js/img_banner.js"></script>
+	<script type="text/javascript" src="../inc/js/swiper.min.js"></script>
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="gnb_section">
+			<div class="logo">
+				<a href="../../index.html"><img src="../images/logo.png" alt="logo" /></a>
+			</div>
+			<nav class="fs_gnb">
+				<ul>
+					<li><a href="join_funding.html" class="fs_lnb">펀딩참여하기</a></li>
+					<li><a href="../publish/pb_start.html" class="fs_lnb">펀딩발행하기</a></li>
+					<li><a href="company_list.html" class="fs_lnb">기업리스트</a></li>
+					<li><a href="../guide/guide_01.html" class="fs_lnb">이용가이드</a></li>
+					<li>
+						<a href="javascript:void(0);" class="fs_lnb"><i class="fas fa-ellipsis-h"></i></a>
+						<ul class="arrow_box">
+							<li><a href="javascript:void(0);">SUCCESTOCK 소개</a></li>
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">고객센터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="lojo_secetion">
+				<div class="login_link">
+					<ul class="login_lnb">
+						<li><a href="login.html" class="purple_main">김석경</a>님</a></li>
+						<li><a href="../join/select_type.html">회원가입</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container"><!-- 각 페이지 별 전체를 감싸는 div -->
+		<div class="fs_article"><!-- 슬라이드 영역 및 바로가기 링크 영역 -->
+            <!-- img slide BG -->
+			<div class="slide_bg_section">
+				<div class="row_wrap">
+					<div class="img_banner_wrap thumb_img">
+						<div class="posA tac_section tac_green">
+							<span class="tac_tit">주식형</span>
+							<span class="tac_mark">
+								<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+							</span>
+						</div>
+						<ul>
+							<img src="../images/card_ui/sp_img_re_v1.jpg">
+						</ul>
+					</div>
+					<div class="slide_content_text_v2">
+						<span>오늘 30명이 조회한 펀딩입니다.</span>
+						<h1>퍼플독</h1>
+						<p>가장 스마트하게 와인을 즐기는 법, 매월 만나는 나를 위한 와인 버틀러 서비스</p>
+					</div>
+				</div>
+			</div><!-- slide_bg_section -->
+			<div class="sub_tab" id="sub_tab_form">
+				<ul class="sub_tab_list">
+					<li class="purple_bottom"><a href="recruit_funding.html">모집내용</a></li>
+					<li><a href="company_info.html">회사정보</a></li>
+					<li><a href="company_news_list.html">회사소식</a></li>
+					<li><a href="company_board_list.html">게시판</a></li>
+				</ul>
+			</div>
+			<div class="funding_container">
+				<div class="nav_recruit" id="nav_recruit_form">
+					<ul>
+						<li><a href=".recruit_container_1">증권 발행조건</a></li>
+						<li><a href=".recruit_container_2">사업 포인트</a></li>
+						<li><a href=".recruit_container_3">펀딩 이야기</a></li>
+						<li><a href=".recruit_container_4">펀딩 인터뷰</a></li>
+					</ul>
+				</div>
+				<div class="recruit_wrap">
+					<div class="recruit_container_1">
+						<div class="recruit_tit mgb20">
+							<h1>증권 발행 조건</h1>
+							<span>주식 |</span>
+							<h3 class="purple_sub_v1">상환전환우선주</h3>
+						</div>
+						<div class="recruit_content">
+							<div class="recruit_section">
+								<span>총 발행 금액</span>
+								<p>89,960,000원</p>
+							</div>
+							<div class="recruit_section">
+								<span>최소 투자 금액</span>
+								<p>195,000(3주)</p>
+							</div>
+							<div class="recruit_section">
+								<span>현재 기업가치</span>
+								<p class="purple_sub_v1">1,300,000,000원</p>
+							</div>
+							<ul class="recruit_list">
+								<li><p>발행 주식 수</p><span>1,384주</span></li>
+								<li><p>펀딩 시작일</p><span>2018.12.12</span></li>
+								<li><p>주식 당 금액</p><span>65,000원</span></li>
+								<li><p>펀딩 종료일</p><span>2019.01.08</span></li>
+								<li><p>발행 지분율</p><span>6.4721%</span></li>
+								<li><p>증권 입고일</p><span>2019.02.11</span></li>
+								<li><p>전환 청구 기간</p><span>2023.01.19~2026.01.19</span></li>
+								<li><p>상환 청구 기간</p><span>2022.01.19~2024.01.19</span></li>
+							</ul>
+						</div><!-- recruit_content end -->
+						<div class="recruit_txt mgt10">
+							<p>펀딩 성공 시 발행된 주식은 6개월 간 매매가 금지됩니다. <br />펀딩 성공 시 주식 발행 6개월 이후(2019년 5월 1일 예상)에는 펀딩 발행 기업이 상장하기 전까지 SUCCESTOCK에서만 매매거래가 가능합니다.</p>
+						</div>
+					</div>
+					<div class="recruit_container_2">
+						<div class="recruit_tit">
+							<h1>사업 포인트</h1>
+						</div>
+						<div class="recruit_content">
+							<div class="swiper-container recruit-container mgt30">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide recruit-slide">
+										<h1>와인에 컨텐츠를 더한 국내 최초 와인 정기구독 서비스</h1>
+										<p>와인 정기 구독 서비스는 이미 해외에서는 안정적인 사업모델로 자리잡았습니다. 국내에서는 최초로 선보이는 모델일 뿐만 아니라 와인에 대한 핵심 컨텐츠들을 정리 후 와인과 동봉하여 해외 사업 모델을 한 단계 업그레이드 하였습니다. 또한, 고객의 취향에 따라 커스터마이징 된 와인을 전달 드립니다.</p>
+									</div>
+									<div class="swiper-slide recruit-slide">
+										<h1>로컬 1위 컨설팅 회사 네모파트너즈와의 파트너쉽 체결로 B2B사업 확장</h1>
+										<p>당사는 기업을 상대로 하는 기업 맞춤형 와인 서비스도 제공하고 있습니다. 로컬 1위 컨설팅 회사인 네모파트너즈와 파트너쉽 계약을 체결 후 다양한 기업들에게 서비스를 제공하거나 제공 예정에 있습니다. B2C뿐만 아니라 B2B 판매 채널도 가지고 있어 안정적인 수익 창출이 가능합니다.</p>
+									</div>
+									<div class="swiper-slide recruit-slide">
+										<h1>와인 라이프스타일을 선도하는 기업</h1>
+										<p>당사는 현재 당사 고객 뿐만 아니라 일반인도 유용하게 활용할 수 있는 범용 와인 어플을 제작 중에 있습니다. 또한 최근 유행하는 와인카페들을 업그레이드 한 오프라인 매장도 내년 오픈을 준비 중에 있습니다. 당사는 단순히 와인 정기 구독 서비스에서 멈추지 않고 와인 라이프스타일을 선도하는 기업으로 성장해 나가고자 합니다.</p>
+									</div>
+								</div>
+								<!-- Add Arrows -->
+								<div class="recruit-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true">
+									<i class="fas fa-angle-right deep_gray"></i>
+								</div>
+								<div class="recruit-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true">
+									<i class="fas fa-angle-left deep_gray"></i>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination recruit-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<div class="recruit_container_3">
+						<div class="recruit_tit">
+							<h1>펀딩 이야기</h1>
+						</div>
+						<div class="recruit_content mgb10">
+							<h3>1. 사업내용</h3>
+							<div class="video_section">
+								<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/SwAQIeQa8N0?autoplay=0&amp;color=white&amp;enablejsapi=1&amp;fs=1&amp;hl=ko-KR&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;origin=https%3A%2F%2Fwww.wadiz.kr&amp;widgetid=1"></iframe>
+							</div>
+							<p class="mgt10">가장 스마트하게 와인을 즐기는 방법,매월 만나는 나를 위한 와인버틀러서비스, 퍼플독 와인버틀러서비스는 정기적으로 매달 1번씩 전문가가 엄선한 취향에 맞는 와인을  배송해 드리는 서비스입니다.</p>
+							<div><img src="../images/card_ui/sp_img_re_v2.jpg" alt="퍼플독"/></div>
+
+							<h3>2. 사업 차별점 / 특장점</h3>
+							<p class="mgt10"><b>한 달 35,000원부터 만날 수 있는 나를 위한 와인 버틀러 로컬 1위 컨설팅 회사 네모파트너스와 함께하는 퍼플독 기업 맞춤 와인 서비스</b>
+							퍼플독은 지난 10월 로컬 1위 컨설팅 회사로 유명한 네모파트너즈와의 판매권 부여 및 업무 협조 계약을 체결하였습니다.이에 네모파트너즈를 통한 B2B 판매량 확대 중에 있으며, 기타 판매 인프라 구축에도 지원을 받고 있습니다.11월에는 기업들의 폐쇄몰을 직.간접적으로 운영하고 있는 우리원커머스와의 판매권 부여 계약을 체결하였습니다.온라인을 활용한 B2B 판매량 역시 급속도로 확대될 것으로 예상됩니다.현재 크고 작은 기업들에 퍼플독 기업 맞춤 와인 서비스를 제공 또는 제공 예정에 있으며 이는 퍼플독이 안정적으로 성장하는 밑거름이 될 것입니다.</p>
+							<div><img src="../images/card_ui/sp_img_re_v4.jpg" alt="차별점"/></div>
+							<p class="mgt10"><b>오프라인 매장과 어플을 활용한 퍼플독의 와인 라이프스타일 선도 “3년 내 직영 매장 10개 이상 오픈 당사의 추후 핵심적 수익 모델”</b>최근 젊은 고객들을 중심으로 성행 중에 있는 와인 카페를 업그레이드 한 퍼플독만의 첫 번째 오프라인 매장이 2019년 상반기 오픈 될 예정입니다. 오프라인 매장에서는 어플을 통하여 자신의 와인 취향 분석이 가능하고 그에 따른 와인을 추천받을 수 있습니다. 또한, 자유롭게 와인에 대한 테이스팅 노트 작성이 가능하며 다음 번 방문 시 자신이 먹었던 와인에 대한 정보와 테이스팅 노트를 확인할 수 있습니다. 어플은 오프라인 매장에서만 활용될 뿐 아니라 누구든지 접근할 수 있는 범용 어플로서 현재 개발 중에 있습니다. 현재 세계적으로 유명한 VIVINO와 이와 유사한 어플들이 계속하여 출시되고는 있지만 아직까지 충분히 만족할 만한 와인정보검색 어플이 존재하지 않는 것이 사실입니다. 당사는 와인버틀러서비스를 운영하며 쌓은 컨텐츠 제작 노하우를 바탕으로 어플을 통해 모든 이에게 만족스러운 와인 정보를 제공하는 것을 목표로 하고 있습니다. 퍼플독은 위와 같이 2019년에는 오프라인 매장과 어플을 통하여 한 단계 더 성장할 예정이며 이에 와인 라이프스타일을 선도하는 기업으로 나아가고자 합니다.</p>
+							<div><img src="../images/card_ui/sp_img_re_v5.jpg" alt="차별점"/></div>
+							<h3>3. 시장분석</h3>
+							<p class="mgt10"><b>천천히 그렇지만 확실하게 성장하는 퍼플독 와인버틀러서비스</b>퍼플독 와인버틀러서비스는 서비스 런칭 약 4개월이 지난 현 시점 실 회원 수 100명을 돌파하였습니다. 하지만, 높은 가격대의 서비스를 신청한 고객의 비율이 적지 않아 현재 와인버틀러서비스만의 월 매출액은 약 800만원에 달합니다. 와인 시장은 계속하여 성장하고 있고 그에 따라 퍼플독 와인버틀러서비스 회원도 꾸준히 증가 추세에 있습니다. 또한 10월 말부터 온라인 마케팅을 시작하였고 11월 중 방송 출연도 예정되어 있어 그 성장폭은 더욱 증가할 것이라 예상됩니다.</p>
+							<div><img src="../images/card_ui/pasted_image_0.png" alt="시장분석"/></div>
+							<p class="mgt10"><b>온라인 주류 배송은 현행 법 상 금지되어 있습니다.</b>하지만 온라인 주류 배송은 명확히 말하면 ‘온라인 주류 판매 금지’ 로 온라인 판매로 간주 되는 모든 행위 (결제, 홈페이지 내 계좌번호 기재, 장바구니 기능) 등이 금지됩니다.</p>
+							<p class="mgt10"><b>소비자의 대면 결제가 있는 주류의 ‘배송’ 판매는 위법이 아닙니다.</b>와인샵이나 백화점에서 명절 선물로 와인을 택배 배송해주는 것을 생각하시면 쉽게 이해하실 수 있을 것 같습니다.그러나 이를 위해서는 소비자를 직접 만나 CMS 자동 결제 신청서를 직접 받아야 한다는 단점이 있습니다. 비록 당사에게는 해당 부분이 영업에 걸림돌이 되기는 하지만, 천천히 그렇지만 확실한 성장을 위하여 해당 원칙을 준수하고 있습니다. 또한, 해당 규제는 계속하여 일각에서 철폐 논의가 있는 것으로 알고 있으며 멀지 않은 시일 내에 철폐될 것으로 예상하고 있습니다.그 때까지는 힘들지만 원칙을 지키며 퍼플독은 발로 뛰는 영업을 할 것입니다.</p>
+						</div>
+					</div>
+					<div class="recruit_container_4">
+						<div class="recruit_tit">
+							<h1>펀딩 인터뷰</h1>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>간단한 회사 소개를 해주세요.</h3>
+							<p><b>좋은 조직, 와인이라는 좋은 아이템과 만나다</b>대표이사를 포함한 멤버 중 3인은 모두 아카데미 듀뱅 Intensive Course를 수료하여 와인에 대한 상당한 지식을 가지고 있습니다.멤버들은 평소에도 와인을 즐겼으며, 이를 바탕으로 타 사업을 진행 중에도 와인에 대한 상담과 컨설팅을 무상으로 진행한 바 있습니다. 이 때 느낀 것이 와인을 즐기지만 와인을 선택하는 어려움으로 인하여 스트레스를 받는 사람들이 많다는 것이었습니다.멤버들은 이에 아이디어를 얻어 정말 좋아하는 아이템으로 사업을 진행하자는 결론에 도달하였고 본 서비스를 런칭하기에 이르렀습니다.</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>현재 투자 단계에 대해 설명해주세요.</h3>
+							<p><b>오픈을 앞둔 시점으로 시리즈 A 단계의 펀딩을 발행하였습니다.</b>EXIT 전략으로는 상환전환우선주의 상환권 행사를 통해 EXIT 가능하며, 상환 이자율은 연단리 7%로 그 수익을 얻을 수 있습니다.또한 현재 국내에서 컨텐츠와 함께 제공되는 와인 배송 서비스는 없기에 주류에 대한 법적 규제가 완화될 때에 이미 와인 배송 시장을 선점한 당사에 많은 제안이 있을 것이라 생각합니다. 당사와 주주의 이익에 도움이 되는 M&A 제안이라면 적극적으로 진행할 수 있으며 이를 통해 EXIT할 수 있습니다.</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>진행중인 사업에 대해 소개해주세요.</h3>
+							<p><b>퍼플독 와인버틀러서비스는 정기적으로 매달 1번씩 전문가가 엄선한 취향에 맞는 와인을  배송해 드리는 서비스입니다.</b>주식회사 퍼플독은 커스터마이징 와인 정기 구독 서비스를 시작하는 업체입니다. 와인 정기 구독 서비스 뿐만 아니라 기업을 대상으로 하는 기업 맞춤형 와인 서비스, 쉽고 편하게 와인을 즐길 수 있는 와인카페 매장까지 진출하여 국내 와인 산업을 주도하고 와인 라이프스타일을 선도하는 기업으로 성장하고자 합니다.</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>사업의 강점을 상세하게 설명해주세요.</h3>
+							<p><b>퍼플독_국내 와인 산업을 주도하는 와인 라이프스타일 선도기업으로 성장하고 있습니다.</b>퍼플독은 전문가들이 몇 번의 테이스팅을 거쳐 엄선된 와인들만 고객들에게 제공합니다. 모든 사람들의 입맛 기준은 동일할 수 없습니다. 그러나, 사람들이 대부분 맛있다고 하는 음식점이 있듯 와인도 대부분의 사람들이 맛있다고 하는 와인이 있습니다. 퍼플독은 테이스팅을 통해 최대한 호불호가 갈리지 않고 대부분이 맛있다고 평가하는 와인을 직접 엄선합니다. 그럼에도 불구하고 개인의 취향에 따라 와인에 대한 세부적인 기준은 차이가 있을 수 있습니다. 와인은 밸런스가 중요한데 밸런스도 주관적 요소가 개입되며 개인의 취향에 따라 산미가 더 높은 와인을 좋아할 수도 있고 달콤한 와인을 더 좋아할 수도 있습니다. 이에 퍼플독은 고객 한분마다 1:1 상담을 통하여 그 취향을 분석하고 그에 맞는 와인들을 선정하여 맞춤 와인을 제공합니다.</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>향후 계획은 어떻게 되나요?</h3>
+							<p>
+								<span>2018년 12월 현재 온라인 회원 100명 돌파</span><br/>
+								<span>2019년 상반기 첫 번째 오프라인 매장 오픈</span><br/>
+								<span>3년 내 B2B 서비스 월 매출 5억 달성 목표</span><br/>
+								<span>3년 내 직영 매장 10개 이상 오픈</span>
+							</p>
+						</div>
+						<div class="interview_section">
+							<h3><span class="interview_icon"></span>마지막으로 투자자분들께 회사를 어필해주세요.</h3>
+							<p>이번 크라우드펀딩으로 모집된 투자금액으로 컨텐츠 및 제작 중인 어플의 업그레이드를 진행할 계획입니다. 업그레이드 되는 컨텐츠와 개발 후 내년에 런칭 될 어플은 퍼플독의 경쟁력을 더욱 높여줄 것입니다.국내에서 와인시장은 점점 성장하고 있지만 획일화된 업계의 서비스로 인하여 국내 와인산업은 의미 없는 제로섬 게임만을 거듭하고 있습니다. 퍼플독은 국내 와인시장의 새로운 패러다임을 제시할 것이며, 단순한 와인 판매가 아니라 와인라이프스타일을 주도하는 기업으로 성장할 것입니다.퍼플독과 함께 와인라이프스타일 산업을 함께 이끌어 나가고 싶으신 모든 예비 주주님께 미리 감사의 말씀을 드립니다. </br>감사합니다.</p>
+						</div>
+					</div>
+				</div><!-- recruit_wrap end -->
+				<div class="chat_wrap" id="chat_wrap_form">
+					<h1>55명 참여</h1>
+					<div class="chat_progress_section">
+						<div class="progressBar_v3">
+							<div class="progress_v3 pg_body_v3"></div>
+						</div>
+						<div class="progress_value_v3">80%</div>
+					</div>
+					<div class="recruit_content">
+						<h4>목표금액 : 89,960,000원</h4>
+						<h4 class="floatR">13일 남음</h4>
+						<ul class="chat_list mgt15">
+							<li><p>현재모집금액</p><span>72,475,000원</span></li>
+							<li><p>연 이자율</p><span>8%</span></li>
+							<li><p>주식 당 금액</p><span>65,000원</span></li>
+							<li><p>증권 입고일</p><span>2019.02.11</span></li>
+							<li><p>투자 단계</p><span>Series A</span></li>
+							<li><p>현재 기업가치</p><span>1,300,000,000원</span></li>
+						</ul>
+						<p class="bold">(본 펀딩 발행 전 주식 수 x 주식 금액 합산)</p>
+					</div><!-- recruit_content end -->
+					<div class="fs_btn_box">
+						<button type="button" class="certi_box_v4">투자하러가기</button>
+						<button type="button" class="chat_list_btn"><i class="fas fa-list-ul white"></i></button>
+					</div>
+					<div class="chat_box">
+						<ul>
+							<li><span>김진희</span> : 와인 잘 몰라도 이용할 수 있는 서비스인가요?</li>
+							<li><span>전석경</span> : 와인 잘 모르는 사람한테 특화된 서비스네요~ 요금이 괜찮은데요???</li>
+							<li><span>권종호</span> : 성공 가능성이 높은 펀딩 같네요~</li>
+						</ul>
+						<div class="chat_input">
+							<input type="text" class="chat_text" placeholder="메시지를 입력해주세요." maxlength="50"/><i class="far fa-smile pd6"></i>
+						</div>
+					</div>
+				</div>
+				<a class="top_btn"><i class="fas fa-angle-up"></i></a>
+			</div>
+		</div><!-- fs_article end -->
+		<div class="fs_article">
+			<div class="row_wrap">
+				<div class="fs_section full_section">
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+	<!-- container end -->
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<div class="fs_section row_wrap fs_private">
+            <div class="footer_logo"><a href="/index.html"><img src="../images/logo_white.png" alt="로고" /></a></div>
+            <div class="footer_info">
+                <ul>
+                    <li><button type="button" onclick="window.location.href='../company/about_ss.html'">회사소개</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/subscription.html'">청약약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/stipulation.html'">회원이용약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/private.html'">개인정보처리방침</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/investment_note.html'">투자유의사항</button></li>
+                </ul>
+            </div>
+        </div>
+		<div class="fs_section row_wrap fs_copyright">
+			<ul class="sns_icon">
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_youtube.png" alt="유튜브 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_kakaoplus.png" alt="카톡플러스친구 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_facebook.png" alt="페이스북 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_naverblog.png" alt="네이버블로그 아이콘" /></a></li>
+			</ul>
+            <div class="copy_txt">
+                <ul class="copy_addr">
+                    <li>주식회사 스마트시큐리티 <span>ㅣ</span> <b>대표 : 조정식</b></li>
+                    <li>대표번호 : <b>00-000-0000</b> <span>ㅣ</span> FAX : <b>00-000-0000</b></li>
+                    <li><b>서울특별시 동대문구 왕산로 122 8층 829호(용두동, 한방천하 포스빌)</b></li>
+                </ul>
+                <ul class="copy_addr">
+                    <li>사업자 등록번호 : <b>000-00-00000</b> <span>ㅣ</span> 통신판매업 신고번호 : <b>2018-서울동대문 0000호</b></li>
+                    <li>COPYRIGHT 2018 FXSTOCK ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<!-- footer end -->
+  </div>
+  <!-- wrap end -->
+</body>
+</html>
+
+<script>
+
+// sub_tab script
+
+window.onscroll = function() {myFunction()};
+
+var sub_tab = document.getElementById("sub_tab_form");
+var sub_tab_v2 = document.getElementById("nav_recruit_form");
+var sub_tab_v3 = document.getElementById("chat_wrap_form");
+var sticky = sub_tab.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+	sub_tab.classList.add("sticky");
+	sub_tab_v2.classList.add("sticky_v2");
+	sub_tab_v3.classList.add("sticky_v3");
+  } else {
+	sub_tab.classList.remove("sticky");
+	sub_tab_v2.classList.remove("sticky_v2");
+	sub_tab_v3.classList.remove("sticky_v3");
+  }
+}
+
+// one page rolling script
+var speed = 700;	// 스크롤 스피드 수치로 사용할 변수
+
+//로직
+function scrolling(obj){
+	if (!obj){	// 예외처리, 현재는 기능적으로 필요한 부분은 아님, 관례적 사용
+		$('html, body').animate({scrollTop:0},speed);
+	}else{
+		var posTop = $(obj).offset().top -100;	// posTop = 매개변수로 들어온 컨텐츠 obj 의 offset().top - 네비게이션 높이
+		$('html, body').animate({scrollTop:posTop}, speed )	// body의 스크롤이동 : posTop
+	}
+};
+
+$("ul li a").click(function(){	// 네비게이션 클릭시
+	var direction = $(this).attr("href");	// direction = 클릭한 요소의 href 속성
+	scrolling( direction );	// direction 을 인자로 함수 실행
+	return false;	// 본래 이벤트 방지
+});
+
+// 사업 포인트 Swiper
+var swiper = new Swiper('.recruit-container', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+	el: '.swiper-pagination',
+	clickable: true,
+  },
+  navigation: {
+	nextEl: '.recruit-next'
+	, prevEl: '.recruit-prev'
+, }
+});
+
+// top button script
+var btn = $('.top_btn');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+<!-- progress script -->
+<script>
+$(document).ready(function(){
+	$('.pg_body_v3').animate({width:'80%'},2000);
+});
+</script>
+
+<!-- nav script -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".nav_recruit li a").mousedown(function(){
+        $(this).css({'font-size':'15px'});
+    });
+});
+</script>

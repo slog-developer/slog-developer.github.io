@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="Author" content="fxstock">
+	<meta name="Keywords" content="fxstock, fx, fx스탁, 에프엑스스탁, 스마트관리, smartmanagement, 마진거래, 선물">
+	<meta name="Description" content="fxstock, 마진거래, fx스탁">
+
+	<title>SUCCESTOCK</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../inc/css/style.css" />
+	<link rel="stylesheet" href="../inc/css/reset.css" />
+	<link rel="stylesheet" href="../inc/css/common.css" />
+	<link rel="stylesheet" href="../inc/css/swiper.min.css">
+
+	<!-- favicon -->
+	<link rel="icon" href="../images/favicon.ico" />
+
+	<!-- jQuery : 추가할시 jPark 에게 알려주세여 -->
+	<link rel="stylesheet" href="../inc/css/jquery-ui.css" />
+	<script type="text/javascript" src="../inc/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.alphanumeric.ex.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.timer.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.uploadPreview.js"></script>
+
+	<!-- js -->
+	<script type="text/javascript" src="../inc/js/script.js"></script>
+	<script type="text/javascript" src="../inc/js/focus.js"></script>
+	<script type="text/javascript" src="../inc/js/img_banner.js"></script>
+	<script type="text/javascript" src="../inc/js/swiper.min.js"></script>
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+ <body>
+ <!-- wrap -->
+ <div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="gnb_section">
+			<div class="logo">
+				<a href="../../index.html"><img src="../images/logo.png" alt="logo" /></a>
+			</div>
+			<nav class="fs_gnb">
+				<ul>
+					<li><a href="../funding/join_funding.html" class="fs_lnb">펀딩참여하기</a></li>
+					<li><a href="../publish/pb_start.html" class="fs_lnb">펀딩발행하기</a></li>
+					<li><a href="../funding/company_list.html" class="fs_lnb">기업리스트</a></li>
+					<li><a href="../guide/guide_01.html" class="fs_lnb">이용가이드</a></li>
+					<li>
+						<a href="javascript:void(0);" class="fs_lnb"><i class="fas fa-ellipsis-h"></i></a>
+						<ul class="arrow_box">
+							<li><a href="javascript:void(0);">SUCCESTOCK 소개</a></li>
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">고객센터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="lojo_secetion">
+				<div class="login_link">
+					<ul class="login_lnb">
+						<li><a href="login.html" class="purple_main">김석경</a>님</a></li>
+						<li><a href="../join/select_type.html">회원가입</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container">
+		<div class="fs_article">
+			<div class="user_login_container">
+				<div class="section_title">회원가입<p>투자자 회원(개인)</p></div>
+					<div class="idpw_wrap">
+						<div class="tabs_container">
+							<div class="reset_contents">
+								<div class="add_tit_input_section">
+									<div class="input_tit"><span>아이디(이메일)</span></div>
+									<div class="fs_input_v3 mgb10">
+										<input type="text" name="txt_mem_id" id="txt_mem_id" class="fs_input_text input_em" placeholder="이메일 주소 입력" />
+										<button type="button" class="certi_box floatR" id="btn_emailAuth_Send">인증번호 발송</button>
+										<button type="button" class="certi_box floatR" id="btn_email_reSend" style="display:none;">이메일 변경</button>
+									</div>
+									<div class="fs_input_v3" id="email_authChk">
+										<input type="password" name="txt_email_authCode" id="txt_email_authCode" class="fs_input_text input_cn" placeholder="인증번호 입력" maxlength="6" />
+										<span class="light_red" id="countdown1" style="display:none;">00:00</span>
+										<button type="button" class="certi_box floatR" id="btn_emailAuth_check">인증하기</button>
+									</div>
+									<div class="input_alert"><p>이메일 주소 입력 후 “인증번호 발송”을 클릭 시 인증번호가 발송됩니다.<br />메일에 포함된 인증번호를 입력하신 후 “인증하기” 버튼을 눌러주세요.</p></div>
+								</div><!-- add_tit_input_section end -->
+								<div class="terms_wrap">
+									<!--
+									<div class="terms_tit">
+										<div class="terms_name floatL">이용약관</div>
+										<div class="terms_tit_check floatR">
+											<input class="checkbox" type="checkbox" name="text" id="all_agree" />
+											<label for="all_agree"></label>
+											<label for="all_agree"></label><span class="save_id_text">전체동의</span>
+										</div>
+									</div>
+									-->
+									<div class="terms_container">
+										<div class="terms_sub_tit">
+											<span>이용 약관</span>
+											<span><a href="javascript:void(0);" id='view_modal_1'>크게보기</a></span>
+											<div class="terms_tit_check floatR">
+												<input class="checkbox" type="checkbox" name="text" id="agree" name="agree" />
+												<label for="agree"></label>
+												<label for="agree"></label><span class="save_id_text">동의</span>
+											</div>
+										</div>
+										<div class="terms_contents">
+											<div class="terms_text">
+												SUCCESTOCK 이용약관
+												본 약관은 (주)스마트 시큐리티(이하”회사”라고 함)가 운영하는 인터넷 사이트(이하”사이트”라고 함)
+												에서 제공하는 모든 웹서비스(이하”서비스”라고 함)를 이용함에 있어”회사”와 회원간의 권리와 의무
+												및 책임사항에 관한 사항을 규정함을 목적으로 합니다.
+												본 약관은 (주)스마트 시큐리티(이하”회사”라고 함)가 운영하는 인터넷 사이트(이하”사이트”라고 함)
+												에서 제공하는 모든 웹서비스(이하”서비스”라고 함)를 이용함에 있어”회사”와 회원간의 권리와 의무
+												및 책임사항에 관한 사항을 규정함을 목적으로 합니다.
+												본 약관은 (주)스마트 시큐리티(이하”회사”라고 함)가 운영하는 인터넷 사이트(이하”사이트”라고 함)
+												에서 제공하는 모든 웹서비스(이하”서비스”라고 함)를 이용함에 있어”회사”와 회원간의 권리와 의무
+												및 책임사항에 관한 사항을 규정함을 목적으로 합니다.
+											</div>
+											<div class="gradient_v2">
+											</div>
+										</div>
+										<div class="terms_sub_tit">
+											<span>개인정보 처리방침</span>
+											<span><a href="javascript:void(0);" id='view_modal_2'>크게보기</a></span>
+											<div class="terms_tit_check floatR">
+												<input class="checkbox" type="checkbox" name="text" id="agree_v2" name="agree_v2" />
+												<label for="agree_v2"></label>
+												<label for="agree_v2"></label><span class="save_id_text">동의</span>
+											</div>
+										</div>
+										<div class="terms_contents">
+											<div class="terms_text">
+												개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침
+												개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침
+												개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침
+												개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침
+												개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침
+												개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침개인정보 처리방침
+											</div>
+											<div class="gradient">
+											</div>
+										</div>
+									</div><!-- terms_container end -->
+								</div><!-- terms_wrap end -->
+								<div class="fs_form">
+									<div class="fs_btn_box">
+										<button type="button" class="fs_full_btn" id="btn_next" onclick="window.location.href='join_personal_info.html'">다음 <i class="fas fa-angle-double-right"></i></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- tabs_container end -->
+					</div><!-- idpw_wrap end -->
+			</div>
+		</div>
+	</div>
+	<!-- container end -->
+
+	<div class="modal_bg" id="modal_1">
+		<div class="modal_body">
+			<div class="modal_contents">
+				<div class="modal_text">
+					<p><b>SUCCESTOCK 이용약관</b><br />
+					본 약관은 ㈜스마트 시큐리티(이하 “회사“라고 함)가 운영하는 인터넷 사이트(이하 “사이트＂라고 함)에서 제공하는 모든 서비스(이하 “서비스＂라고 함)를 이용함에 있어 “회사＂와 회원 간의 권리와 의무 및 책임사항에 관한 사항을 규정함을 목적으로 합니다.</p>
+					<p><b>목차</b><br />
+					제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<p>제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<p>제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<div class="gradient_v3"></div>
+				</div>
+			</div>
+			<div class="modal_button_wrap">
+				<button type="button" class="modal_agree" id="btn_agree_pop_v1">동의하기</button>
+				<button type="button" class="modal_close" id="btn_close_pop_v1">닫기</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal_bg" id="modal_2">
+		<div class="modal_body">
+			<div class="modal_contents">
+				<div class="modal_text">
+					<p><b>SUCCESTOCK 개인정보 처리방침</b><br />
+					본 약관은 ㈜스마트 시큐리티(이하 “회사“라고 함)가 운영하는 인터넷 사이트(이하 “사이트＂라고 함)에서 제공하는 모든 서비스(이하 “서비스＂라고 함)를 이용함에 있어 “회사＂와 회원 간의 권리와 의무 및 책임사항에 관한 사항을 규정함을 목적으로 합니다.</p>
+					<p><b>목차</b><br />
+					제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<p>제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<p>제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<div class="gradient_v3"></div>
+				</div>
+			</div>
+			<div class="modal_button_wrap">
+				<button type="button" class="modal_agree" id="btn_agree_pop_v2">동의하기</button>
+				<button type="button" class="modal_close" id="btn_close_pop_v2">닫기</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<div class="fs_section row_wrap fs_private">
+            <div class="footer_logo"><a href="/index.html"><img src="../images/logo_white.png" alt="로고" /></a></div>
+            <div class="footer_info">
+                <ul>
+                    <li><button type="button" onclick="window.location.href='../company/about_ss.html'">회사소개</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/subscription.html'">청약약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/stipulation.html'">회원이용약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/private.html'">개인정보처리방침</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/investment_note.html'">투자유의사항</button></li>
+                </ul>
+            </div>
+        </div>
+		<div class="fs_section row_wrap fs_copyright">
+			<ul class="sns_icon">
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_youtube.png" alt="유튜브 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_kakaoplus.png" alt="카톡플러스친구 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_facebook.png" alt="페이스북 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_naverblog.png" alt="네이버블로그 아이콘" /></a></li>
+			</ul>
+            <div class="copy_txt">
+                <ul class="copy_addr">
+                    <li>주식회사 스마트시큐리티 <span>ㅣ</span> <b>대표 : 조정식</b></li>
+                    <li>대표번호 : <b>00-000-0000</b> <span>ㅣ</span> FAX : <b>00-000-0000</b></li>
+                    <li><b>서울특별시 동대문구 왕산로 122 8층 829호(용두동, 한방천하 포스빌)</b></li>
+                </ul>
+                <ul class="copy_addr">
+                    <li>사업자 등록번호 : <b>000-00-00000</b> <span>ㅣ</span> 통신판매업 신고번호 : <b>2018-서울동대문 0000호</b></li>
+                    <li>COPYRIGHT 2018 FXSTOCK ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<!-- footer end -->
+  </div>
+ <!-- wrap end -->
+ </form>
+ </body>
+</html>
+
+<script>
+$(document).ready(function(){
+	$("#view_modal_1").click(function(){
+		$("#modal_1").addClass("active");
+	});
+
+	$("#btn_agree_pop_v1").click(function(){
+		$('input:checkbox[id="agree"]').prop("checked",true);
+		$(".modal_bg").removeClass("active");
+	});
+
+	$("#view_modal_2").click(function(){
+		$("#modal_2").addClass("active");
+	});
+
+	$("#btn_agree_pop_v2").click(function(){
+		$('input:checkbox[id="agree_v2"]').prop("checked",true);
+		$(".modal_bg").removeClass("active");
+	});
+
+	$(".modal_close").click(function(){
+		$(".modal_bg").removeClass("active");
+	});
+
+	$("#btn_email_reSend").click(function (){
+		location.reload();
+	});
+});
+</script>

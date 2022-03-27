@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="fxrent">
+	<meta name="description" content="fxrent, 마진거래, fx렌트">
+	<meta name="keywords" content="fxrent, fx, fx렌트, 스마트관리, 마진거래, 선물">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>fxrent</title>
+
+	<!-- style-->
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/editCss.css">
+
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/needpopup.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/jquery-ui.css"> <!-- calendar css / v1.12.1 -->
+
+	<!-- webfont-->
+
+	<!-- js-->
+	<script src="../asset/js/jquery-3.2.1.min.js"></script>
+	<script src="../asset/js/jquery-ui.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!--모바일menu-->
+	<script src="../asset/js/slideBanner.js"></script>
+	<!--슬라이드배너-->
+
+	<!-- IEChecker-->
+	<script src="../asset/js/ie-checker-min.js"></script>
+
+	<!-- HTML5shiv-->
+	<!--[if lt IE 9]>
+      <script src="../asset/js/html5Shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+	<!-- header-->
+	<div id="header">
+		<!-- row-->
+		<div class="row row_header">
+			<!-- gnb-->
+			<div class="top_fix_zone">
+				<div id="logo">
+					<a href="../index.html"><img src="../img/logo.png" alt="" title="FXRENT" /></a>
+				</div>
+				<nav id="gnb" class="gnb clear_fix">
+					<ul class="clear_fix">
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">거래하기 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../trading/fxrent.html">거래</a></li>
+								<li><a href="../trading/fxrent_state.html">실현/실격</a></li>
+								<li><a href="../trading/apidate.html">API데이터</a></li>
+								<li><a href="../trading/deposit_ask.html">입/출금</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">소개 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../company/about_rent.html">FXRENT소개</a></li>
+								<li><a href="../company/about_fx.html">FX마진거래</a></li>
+								<li><a href="../manual/manual_join.html">이용방법</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">공지사항 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../board/board.html?board_code=notice">공지사항</a></li>
+								<li><a href="../board/board.html?board_code=tickchart">틱차트</a></li>
+								<li><a href="../board/board.html?board_code=news">회사소식</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">고객센터 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../board/board.html?board_code=1on1">1:1문의</a></li>
+								<li><a href="../service/faq.html">FAQ</a></li>
+								<li><a href="../service/account_change.html">계좌변경</a></li>
+								<li><a href="../service/support.html">원격지원</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+					</ul>
+					<div class="sign-cont">
+						<a href="join/login.html">로그인</a>
+						<a href="join/join_form.html">회원가입</a>
+					</div>
+				</nav>
+			</div>
+			<div id="mobile_nav">
+				<nav class="menu" role="navigation">
+					<a href="join/login.html" class="btn_accordion_top login_check">로그인</a>
+					<a href="join/join_form.html" class="btn_accordion_top join_check">회원가입</a>
+					<ul id="nav">
+						<li> <a href="#">거래하기<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../trading/fxrent.html">거래</a></li>
+								<li><a href="../trading/fxrent_state.html">실현/실격</a></li>
+								<li><a href="../trading/apidate.html">API데이터</a></li>
+								<li><a href="../trading/deposit_ask.html">입/출금</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">소개<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../company/about_rent.html">소개</a></li>
+								<li><a href="../manual/manual_join.html">FX마진거래</a></li>
+								<li><a href="../company/about_fx.html">이용방법</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">공지사항<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../board/board.html?board_code=notice">공지사항</a></li>
+								<li><a href="../board/board.html?board_code=tickchart">틱차트</a></li>
+								<li><a href="../board/board.html?board_code=news">회사소식</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">고객센터<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../board/board.html?board_code=1on1">1:1문의</a></li>
+								<li><a href="../service/faq.html">FAQ</a></li>
+								<li><a href="../service/account_change.html">계좌변경</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="nav-toggle"><span class="fa fa-bars"></span></a>
+			</div>
+			<!-- //gnb-->
+		</div>
+	</div>
+	<!-- //header-->
+	<!-- container-->
+	<div id="container">
+		<div class="row">
+			<!-- 회원정보 -->
+			<ul class="user-state clear_fix">
+				<li class="end_alert">
+					<div class="toggle_switch">
+						<span>마감 알림음</span>
+						<label class="switch">
+							<input type="checkbox" id="rent_alarm" />
+							<div class="swi_slider round" onclick="fn_rent_alarm()"></div>
+						</label>
+					</div>
+				</li>
+				<li class="userId_section">
+					<span><img src="../img/userIcon.png" alt="user"></span>
+					<span class="green">김석경</span>
+				</li>
+				<li>
+					<span class="u-tit">지점명</span>
+					<span class="green">역삼</span>
+				</li>
+				<li>
+					<span class="u-tit">회원등급</span>
+					<span class="green">일반회원</span>
+				</li>
+				<li>
+					<span class="u-tit">종목</span>
+					<span class="green">GBP/AUD.M</span>
+				</li>
+				<li class="userCash">
+					<span class="u-tit">보유보증금</span>
+					<span class="green"><span class="num-font bold mem_total_point">44,095,662</span> 원</span>
+				</li>
+				<li class="serv-page"><a href="javascript:;" class="btn_anchor btn-left" onclick="fn_de_pay_data()">입/출금신청</a></li>
+				<li class="serv-page"><a href="javascript:;" class="btn_anchor" onclick="fn_trading_light_data()">거래내역</a></li>
+			</ul>
+			<!-- 차트 -->
+			<div class="candle_chart">
+				<div class="chart_tab_container">
+					<img src="../img/chart.jpg" alt="">
+				</div>
+			</div>
+			<!-- 상품계약 -->
+			<div class="trade-contract">
+				<div class="time-tabs clear_fix">
+					<span>보유보증금 : <span class="num-font bold mem_total_point">0</span> 원</span>
+				</div>
+				<ul class="trade-state clear_fix">
+					<li class="fl_L">
+						<span>계약시간</span>
+						<span class="num-font bold fx_goods_time">00:00</span>
+					</li>
+					<li class="fl_L">
+						<span>남은시간</span>
+						<span id="deadline_time" class="num-font bold">00:00</span>
+					</li>
+					<li class="fl_R">
+						<i class="fa fa-history" title="새로고침" onclick="fn_now_page_refresh()"></i>
+					</li>
+				</ul>
+				<div class="table-section">
+					<table id="goods_list">
+						<thead>
+							<tr>
+								<th style="letter-spacing: 0;">Lot</th>
+								<th>보증금</th>
+								<th>매수</th>
+								<th>매도</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="bold" style="letter-spacing:0;">0.1Lot</td>
+								<td><span class="num-font">5,000</span>원</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:red">▲40</span>/<span class="num-font">▼40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_red" onclick="fn_contract_open('1959306', 'B')">매수</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:blue"> ▼40</span>/<span class="num-font">▲40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_blue" onclick="fn_contract_open('1959307', 'S')">매도</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+							</tr>
+							<tr>
+								<td class="bold" style="letter-spacing:0;">0.2Lot</td>
+								<td><span class="num-font">10,000</span>원</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:red">▲40</span>/<span class="num-font">▼40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_red" onclick="fn_contract_open('1961095', 'B')">매수</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:blue"> ▼40</span>/<span class="num-font">▲40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_blue" onclick="fn_contract_open('1961096', 'S')">매도</a>
+									<i class="battery fa fa-battery-full"></i>
+									</td>
+							</tr>
+							<tr>
+								<td class="bold" style="letter-spacing:0;">1Lot</td>
+								<td><span class="num-font">50,000</span>원</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:red">▲40</span>/<span class="num-font">▼40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_red" onclick="fn_contract_open('1962884', 'B')">매수</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:blue"> ▼40</span>/<span class="num-font">▲40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_blue" onclick="fn_contract_open('1962885', 'S')">매도</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+							</tr>
+							<tr>
+								<td class="bold" style="letter-spacing:0;">2Lot</td>
+								<td><span class="num-font">100,000</span>원</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:red">▲40</span>/<span class="num-font">▼40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_red" onclick="fn_contract_open('1964673', 'B')">매수</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:blue"> ▼40</span>/<span class="num-font">▲40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_blue" onclick="fn_contract_open('1964674', 'S')">매도</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+							</tr>
+							<tr>
+								<td class="bold" style="letter-spacing:0;">10Lot</td>
+								<td><span class="num-font">500,000</span>원</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:red">▲40</span>/<span class="num-font">▼40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_red" onclick="fn_contract_open('1966462', 'B')">매수</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:blue"> ▼40</span>/<span class="num-font">▲40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_blue" onclick="fn_contract_open('1966463', 'S')">매도</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+							</tr>
+							<tr>
+								<td class="bold" style="letter-spacing:0;">10Lot[10배]</td>
+								<td><span class="num-font">500,000</span>원</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:red">▲400</span>/<span class="num-font">▼40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_red" onclick="fn_contract_open('1968251', 'B')">매수</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+								<td>
+									<span class="pip-num"><span class="num-font bold" style="color:blue"> ▼400</span>/<span class="num-font">▲40</span></span>
+									<a href="javascript:;" class="btn-buysell bg_blue" onclick="fn_contract_open('1968252', 'S')">매도</a>
+									<i class="battery fa fa-battery-full"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- 거래결과/API데이터 -->
+			<div class="api-result clear_fix">
+				<div class="trade-list-cont">
+					<div class="time-tabs2 clear_fix">
+						<span>거래결과</span>
+					</div>
+					<div class="trade-list">
+						<table class="rent_result_summary">
+							<thead>
+								<tr>
+									<th>시간</th>
+									<th>시가</th>
+									<th>결과</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:25</td>
+									<td class="num-font">2.04231</td>
+									<td><span class="bg_red">매수</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:20</td>
+									<td class="num-font">2.04176</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:25</td>
+									<td class="num-font">2.04231</td>
+									<td><span class="bg_red">매수</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:20</td>
+									<td class="num-font">2.04176</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:25</td>
+									<td class="num-font">2.04231</td>
+									<td><span class="bg_red">매수</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:20</td>
+									<td class="num-font">2.04176</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:25</td>
+									<td class="num-font">2.04231</td>
+									<td><span class="bg_red">매수</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:20</td>
+									<td class="num-font">2.04176</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:25</td>
+									<td class="num-font">2.04231</td>
+									<td><span class="bg_red">매수</span></td>
+								</tr>
+								<tr>
+									<td class="num-font">16:20</td>
+									<td class="num-font">2.04176</td>
+									<td><span class="bg_blue">매도</span></td>
+								</tr>
+						</table>
+					</div>
+				</div>
+				<div class="api-list">
+					<h2 class="rt-cont-tit">API데이터</h2>
+					<div id="fxrent_api" class="fxapi-content">
+						<table>
+							<thead>
+								<tr>
+									<th>시간</th>
+									<th>시가</th>
+									<th>고가</th>
+									<th>저가</th>
+									<th>종가</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+								<tr>
+									<td class="num-font">16:54</td>
+									<td class="num-font">2.04470</td>
+									<td class="num-font">2.04489</td>
+									<td class="num-font">2.04407</td>
+									<td class="num-font">2.04427</td>
+								</tr>
+								<tr style="color:white;background:#ebebeb">
+									<td class="num-font">16:30</td>
+									<td class="num-font">2.04148</td>
+									<td class="num-font">2.04161</td>
+									<td class="num-font">2.04086</td>
+									<td class="num-font">2.04158</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- 렌트설명 -->
+			<div class="rent-alert clear_fix">
+				<div>
+					<h2>렌트버튼</h2>
+					<ul class="end-btn-alert">
+						<li>
+							<a href="javascript:;" class="btn-buysell bg_gray">마감</a>
+							<span>: 렌트 상품의 렌트 시간이 종료된 경우 / 렌트 상품 개수가 종료된 경우</span>
+						</li>
+						<li>
+							<a href="javascript:;" class="btn-buysell bg_gray">대기중</a>
+							<span>: 이전 상품의 결과(실현/실격/계약해지)가 미적용되어 렌트 중인 상품이 결과 대기 중인 경우</span>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h2>잔여수량</h2>
+					<ul class="battery-alert clear_fix">
+						<li><i class="battery fa fa-battery-full"></i> 10개 이상</li>
+						<li><i class="battery fa fa-battery-half"></i> 4~10개</li>
+						<li><i class="battery fa fa-battery-quarter"></i> 3개 이하</li>
+						<li class="orange clearfix">※ '남은 시간'은 현재 서버시간 기준이며, 고객님의 환경에 따라 오차가 있을 수 있습니다.</li>
+					</ul>
+				</div>
+				<div>
+					<h2>고객센터</h2>
+					<ul class="cs-center-alert">
+						<li><span class="num-font blue">1544-0776</span> (운영시간:월~금 / 07시~23시)</li>
+						<li>상품표기/오류 문의 (운영시간:월 07시~토 07시)</li>
+						<li>월~금 23시 이후 출금신청 시, 익일 06시 일괄 출금</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //container-->
+	<!-- footer-->
+	<div id="footer">
+		<div class="footer_about">
+			<!--2018-05-25 jPark ADD-->
+			<ul>
+				<li><a href="../company/about_vision.html">회사소개</a></li>
+				<li><a href="../policy/stipulation.html">이용약관</a></li>
+				<li><a href="../policy/private.html">개인정보처리방침</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="footer_company">
+			<ul class="fx_ad_v1">
+				<li class="img_logo"><img src="../img/logo.png" alt="logo"></li>
+				<li>퍼블리싱 - 100% / 디자인 - 100%</li>
+				<li>기존 FXRENT 사업의 디자인의 개선사항의 필요성을 느끼고 UI를 최적화하고 데이터의 가독성을 향상하는 방향으로 변경하였다.</li>
+				<li>기존의 사이트도 직접 만들긴했지만 시간이 지남에 따라 개선이 필요하다고 느낌</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+	</div>
+	<!-- //footer-->
+
+	<link rel="stylesheet" href="../asset/css/jquery.mCustomScrollbar.css">
+	<script src="../asset/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+		(function($) { //스크롤 커마
+			$(window).on("load", function() {
+				if (matchMedia("screen and (min-width: 768px)").matches) {
+					$(".trade-list").mCustomScrollbar({
+						theme: "minimal-dark"
+					});
+					$(".fxapi-content").mCustomScrollbar({
+						theme: "minimal-dark"
+					});
+				} else {}
+			});
+		})(jQuery);
+	</script>
+</body>
+
+</html>

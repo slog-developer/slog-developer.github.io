@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="author" content="fxrent">
+  <meta name="description" content="fxrent, 마진거래, fx렌트">
+  <meta name="keywords" content="fxrent, fx, fx렌트, 스마트관리, 마진거래, 선물">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>fxrent</title>
+
+  <!-- style-->
+  <link rel="stylesheet" type="text/css" href="asset/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="asset/css/common.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/editCss.css">
+
+	<link rel="stylesheet" type="text/css" href="asset/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/needpopup.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/jquery-ui.css"> <!-- calendar css / v1.12.1 -->
+
+  <!-- webfont-->
+
+	<!-- js-->
+	<script src="asset/js/jquery-3.2.1.min.js"></script>
+	<script src="asset/js/jquery-ui.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!--모바일menu-->
+	<script src="asset/js/slideBanner.js"></script><!--슬라이드배너-->
+
+  <!-- IEChecker-->
+  <script src="asset/js/ie-checker-min.js"></script>
+
+  <!-- HTML5shiv-->
+  <!--[if lt IE 9]>
+      <script src="asset/js/html5Shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+<div id="wrap">
+	<!-- header-->
+	<div id="header">
+		<!-- row-->
+		<div class="row row_header">
+			<!-- gnb-->
+			<div class="top_fix_zone">
+				<div id="logo">
+					<a href="/index.html"><img src="img/logo.png" alt="" title="FXRENT" /></a>
+				</div>
+				<nav id="gnb" class="gnb clear_fix">
+					<ul class="clear_fix">
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">거래하기 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="trading/fxrent.html">거래</a></li>
+								<li><a href="trading/fxrent_state.html">실현/실격</a></li>
+								<li><a href="trading/apidate.html">API데이터</a></li>
+								<li><a href="trading/deposit_ask.html">입/출금</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">소개 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="company/about_rent.html">FXRENT소개</a></li>
+								<li><a href="company/about_fx.html">FX마진거래</a></li>
+								<li><a href="manual/manual_join.html">이용방법</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">공지사항 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="board/board.html?board_code=notice">공지사항</a></li>
+								<li><a href="board/board.html?board_code=tickchart">틱차트</a></li>
+								<li><a href="board/board.html?board_code=news">회사소식</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">고객센터 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="board/board.html?board_code=1on1">1:1문의</a></li>
+								<li><a href="service/faq.html">FAQ</a></li>
+								<li><a href="service/account_change.html">계좌변경</a></li>
+								<li><a href="service/support.html">원격지원</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+					</ul>
+					<div class="sign-cont">
+						<a href="join/login.html">로그인</a>
+						<a href="join/join_form.html">회원가입</a>
+					</div>
+				</nav>
+			</div>
+			<div id="mobile_nav">
+				<nav class="menu" role="navigation">
+					<a href="join/login.html" class="btn_accordion_top login_check">로그인</a>
+					<a href="join/join_form.html" class="btn_accordion_top join_check">회원가입</a>
+					<ul id="nav">
+						<li> <a href="#">거래하기<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="trading/fxrent.html">거래</a></li>
+								<li><a href="trading/fxrent_state.html">실현/실격</a></li>
+								<li><a href="trading/apidate.html">API데이터</a></li>
+								<li><a href="trading/deposit_ask.html">입/출금</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">소개<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="company/about_rent.html">소개</a></li>
+								<li><a href="manual/manual_join.html">FX마진거래</a></li>
+								<li><a href="company/about_fx.html">이용방법</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">공지사항<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="board/board.html?board_code=notice">공지사항</a></li>
+								<li><a href="board/board.html?board_code=tickchart">틱차트</a></li>
+								<li><a href="board/board.html?board_code=news">회사소식</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">고객센터<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="board/board.html?board_code=1on1">1:1문의</a></li>
+								<li><a href="service/faq.html">FAQ</a></li>
+								<li><a href="service/account_change.html">계좌변경</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="nav-toggle"><span class="fa fa-bars"></span></a>
+			</div>
+			<!-- //gnb-->
+		</div>
+	</div>
+  <!-- //header-->
+  <!-- container-->
+  <div id="container">
+		<div class="manual_banner_wrap banner01">
+			<ul>
+				<li style="background-image:url(img/slide-img01.jpg); background-position:center;">
+					<div class="slide_content_text slide_v01">
+						<h3>FXRENT란?</h3>
+						<p>당사 보유 중인 FX마진거래의 <br>±소득권리를 렌트하는 신개념 서비스!</p>
+						<a href="company/about_rent.html">자세히 보기 +</a>
+					</div>
+				</li>
+				<li style="background-image:url(img/slide-img02.jpg); background-position:center;">
+					<div class="slide_content_text slide_v02">
+						<h3>FXRENT 특허 등록!</h3>
+						<p>FXRENT는 거래방법을 특허 등록한<br>국내 유일의 독점  사업입니다.</p>
+						<a href="company/about_fx.html">자세히 보기 +</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="row row_container">
+			<section class="main_ncontent">
+				<h1 class="sc_title">Best Service</h1>
+				<p class="sc_subtitle">최고의 성공을 위한 최상의 서비스를 제공합니다.</p>
+				<ul class="ctgr_content clear_fix">
+					<li class="call_center">
+						<h1>CUSTOMER CENTER</h1>
+						<p>친절하게 상담해드리겠습니다.</p>
+						<strong>0000-0000</strong>
+						<ul>
+							<li>운영시간:월~금 / 07시~23시</li>
+							<li>상품표기/오류 문의:월 07시~ 토 07시</li>
+							<li>월~금 23시 이후 출금신청 시, 익일 06시 일괄 출금</li>
+						</ul>
+					</li>
+					<li class="txt_L" onclick="location.href='company/about_vision.html';">
+						<img src="img/first_service.jpg" alt="" />
+						<h2>회사소개</h2>
+						<span>고객님들의 깊은 사랑과 성원으로 성장해온 FXRENT는 앞으로도 국민경제의 제4차 산업발전에 다음과 같이 기여하겠습니다.</span>
+					</li>
+					<li class="txt_L">
+						<img src="img/second_service.jpg" alt="" />
+						<h2>상담전화</h2>
+						<span>고객의 성공을 위한 친절하고 적극적인 상담으로 최고의 서비스를 제공하겠습니다.</span>
+					</li>
+					<li class="txt_L" onclick="location.href='company/about_fx.html';">
+						<img src="img/third_service.jpg" alt="" />
+						<h2>FX마진거래</h2>
+						<span>FX마진거래가 생소한 고객님들에게 FXRENT의 기초가 되는 해외통화를 알기쉽게 설명합니다.</span>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="full_ncontent">
+			<section class="sv_stgr row clear_fix">
+				<ul class="sv_list clear_fix">
+					<li>
+						<a href="trading/fxrent.html">
+						<img src="img/main-icon01.png" alt="FXRENT거래" />
+						<p>FXRENT거래</p>
+						</a>
+					</li>
+					<li>
+						<a href="trading/fxrent_state.html">
+						<img src="img/main-icon02.png" alt="거래확인" />
+						<p>거래확인</p>
+						</a>
+					</li>
+					<li>
+						<a href="trading/apidate.html">
+						<img src="img/main-icon03.png" alt="API데이터" />
+						<p>API데이터</p>
+						</a>
+					</li>
+					<li>
+						<a href="trading/deposit_ask.html">
+						<img src="img/main-icon04.png" alt="입출금신청" />
+						<p>입출금신청</p>
+						</a>
+					</li>
+					<li>
+						<a href="manual/manual_join.html">
+						<img src="img/main-icon05.png" alt="메뉴얼" />
+						<p>메뉴얼</p>
+						</a>
+					</li>
+					<li>
+						<a href="board/board.html?board_code=notice">
+						<img src="img/main-icon06.png" alt="공지사항" />
+						<p>공지사항</p>
+						</a>
+					</li>
+				</ul>
+				<div class="main_slogan">
+					<div class="slogan_txt">
+						<h3>FIRST<br/>SERVICES</h3>
+						<p>신뢰와 믿음을 바탕으로 고객에게 최고의 서비스를 제공하겠습니다.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+  </div>
+  <!-- //container-->
+  <!-- footer-->
+	<div id="footer">
+		<div class="footer_about">
+			<!--2018-05-25 jPark ADD-->
+			<ul>
+				<li><a href="company/about_vision.html">회사소개</a></li>
+				<li><a href="policy/stipulation.html">이용약관</a></li>
+				<li><a href="policy/private.html">개인정보처리방침</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="footer_company">
+			<ul class="fx_ad_v1">
+				<li class="img_logo"><img src="img/logo.png" alt="logo"></li>
+				<li>퍼블리싱 - 100% / 디자인 - 100%</li>
+				<li>기존 FXRENT 사업의 디자인의 개선사항의 필요성을 느끼고 UI를 최적화하고 데이터의 가독성을 향상하는 방향으로 변경하였다.</li>
+				<li>기존의 사이트도 직접 만들긴했지만 시간이 지남에 따라 개선이 필요하다고 느낌</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+	</div>
+  <!-- //footer-->
+	<!-- //footer-->
+</div>
+
+<!-- 스크립트 -->
+<script type="text/javascript">
+	$('.gnb > ul > li').hover(function() {
+		$(this).find('.gnb_section').stop(true, true).delay(100).fadeIn(100);
+	}, function() {
+		$(this).find('.gnb_section').stop(true, true).delay(100).fadeOut(100);
+	});
+	$(document).ready(function () {
+		var header = $("#header").offset();
+		$(window).scroll(function () {
+			var docScrollY = $(document).scrollTop()
+			var barThis = $("#header")
+			var fixNext = $("#container")
+			if (docScrollY > header.top) {
+				barThis.addClass("header_fix");
+				//document.getElementById("header").style.backgroundColor = "#212a3b";
+				//$(".gnb_first").css("color","#ffffff");
+			}
+			else {
+				barThis.removeClass("header_fix");
+				//document.getElementById("header").style.backgroundColor = "#ffffff";
+				//$(".gnb_first").css("color","#2f394b");
+			}
+		});
+
+		// Nav - header
+		$('.gnb-link').hover(function(){
+			$('.gnb-link').css('opacity','0.3');
+			$('.gnb-link:hover').css('opacity','1');
+			$(this).find('.gnb-dropdown-area').fadeIn(200).show();
+		}, function(){
+			$('.gnb-link').css('opacity','1');
+			$(this).find('.gnb-dropdown-area').fadeOut(200).hide();
+		});
+	});
+
+	// Vars
+	var wrapper = $("#mobile_nav")
+		, menu = $(".menu")
+		, menuLinks = $(".menu ul li a")
+		, toggle = $(".nav-toggle")
+		, toggleIcon = $(".nav-toggle span");
+
+	function toggleThatNav() {
+		if (menu.hasClass("show-nav")) {
+			if (!Modernizr.csstransforms) {
+				menu.removeClass("show-nav");
+				toggle.removeClass("show-nav");
+				menu.animate({
+					right: "-=300"
+				}, 500);
+				toggle.animate({
+					right: "-=300"
+				}, 500);
+			}
+			else {
+				menu.removeClass("show-nav");
+				toggle.removeClass("show-nav");
+			}
+		}
+		else {
+			if (!Modernizr.csstransforms) {
+				menu.addClass("show-nav");
+				toggle.addClass("show-nav");
+				menu.css("right", "0px");
+				toggle.css("right", "330px");
+			}
+			else {
+				menu.addClass("show-nav");
+				toggle.addClass("show-nav");
+			}
+		}
+	}
+
+	function changeToggleClass() {
+		toggleIcon.toggleClass("fa-times");
+		toggleIcon.toggleClass("fa-bars");
+	}
+	$(function () {
+		toggle.on("click", function (e) {
+			e.stopPropagation();
+			e.preventDefault();
+			toggleThatNav();
+			changeToggleClass();
+		});
+		// Keyboard Esc event support
+		$(document).keyup(function (e) {
+			if (e.keyCode == 27) {
+				if (menu.hasClass("show-nav")) {
+					if (!Modernizr.csstransforms) {
+						menu.removeClass("show-nav");
+						toggle.removeClass("show-nav");
+						menu.css("right", "-300px");
+						toggle.css("right", "30px");
+						changeToggleClass();
+					}
+					else {
+						menu.removeClass("show-nav");
+						toggle.removeClass("show-nav");
+						changeToggleClass();
+					}
+				}
+			}
+		});
+	});
+
+	$(document).ready(function () {
+		$("#nav > li > a").on("click", function (e) {
+			if ($(this).parent().has("ul")) {
+				e.preventDefault();
+			}
+			if (!$(this).hasClass("open")) {
+				// hide any open menus and remove all other classes
+				$("#nav li ul").slideUp(300);
+				$("#nav li a").removeClass("open");
+				// open our new menu and add the open class
+				$(this).next("ul").slideDown(300);
+				$(this).addClass("open");
+			}
+			else if ($(this).hasClass("open")) {
+				$(this).removeClass("open");
+				$(this).next("ul").slideUp(300);
+			}
+		});
+
+		$('.nav-toggle').click(function(){
+			var state = $('#deemed').css('display');
+
+			if(state == 'none'){
+				$('#deemed').show();
+			}else{
+				$('#deemed').hide();
+			}
+		});
+
+		$('.nav-toggle').click(function(){
+			$('body').toggleClass('hidden');
+		})
+
+	});
+</script>
+</body>
+</html>

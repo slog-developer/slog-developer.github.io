@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SEOKGYEONG</title>
+
+	<link rel="stylesheet" href="../asset/css/master.css">
+	<link rel="stylesheet" href="../asset/css/common.css">
+	<link rel="stylesheet" href="../asset/css/reset.css">
+
+
+	<link rel="stylesheet" href="../asset/css/all.css">
+	<link rel="stylesheet" href="../asset/css/needpopup.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,400,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div id="header" class="nav-down">
+		<header class="header_wrap clear_fix">
+			<div id="logo">
+				<a href="index.html"><img src="../asset/img/logo/logo.svg" alt="LOGO" title="HOME"></a>
+			</div>
+		</header>
+	</div>
+	<div id="container">
+		<div class="content list-intro flower-pre">
+			<div class="preview-img">
+				<img src="../asset/img/portfolio/flower.jpg" alt="">
+			</div>
+			<div class="preview-link">
+				<h1>Flower - Mobile Design</h1>
+				<div>
+					<p>힐링이 필요할때, 휴식을 위한 작은 정원</p>
+					<ul>
+						<li>1. 기존에 꽃집 홈페이지, 앱은 UI 디자인을 크게 중요시하지 않고 많은 양의 컨텐츠를 보여주고자하는 형식의 레이아웃으로 구성하여 그 부분을 개선하였다.</li>
+						<li>2. 힐링, 인테리어, 선물용으로 사용되는 컨텐츠이기 때문에 레이아웃을 심플하고 각각의 컨텐츠를 크게 배치하였다.</li>
+						<li>3. 로딩 및 인트로 페이지엔 심플한 하나의 상품을 랜덤하게 개시 하여 사용자에게 컨텐츠를 집중</li>
+						<li>4. 다양한 종류의 메뉴를 한정된 컨텐츠안에 보여주기 위해 슬라이드 배너와 각 컨텐츠의 메뉴는 스와이프형태로 배치</li>
+					</ul>
+				</div>
+				<a href="javascript:;" class="btn-link" data-needpopup-show="#small-popup"><i class="fa fa-search"></i> 크게보기</a>
+				<a href="../index.html" class="btn-link fl_R gray"><i class="fa fa-home"></i></a>
+			</div>
+		</div>
+		<!-- popup -->
+		<div id='small-popup' class="needpopup flower_pop">
+			<p><img src="../asset/img/portfolio/flower.jpg" alt=""></p>
+		</div>
+	</div>
+
+
+	<script src="../asset/js/needpopup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		needPopup.init();
+	</script>
+</body>
+</html>

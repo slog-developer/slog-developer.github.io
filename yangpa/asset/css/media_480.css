@@ -1,0 +1,245 @@
+@media screen and (max-width: 480px) {
+    /* main */
+    .slide_txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        padding: unset;
+    }
+    .slide_txt li:first-child{
+        font-size: 3em;
+    }
+	.nt_cont > h1{
+		font-size: 1.2em;
+		padding: 15px 0;
+	}
+
+    .mslide_cont .btn_more{
+		float: none;
+		position: absolute;
+		bottom: 70px;
+	    left: 50%;
+	    transform: translate(-50%, 0);
+    }
+	.mslide_cont .btn_more a{
+		font-size: 16px;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.small_form{
+		width: 96%;
+		margin: 15% 2%;
+	}
+
+    /* common */
+    #container{
+        min-height: 540px;
+    }
+    .main_row{
+        width: 100%;
+    }
+	.fullpage.second_nav > .swiper-container{
+		height: calc(100% - 134px);
+	}
+
+    .aside.in{
+        width: 100%;
+        min-width: inherit;
+    }
+    input::placeholder{
+        font-size: 13px;
+    }
+
+    .btn_double > div > a{
+        margin: 0.6em 0;
+    }
+	.yp_btn button{
+		padding: 14px 0;
+		border-radius: 5px;
+	}
+
+    .subpage_tit{
+        font-size: 24px;
+        padding: 0 0 0.5em;
+    }
+
+    .w_300{width: 100%;}
+    .w_350{width: 100%;}
+    .w_400{width: 100%;}
+
+	.txtpw > input[type='text'],
+	.txtpw > input[type='password']{
+		font-size: 13px;
+	}
+	.email_form .txtpw{
+		width: 100px;
+	}
+	.email_form .txtpw.email_ad{
+		width: 85px;
+	}
+	.email_form .txtpw input[type='text']{
+		padding: 3px 5px;
+	}
+	.email_form .wSelect-theme-classic.wSelect{
+		max-width: 85px;
+		line-height: 18px;
+	}
+	.board_table table tr td{
+		padding: 1em 0.3em;
+	}
+
+	/* needpopup */
+	.needpopup{
+		padding: 1em;
+	}
+
+	/* swiper */
+	.swiper-button-next,
+	.swiper-button-prev{
+		transform: scale(0.7);
+	}
+
+    /* login */
+    .logo_section{
+        display: none;
+    }
+
+
+    /* join */
+    .join_tit p{
+        font-size: 13px;
+    }
+    .agree_cont{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .yp_altxt p{
+        font-size: 12px;
+    }
+
+    .join_success h1{
+        font-size: 24px
+    }
+    .join_success ul{
+        font-size: 13px
+    }
+
+    /* mypage */
+    .user_info{
+        margin-bottom: 20px;
+    }
+    .user_info > ul >li{
+        font-size: 13px;
+    }
+	.user_info.info_edit > ul > li{
+	    line-height: 32px;
+	    margin-top: 10px;
+	}
+	.user_info.info_edit > ul > li > .info_tit{
+		float:none;
+		width: 100%;
+		line-height: 18px;
+	}
+	.user_info.info_edit > ul > li > .txtpw,
+	.user_info.info_edit > ul > li > .yp_input{
+		overflow: hidden;
+		width: 100%;
+		display: block;
+	}
+	.edit_pw_cont .ml_110{
+		margin-left: 0;
+	}
+
+    /* company */
+    .intro_cont h1 {
+        font-size: 10vw;
+    }
+    .intro_cont ul {
+        font-size: 4vw;
+        padding: 0 8vw;
+    }
+	.highlight_txt li span{
+		font-size: 1.2em;
+		color: #fff;
+		font-weight: 400;
+	}
+	.active_box > div{
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+		padding: 10px;
+		font-size: 12px;
+	}
+	.active_box > div > h2{
+		padding: 10px 0;
+	}
+	.active_box > div > p{
+		font-size: 1em;
+	}
+
+    .company_nav{
+        font-size: 14px;
+    }
+    .company_nav li{
+        margin: 0.6em 0.4em;
+    }
+
+    .c_news_table table th:first-child,
+    .c_news_table table td:first-child{
+        display: none;
+    }
+    .c_news_table table th.w_80p{
+        width: 70%;
+    }
+    .c_news_table table th.w_10p{
+        width: 30%;
+    }
+
+	.faq_tab button{
+		display: block;
+		width: calc(50% - 10px);
+		float: left;
+	}
+
+	.location_cont dl{
+		float: none;
+		width: 100%;
+	}
+
+	.ang_info_cont{
+		font-size: 16px;
+	}
+	.ang_info_cont .ang_main_txt,
+	.ang_info_cont .ang_sub_txt{
+		width: 100%;
+	}
+	.ang_info_cont .btn_anchor{
+		font-size: 16px;
+	}
+
+	/* partner */
+	.spon_cont button{
+		margin-right: 0;
+	}
+	.partner_nav{
+		width: 100%;
+		padding: 0;
+		font-size: 13px;
+	}
+	.partner_nav li{
+		width:33.3333%;
+		margin: 0.6em 0;
+
+	}
+
+	/* sponsor */
+	.cash_data dt{
+		min-width: 102px;
+		line-height: 1.5;
+	}
+}

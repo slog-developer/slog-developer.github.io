@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="author" content="fxrent">
+  <meta name="description" content="fxrent, 마진거래, fx렌트">
+  <meta name="keywords" content="fxrent, fx, fx렌트, 스마트관리, 마진거래, 선물">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>fxrent</title>
+
+  <!-- style-->
+  <link rel="stylesheet" type="text/css" href="../asset/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../asset/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/needpopup.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/jquery-ui.css"> <!-- calendar css / v1.12.1 -->
+
+  <!-- webfont-->
+
+	<!-- js-->
+	<script src="../asset/js/jquery-3.2.1.min.js"></script>
+	<script src="../asset/js/jquery-ui.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!--모바일menu-->
+
+  <!-- IEChecker-->
+  <script src="../asset/js/ie-checker-min.js"></script>
+
+  <!-- HTML5shiv-->
+  <!--[if lt IE 9]>
+      <script src="../asset/js/html5Shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+<div id="wrap">
+	<!-- header-->
+	<div id="header">
+		<!-- row-->
+		<div class="row row_header">
+			<!-- gnb-->
+			<div class="top_fix_zone">
+				<div id="logo">
+					<a href="../index.html"><img src="../img/logo.png" alt="" title="FXRENT" /></a>
+				</div>
+				<nav id="gnb" class="gnb clear_fix">
+					<ul class="clear_fix">
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">거래하기 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../trading/fxrent.html">거래</a></li>
+								<li><a href="../trading/fxrent_state.html">실현/실격</a></li>
+								<li><a href="../trading/apidate.html">API데이터</a></li>
+								<li><a href="../trading/deposit_ask.html">입/출금</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">소개 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../company/about_rent.html">FXRENT소개</a></li>
+								<li><a href="../company/about_fx.html">FX마진거래</a></li>
+								<li><a href="../manual/manual_join.html">이용방법</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">공지사항 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../board/board.html?board_code=notice">공지사항</a></li>
+								<li><a href="../board/board.html?board_code=tickchart">틱차트</a></li>
+								<li><a href="../board/board.html?board_code=news">회사소식</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+						<li class="gnb-link">
+							<a href="#" class="gnb_first">고객센터 <i class="fa fa-angle-down"></i></a>
+							<ul class="gnb_section">
+								<li><a href="../board/board.html?board_code=1on1">1:1문의</a></li>
+								<li><a href="../service/faq.html">FAQ</a></li>
+								<li><a href="../service/account_change.html">계좌변경</a></li>
+								<li><a href="../service/support.html">원격지원</a></li>
+							</ul>
+							<!-- /gnb_section -->
+						</li>
+					</ul>
+					<div class="sign-cont">
+						<a href="join/login.html">로그인</a>
+						<a href="join/join_form.html">회원가입</a>
+					</div>
+				</nav>
+			</div>
+			<div id="mobile_nav">
+				<nav class="menu" role="navigation">
+					<a href="join/login.html" class="btn_accordion_top login_check">로그인</a>
+					<a href="join/join_form.html" class="btn_accordion_top join_check">회원가입</a>
+					<ul id="nav">
+						<li> <a href="#">거래하기<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../trading/fxrent.html">거래</a></li>
+								<li><a href="../trading/fxrent_state.html">실현/실격</a></li>
+								<li><a href="../trading/apidate.html">API데이터</a></li>
+								<li><a href="../trading/deposit_ask.html">입/출금</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">소개<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../company/about_rent.html">소개</a></li>
+								<li><a href="../manual/manual_join.html">FX마진거래</a></li>
+								<li><a href="../company/about_fx.html">이용방법</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">공지사항<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../board/board.html?board_code=notice">공지사항</a></li>
+								<li><a href="../board/board.html?board_code=tickchart">틱차트</a></li>
+								<li><a href="../board/board.html?board_code=news">회사소식</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">고객센터<span>+</span></a>
+							<ul class="sub_gnb">
+								<li><a href="../board/board.html?board_code=1on1">1:1문의</a></li>
+								<li><a href="../service/faq.html">FAQ</a></li>
+								<li><a href="../service/account_change.html">계좌변경</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="nav-toggle"><span class="fa fa-bars"></span></a>
+			</div>
+			<!-- //gnb-->
+		</div>
+	</div>
+  <!-- //header-->
+  <!-- container-->
+  <div id="container">
+    <div class="row join_row">
+			<div class="join">
+				<h1>회원가입</h1>
+				<div class="join_content">
+					<ul class="join_step">
+						<li><i class="fa fa-check-circle-o"></i>약관동의</li>
+						<li><i class="fa fa-eye"></i>본인인증</li>
+						<li class="join_nowpage"><i class="fa fa-file-text-o"></i>정보입력</li>
+						<li><i class="fa fa-user-plus"></i>가입완료</li>
+					</ul>
+					<div class="join_form_cont">
+						<h4>계정정보(필수)</h4>
+						<div class="join_row_group">
+							<div class="join_form_row">
+								<label>국가선택</label>
+								<select class="bank_name" name="country_code" id="country_code">
+									<option value="대한민국">대한민국</option>
+									<option value="대한민국">대한민국</option>
+								</select>
+							</div>
+							<div class="join_form_row">
+								<label>추천인</label>
+								<input type="text" name="agent_area" id="agent_area" placeholder="프리랜서명 또는 이름" class="input_text_sidebtn" maxlength="20" />
+								<div class="alert_text">
+									<div class="join_form_check">
+										<input type="checkbox" name="fr_open" id="fr_open">
+										<label for="fr_open">프리랜서에게 내정보 공개</label>
+									</div>
+									<input type="hidden" name="agent_code" id="agent_code" value="<?=$base_agentcode?>" />
+									<a href="javascript:;" class="btn_join_search" id="freeagentSearch_Reset" style="display:none;"><?=$_lang_join_form_agent_btn?></a>
+									<p class="alert_text" id="alert_text_agent"></p>
+									<i class="fa fa-check green" id="agentChk_i" style="display:none;"></i>
+
+									<p>정확한 프리랜서명 또는 프리랜서 담당자의 이름을 입력 후 결과물을 선택해주세요<br />예) <b class="red">서울_서울</b>일 경우 <b class="red">서울</b>을 정확히 입력하셔야합니다.</p>
+								</div>
+							</div>
+							<div class="join_form_row" id="div_id">
+								<label>아이디</label>
+								<input type="text" name="mem_id" id="mem_id" placeholder="아이디 입력" class="input_text_sidebtn" maxlength="16" />
+								<input type="hidden" name="mem_id_check" id="mem_id_check" />
+							</div>
+							<div class="join_form_row" id="div_pwd_1">
+								<label>비밀번호</label>
+								<input type="password" name="mem_pwd" id="mem_pwd" placeholder="비밀번호 입력(8자리 이상)" class="join_input_text" maxlength="20">
+							</div>
+							<div class="join_form_row" id="div_pwd_1_2">
+								<label>비밀번호 확인</label>
+								<input type="password" name="mem_pwd_confirm" id="mem_pwd_confirm" placeholder="비밀번호 재입력" class="join_input_text" maxlength="20" >
+								<p class="alert_text alert_text_big">※ 2차 비밀번호는 별도의 설정이 없을 경우, 생일(예:2000년01월 01일 생 : 0101)로 설정됩니다.</p>
+								<p class="alert_text alert_text_big">※ 2차 비밀번호 변경을 원하실 경우 '추가정보'에서 2차 비밀번호를 설정하시기 바랍니다.</p>
+							</div>
+							<div id="bank_box" class="join_form_row">
+								<label>은행명</label>
+								<select class="bank_name" name="bank_code" id="bank_code">
+									<option value="은행선택">은행선택</option>
+									<option value="국민은행">국민은행</option>
+								</select>
+							</div>
+							<div id="bank_box" class="join_form_row">
+								<label>계좌번호</label>
+								<input type="text" name="mem_bank_account" id="mem_bank_account" placeholder="계좌번호 입력" class="join_input_text" maxlength="25">
+								<p class="alert_text">※ 본인 명의의 계좌로 등록하셔야 합니다.</p>
+							</div>
+						</div>
+					</div>
+					<div class="btn_join">
+						<a href="../../index.php" class="btn_anchor btn_anchor_gray">취소</a>
+						<a href="javascript:;" class="btn_anchor btn_anchor_green">회원가입 ></a>
+					</div>
+				</div>
+			</div>
+    </div>
+  </div>
+  <!-- //container-->
+  <!-- footer-->
+	<div id="footer">
+		<div class="footer_about">
+			<!--2018-05-25 jPark ADD-->
+			<ul>
+				<li><a href="../company/about_vision.html">회사소개</a></li>
+				<li><a href="../policy/stipulation.html">이용약관</a></li>
+				<li><a href="../policy/private.html">개인정보처리방침</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="footer_company">
+			<ul class="fx_ad_v1">
+				<li class="img_logo"><img src="../img/logo.png" alt="logo"></li>
+				<li>퍼블리싱 - 100% / 디자인 - 100%</li>
+				<li>기존 FXRENT 사업의 디자인의 개선사항의 필요성을 느끼고 UI를 최적화하고 데이터의 가독성을 향상하는 방향으로 변경하였다.</li>
+				<li>기존의 사이트도 직접 만들긴했지만 시간이 지남에 따라 개선이 필요하다고 느낌</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+	</div>
+  <!-- //footer-->
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="author" content="fxrent">
+  <meta name="description" content="fxrent, 마진거래, fx렌트">
+  <meta name="keywords" content="fxrent, fx, fx렌트, 스마트관리, 마진거래, 선물">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>fxrent</title>
+
+  <!-- style-->
+  <link rel="stylesheet" type="text/css" href="../asset/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../asset/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/needpopup.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/jquery-ui.css"> <!-- calendar css / v1.12.1 -->
+
+  <!-- webfont-->
+
+	<!-- js-->
+	<script src="../asset/js/jquery-3.2.1.min.js"></script>
+	<script src="../asset/js/jquery-ui.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!--모바일menu-->
+	<script src="../asset/js/slideBanner.js"></script><!--슬라이드배너-->
+
+  <!-- IEChecker-->
+  <script src="../asset/js/ie-checker-min.js"></script>
+
+  <!-- HTML5shiv-->
+  <!--[if lt IE 9]>
+      <script src="../asset/js/html5Shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+<div id="wrap">
+	<div id="login">
+		<form name="login_form" id="login_form" method="post">
+		<input type="hidden" name="returnUrl" id="returnUrl" value="<?=$returnUrl;?>" />
+		<div  class="login_con">
+			<ul>
+				<li><p>로그인</p></li>
+				<li><span class="caution_msg"></span></li>
+				<li><input type="text" name="mem_id" id="mem_id" title="ID" placeholder="아이디를 입력하여 주세요." autocomplete="off" /></li>
+				<li><input type="password" name="mem_pwd" id="mem_pwd" title="PASSWORD" placeholder="비밀번호를 입력하여 주세요." /></li>
+				<li class="clear_fix">
+					<input type="checkbox" id="c1" name="chk1">
+					<label for="c1" class="save_id" >아이디 저장</label>
+				</li>
+				<li>
+					<a href="javascript:;">로그인</a>
+				</li>
+				<li class="join_idpw">
+					<div>
+						<a href="../join/join_pre.php">회원가입</a>
+						<a href="../join/search_idpw.php">아이디/비밀번호 찾기</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<?
+	include_once getenv("DOCUMENT_ROOT")."/_common.php";
+	session_destroy();
+?>
+<!doctype html>
+<html lang="ko">
+<head>
+<? include_once FX_SITE."/std/inc/php/head.php" ?>
+</head>
+ <body>
+<form id="frm" method="post">
+<input type="hidden" name="search_type" id="search_type">
+<input type="hidden" id="Business_Number_Chk">
+<input type="hidden" id="johap_Number_Chk">
+<input type="hidden" name="chk_auth" id="chk_auth" value="0">
+ <!-- wrap -->
+ <div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<? include_once FX_SITE."/std/inc/php/header.php" ?>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container">
+		<div class="fs_article">
+			<div class="user_login_container">
+				<div class="section_title">회원가입<p>투자자 회원(법인)</p></div>					
+					<div class="idpw_wrap">
+						<div class="tabs_container">
+							<div class="reset_contents">
+								<div class="reset_contents_tit">
+									<span>법인 유형 선택</span>	
+									<input class="radiobox" type="radio" name="radio_r" id="radio" value="0" checked />
+									<label for="radio"></label>
+									<span>회사법인</span>								
+									<input class="radiobox" type="radio" name="radio_r" id="radio_v1" value="1" />
+									<label for="radio_v1"></label>
+									<span>투자조합</span>									
+								</div>
+								
+								<!--회사법인 -->
+								<div class="add_tit_input_section" id="div_01">  
+									<div class="input_tit"><span>사업자 등록번호</span></div>
+									<div class="fs_input_v3 mgb10">
+										<input type="text" name="txt_Business_Number" id="txt_Business_Number" class="fs_input_text input_name" placeholder="- 없이 입력" maxlength="10" numberOnly />	
+									</div>
+								</div>
+								<div class="add_tit_input_section" id="div_01_01">  
+									<div class="input_tit"><span>법인 번호</span></div>   
+									<div class="fs_input_v3 mgb10">
+										<input type="text" name="txt_Corporation_Number" id="txt_Corporation_Number" class="fs_input_text input_name" placeholder="- 없이 입력" maxlength="13" numberOnly />
+										
+										<button type="button" class="certi_box floatR" id="btn_BusinessNumber_Chk">중복체크</button>
+										<span class="floatR mgr10" id="business_chkCss" style="display:none;"><i class="fas fa-check green"></i></span>
+									</div>
+								</div>
+								
+								<!--투자조합-->					
+								<div class="add_tit_input_section" id="div_02" style="display:none;">  
+									<div class="input_tit"><span>조합명</span></div>  
+									<div class="fs_input_v3 mgb10">
+										<input type="text" name="txt_johap_Name" id="txt_johap_Name" class="fs_input_text input_name" placeholder="조합명" maxlength="20" />
+									</div>
+								</div>
+								<div class="add_tit_input_section" id="div_02_01" style="display:none;">   
+									<div class="input_tit"><span>고유번호</span></div>
+									<div class="fs_input_v3 mgb10">
+										<input type="text" name="txt_johap_Number" id="txt_johap_Number" class="fs_input_text input_name" placeholder="- 없이 입력" maxlength="10" numberOnly />										
+										<button type="button" class="certi_box floatR" id="btn_GouNumber_Chk">중복체크</button>
+										<span class="floatR mgr10" id="gouNum_chkCss" style="display:none;"><i class="fas fa-check green"></i></span>
+									</div>
+								</div>
+
+								<div class="add_tit_input_section">
+									<div class="input_tit"><span>아이디(이메일)</span></div>
+									<div class="fs_input_v3 mgb10">
+										<input type="text" name="txt_mem_id" id="txt_mem_id" class="fs_input_text input_em" placeholder="이메일 주소 입력" />
+										<button type="button" class="certi_box floatR" id="btn_emailAuth_Send">인증번호 발송</button> 
+										<button type="button" class="certi_box floatR" id="btn_email_reSend" style="display:none;">이메일 변경</button> 
+									</div>
+									<div class="fs_input_v3" id="email_authChk">
+										<input type="password" name="txt_email_authCode" id="txt_email_authCode" class="fs_input_text input_cn" placeholder="인증번호 입력" maxlength="6" />
+										<span class="light_red" id="countdown1" style="display:none;">00:00</span>
+										<button type="button" class="certi_box floatR" id="btn_emailAuth_check">인증하기</button>
+									</div>
+									<div class="input_alert"><p>이메일 주소 입력 후 “인증번호 발송”을 클릭 시 인증번호가 발송됩니다.<br />메일에 포함된 인증번호를 입력하신 후 “인증하기” 버튼을 눌러주세요.</p></div>
+								</div><!-- add_tit_input_section end -->
+								<div class="terms_wrap"> 
+									<div class="terms_container">
+										<div class="terms_sub_tit">
+											<span>이용 약관</span>
+											<span><a href="javascript:void(0);" id='view_modal_1'>크게보기</a></span>
+											<div class="terms_tit_check floatR">
+												<input class="checkbox" type="checkbox" name="text" id="agree" name="agree" />
+												<label for="agree"></label>
+												<label for="agree"></label><span class="save_id_text">동의</span>
+											</div>
+										</div>
+										<div class="terms_contents">
+											<div class="terms_text">
+											SUCCESTOCK 이용약관
+											본 약관은 (주)스마트 시큐리티(이하”회사”라고 함)가 운영하는 인터넷 사이트(이하”사이트”라고 함)
+											에서 제공하는 모든 웹서비스(이하”서비스”라고 함)를 이용함에 있어”회사”와 회원간의 권리와 의무
+											및 책임사항에 관한 사항을 규정함을 목적으로 합니다.
+											본 약관은 (주)스마트 시큐리티(이하”회사”라고 함)가 운영하는 인터넷 사이트(이하”사이트”라고 함)
+											에서 제공하는 모든 웹서비스(이하”서비스”라고 함)를 이용함에 있어”회사”와 회원간의 권리와 의무
+											및 책임사항에 관한 사항을 규정함을 목적으로 합니다.
+											본 약관은 (주)스마트 시큐리티(이하”회사”라고 함)가 운영하는 인터넷 사이트(이하”사이트”라고 함)
+											에서 제공하는 모든 웹서비스(이하”서비스”라고 함)를 이용함에 있어”회사”와 회원간의 권리와 의무
+											및 책임사항에 관한 사항을 규정함을 목적으로 합니다.
+											</div>
+											<div class="gradient">
+											</div>
+										</div>
+									</div><!-- terms_container end -->									
+								</div><!-- terms_wrap end -->
+								<div class="fs_form">
+									<div class="fs_btn_box"> 
+										<button type="button" class="fs_full_btn" id="btn_next">다음 <i class="fas fa-angle-double-right"></i></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- tabs_container end -->
+					</div><!-- idpw_wrap end -->
+			</div>
+		</div> 
+	</div>
+	<!-- container end -->
+	<div class="modal_bg" id="modal_1">
+		<div class="modal_body">
+			<div class="modal_contents">
+				<div class="modal_text">					
+					<p><b>SUCCESTOCK 이용약관</b><br />
+					본 약관은 ㈜스마트 시큐리티(이하 “회사“라고 함)가 운영하는 인터넷 사이트(이하 “사이트＂라고 함)에서 제공하는 모든 서비스(이하 “서비스＂라고 함)를 이용함에 있어 “회사＂와 회원 간의 권리와 의무 및 책임사항에 관한 사항을 규정함을 목적으로 합니다.</p>					
+					<p><b>목차</b><br />
+					제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>	
+					<p>제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<p>제 1조 약관의 적용<br />
+					제 2조 용어의 정의<br />
+					제 3조 서비스 종류<br />
+					제 4조 서비스 이용계약의 성립 등<br />
+					제 5조 회원가입<br />
+					제 6조 회원정보의 수집과 보호<br />
+					제 7조 회원의 의무<br />
+					제 8조 서비스 이용권리의 양도 등<br />
+					제 9조 계약해지 및 이용제한<br />
+					제 10조 전자메일에 대한 회원의 의무와 책임<br />
+					제 11조 게시물 등의 관리</p>
+					<div class="gradient_v3"></div>
+				</div>
+			</div>
+			<div class="modal_button_wrap">
+				<button type="button" class="modal_agree" id="btn_agree_pop_v1">동의하기</button>
+				<button type="button" class="modal_close" id="btn_close_pop_v1">닫기</button>
+			</div>
+		</div>
+	</div> 
+ 
+	 
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<? include_once FX_SITE."/std/inc/php/footer.php" ?>
+	</div>
+	<!-- footer end -->
+  </div>
+ <!-- wrap end -->
+ </form>
+ </body>
+</html>
+
+<script type="text/javascript" src="/std/inc/js/_common.js"></script>
+<script> 
+		
+	$(document).ready(function(){
+
+		$("#view_modal_1").click(function(){
+			$("#modal_1").addClass("active");
+		}); 
+		
+		$("#btn_agree_pop_v1").click(function(){
+			$('input:checkbox[id="agree"]').prop("checked",true);
+			$(".modal_bg").removeClass("active");
+		});   
+
+		$(".modal_close").click(function(){
+			$(".modal_bg").removeClass("active");
+		});
+
+		$("#radio").click(function () {  
+			$("#div_01").css("display",""); 
+			$("#div_01_01").css("display",""); 
+			$("#div_02").css("display","none"); 
+			$("#div_02_01").css("display","none"); 
+		}); 
+		
+		$("#radio_v1").click(function () {  
+			$("#div_01").css("display","none"); 
+			$("#div_01_01").css("display","none"); 
+			$("#div_02").css("display",""); 
+			$("#div_02_01").css("display",""); 
+		}); 
+
+		$("#btn_email_reSend").click(function (){
+			location.reload();			 
+		});
+		
+		$("#all_agree").click(function (){
+
+			if($("#all_agree").prop("checked")) { 
+				$("input[type=checkbox]").prop("checked",true); 
+			} else { 
+				$("input[type=checkbox]").prop("checked",false); 
+			}
+		});
+		
+		$("#btn_agree_pop").click(function (){
+			$('input:checkbox[id="agree"]').prop("checked",true);
+			$('#btn_modal_close').trigger('click');
+		});
+
+		$("#btn_GouNumber_Chk").click(function () {   
+			//조합 고유번호
+			var johap_Number = $("#txt_johap_Number").val();
+			var johapChk = variousChecked.johapNumber(johap_Number);   
+			
+			if(johapChk)
+			{
+				var rtn_val = -1001;
+				$("#search_type").val('johapNumber');
+				var str_option = $("#frm").serialize();
+				$.ajax({
+					url: "/std/join/_Proc/join_id_Chk.php",
+					data: str_option,
+					type: 'POST',
+					dataType: 'json',
+					traditional: true,
+					async: true,
+					timeout: 60000,
+					error: function (request, status, error) {
+					},
+					success: function (response) {
+						if(response.chkCnt == 0){   
+							$("#johap_Number_Chk").val(1);
+							
+							$('#txt_johap_Number').attr("readOnly", true);							
+							$("#gouNum_chkCss").css("display",""); 
+							$("#btn_GouNumber_Chk").css("display","none"); 
+						}
+						else
+						{
+							alert("이미 등록되 있는 조합 고유 번호입니다.");
+							$("#txt_johap_Number").focus();
+							return false;
+						}
+					}
+				});  
+			} 
+		});		
+		
+		$("#btn_BusinessNumber_Chk").click(function () {   
+			//사업자 등록번호
+			var BusinessNumber = $("#txt_Business_Number").val();
+			var bnChk = variousChecked.BusinessNumber(BusinessNumber);   
+			
+			if(bnChk)
+			{
+				var rtn_val = -1001;
+				$("#search_type").val('businessNumber');
+				var str_option = $("#frm").serialize();
+				$.ajax({
+					url: "/std/join/_Proc/join_id_Chk.php",
+					data: str_option,
+					type: 'POST',
+					dataType: 'json',
+					traditional: true,
+					async: true,
+					timeout: 60000,
+					error: function (request, status, error) {
+					},
+					success: function (response) {
+						if(response.chkCnt == 0){
+							//법인번호    사업자등록번호	1248175413  법인등록번호 1301110062876
+							var CorporationNumber = $("#txt_Corporation_Number").val(); 
+							var cnChk = variousChecked.CorporationNumber(CorporationNumber); 
+
+							if(cnChk)
+							{
+								$("#Business_Number_Chk").val(1);
+
+								$('#txt_Business_Number').attr("readOnly", true);	
+								$('#txt_Corporation_Number').attr("readOnly", true);		
+								
+								$("#business_chkCss").css("display",""); 
+								$("#btn_BusinessNumber_Chk").css("display","none");  
+							}
+
+						}
+						else
+						{
+							alert("이미 등록되 있는 사업자등록번호입니다.");
+							$("#txt_Corporation_Number").focus();
+							return false;
+						}
+					}
+				});  
+			} 
+		});		
+
+		$("#btn_emailAuth_Send").click(function () { 
+			if ($("#txt_mem_id").val() == "")
+			{
+				alert("이메일 주소를 입력해주세여");
+				$("#txt_mem_id").focus();
+				return false;
+			}
+
+			if ($("#txt_mem_id").val().emailCheck() == false)
+			{
+				alert("올바른 형식의 이메일을 작성해 주십시오.");
+				$("#txt_mem_id").focus();
+				return false;
+			}
+
+			if ($("#txt_mem_id").val().indexOf("hotmail") != -1)
+			{
+				alert("hotmail는 사용할 수 없습니다.");
+				$("#txt_mem_id").focus();
+				return false;
+			}
+
+			//email 체크 및 인증번호 전송
+			$("#search_type").val('email');
+			var str_option = $("#frm").serialize();
+			$.ajax({
+				url: "/std/join/_Proc/join_id_Chk.php",
+				data: str_option,
+				type: 'POST',
+				dataType: 'json',
+				traditional: true,
+				async: true,
+				timeout: 60000,
+				error: function (request, status, error) {
+				},
+				success: function (response) {
+					if(response.chkCnt == 0){
+						$("#countdown1").css("display",""); 
+						UserJoinTimer.init();
+						
+						$('#txt_mem_id').attr("readOnly", true);
+						$("#btn_emailAuth_Send").attr("disabled", true);
+						
+						$("#btn_email_reSend").css("display",""); 
+						$("#btn_emailAuth_Send").css("display","none"); 
+												
+						_authCode.SendEmail($("#txt_mem_id").val(), 6);
+					}
+					else
+					{
+						alert("이미 등록되 있는 이메일입니다.");
+						$("#txt_mem_id").focus();
+						return false;
+					}
+				}
+			});
+		});	
+		
+		$("#btn_emailAuth_check").click(function () {
+			
+			if($("#txt_email_authCode").val() == "")
+			{
+				alert("인증번호를 입력해주세요");
+				$("#txt_email_authCode").focus();
+				return false;
+			}
+
+			var rtn = _authCode.CheckCode_Email($("#txt_mem_id").val(), $("#txt_email_authCode").val(), 1);
+			if(rtn)
+			{
+				UserJoinTimer.timerComplete(0);
+				$('#countdown1').html("00:00");	
+				$("#countdown1").css("display","none");
+				$("#email_authChk").css("display","none");
+				$("#chk_auth").val(1);				
+			}
+		});	 
+
+		
+		$("#btn_next").click(function () { 
+
+			var radioVal = $('input[name="radio_r"]:checked').val();
+
+			if(radioVal == 0)
+			{ 
+				if($("#Business_Number_Chk").val() != "1")
+				{
+					alert("사업자 등록번호 / 법인번호 중복체크를 해주세요.");
+					$("#txt_Business_Number").focus();
+					return false;
+				}
+			}
+			
+			if(radioVal == 1)
+			{
+				if($("#txt_johap_Name").val() == "")
+				{
+					alert("투자조합 조합명을 해주세요.");
+					$("#txt_johap_Name").focus();
+					return false;
+				}
+
+				if($("#johap_Number_Chk").val() != "1")
+				{
+					alert("투자조합 고유번호 중복체크를 해주세요.");
+					$("#txt_johap_Number").focus();
+					return false;
+				}
+			}
+
+			if($("#chk_auth").val() == "0")
+			{
+				alert("이메일 인증을 먼저 해주세여");
+				$("#txt_mem_id").focus();
+				return false;
+			}
+
+			if($('input:checkbox[id="agree"]').is(":checked") != true)
+			{
+				alert("이용약관에 동의해 주세요");
+				return false;
+			}
+
+			window.location.href = "/std/join/join_corporate_info.php";
+		});	
+
+	});
+
+</script>

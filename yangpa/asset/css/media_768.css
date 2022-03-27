@@ -1,0 +1,204 @@
+@media screen and (max-width: 768px) {
+    /* main */
+	.slide_txt{
+		width: 100%;
+	}
+
+    /* common */
+    .scroll_icon{
+        display: none;
+    }
+
+    .board_table table tr th{
+        font-size: 14px;
+    }
+    .board_read_table table tr th{
+        display: none;
+    }
+    .board_read_table table tr td{
+        width: 100%;
+    }
+    .board_read_table table tr td span:before,
+    .board_read_table table tr td p:before{
+        display: block;
+        font-size: 1.5em;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .board_read_table table tr td span:before{
+        content:'제목';
+    }
+    .board_read_table table tr td p:before{
+        content:'내용';
+    }
+
+    /* mypage */
+    .user_info.half_form{
+        width: 100%;
+    }
+    .user_info.fl_L{
+        float: none;
+    }
+    .user_info.pr_20{
+        padding-right: 0;
+    }
+
+    .receipt_table table tr th{
+        display: none;
+    }
+    .receipt_table table tr{
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .receipt_table table tr td{
+        display: block;
+        padding: 0.8em;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+    }
+    .receipt_table table tr:last-child td{
+        padding: 0.8em;
+    }
+	.receipt_table table tr td{
+		background-color: #f5f5f5;
+	}
+	.receipt_table table tr td:last-child{
+		margin-bottom: 10px;
+	}
+    .receipt_table table tr td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .spon_pagination{
+        display: none;
+    }
+
+    .btn-wrap{
+        display: block;
+    }
+    .more_button{
+        display: inline-block;
+        padding: 1em;
+        color: #e6bf8c;
+    }
+    .js-load {
+        display: none;
+    }
+    .is_comp.js-load:after {
+        display: none;
+    }
+    table tr.js-load {
+        display: none;
+    }
+    table tr.js-load.activee {
+        display: table-row;
+    }
+    .is_comp.js-load:after {
+        display: none;
+    }
+
+    .ripple{
+        padding: 1em;
+    }
+
+    /* company */
+    .vision_cont, .purpose_cont, .location_cont{
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    .vision_cont .txt_box, .purpose_cont .txt_box,
+    .location_cont .txt_box{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .g_img{
+        width: 60vw;
+    }
+    .ceo_cont .txt_box{
+        width: 40vw;
+        margin-left: -10vw;
+    }
+    .ceo_cont .txt_box h1{
+        color: #333;
+    }
+    .h_img{
+        position: absolute;
+        top: 20vw;
+        width: 100%;
+    }
+    .history_cont .txt_box{
+        position: absolute;
+        top: 60vw;
+        width: calc(100% - 10vw);
+        margin-left: 0;
+    }
+	.intro_cont ul{
+		height: 30vh;
+		overflow-y: auto;
+	}
+
+	/* anglepartner */
+	.angle_container .swiper-container .swiper-slide{
+		transform: none;
+	}
+	.angle_container > h1{
+		font-size: 18px;
+		padding: 10px;
+		font-weight: 400;
+		word-break: keep-all;
+	}
+	.angle_container > p{
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+
+	/* support */
+	.sup_cont01 .txt_cont img{
+		width: 40vw;
+	}
+
+	/* policy */
+	.policy_contents{
+		height: 70vh;
+	}
+
+	/* campaign */
+	.vol_banner{
+
+	}
+	.vlo_cont img{
+		width: 100%;
+
+	}
+
+}
+
+
+/* 580size */
+@media screen and (max-width: 580px) {
+    .g_img{
+        position: absolute;
+        top: 0;
+        width: auto;
+    }
+    .ceo_cont .txt_box{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-left: 0;
+        padding: 4vw 0;
+        color: #fff;
+        text-align: center;
+        background-color: rgba(232, 196, 146, 0.6);
+    }
+    .ceo_cont .txt_box h1{
+        color: #fff;
+    }
+
+
+}

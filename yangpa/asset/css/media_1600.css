@@ -1,0 +1,9 @@
+@media screen and (max-width: 1600px) {
+	/* main */
+    .main_row{
+        max-width: 1600px;
+    }
+	.notice_table{
+		width: 95%;
+	}
+}

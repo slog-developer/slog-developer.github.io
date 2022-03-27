@@ -1,0 +1,49 @@
+.main_title_section{
+    margin: 0.5em 0em 0.3em;
+    font-size: 24px;
+    font-weight: 100;
+    color: #999;
+}
+.nav{
+    font-size: 14px;
+}
+.nav li{
+    float: left;
+    margin: 0.5em 1em 0 0;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    background-color: #fff;
+}
+.nav li:hover{
+    transition: all ease 0.5s;
+    opacity: 0.5;
+}
+.nav li.active{
+    color: #906019;
+    border: 1px solid #eac334;
+    background-color: #fddc61;
+}
+.nav li.active:hover{
+    opacity: 1;
+}
+.nav li a{
+    display: block;
+    padding: 0.5em  1em;
+}
+
+
+@media screen and (max-width: 768px){
+    .trade_result, .api_situation, .pop_my_trade_result,
+    .my_trade_result, .my_user_deal, .my_user_log{
+        margin: 10px;
+    }
+}
+
+div.wrap22{position: relative;padding-top:30px;width:850px;height: 300px;overflow: hidden;}
+div.wrap22 > div {height: 300px;overflow: auto;}
+table.scroll_table{width: 800px}
+.scroll_table thead tr{position: absolute;top: 0;display: block;background-color: #DEDEDE;width: 800px;height: 30px;}
+.scroll_table thead th{width: 200px}
+.scroll_table tbody{display: block;height: 300px;}
+.scroll_table tbody tr{height: auto;}
+.scroll_table tbody td{width: 200px;text-align: center;}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<? include_once FX_SITE."/std/inc/php/head.php" ?>
+</head>
+<body>
+<form method="post" id="frm" onsubmit="return false;">
+<input type="hidden" name="funding_idx" value="<?=$funding_idx?>">
+<input type="hidden" name="mode" value="I">
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<? include_once FX_SITE."/std/inc/php/header.php" ?>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container"><!-- 각 페이지 별 전체를 감싸는 div -->
+		<div class="fs_article"><!-- 슬라이드 영역 및 바로가기 링크 영역 -->
+            <!-- img slide BG -->
+			<div class="slide_bg_section">
+				<? include_once "_top_info_inc.php" ?>
+			</div><!-- slide_bg_section -->
+			<div class="sub_tab" id="sub_tab_form">
+				<ul class="sub_tab_list">
+					<li><a href="/std/funding/recruit_funding.php?funding_idx=<?=$funding_idx?>">모집내용</a></li>
+					<li><a href="/std/funding/company_info.php?funding_idx=<?=$funding_idx?>">회사정보</a></li>
+					<li><a href="/std/funding/company_news_list.php?funding_idx=<?=$funding_idx?>">회사소식</a></li>
+					<li class="purple_bottom"><a href="/std/funding/company_board_list.php?funding_idx=<?=$funding_idx?>">게시판</a></li>
+				</ul>
+			</div>
+			<div class="funding_container">
+				<div class="recruit_wrap">
+					<div class="recruit_container_1">
+						<div class="fs_input_v5">
+							<input type="text" placeholder="제목을 입력하여 주세요." id="cb_title" name="cb_title" maxlength="100" />
+						</div>
+						<div class="cs_line mgb10"></div>
+						<div class="cs_content_v3 mgb20">
+							<textarea type="text" id="cb_content" name="cb_content" placeholder="문의하실 내용을 입력하여 주세요. (한글 기준 최대 1,000글자 등록 가능)" /></textarea>
+						</div>
+						<div class="cs_line mgb10"></div>
+						<div class="cs_btn_v2 H35 mgb10 floatR">
+							<button type="button" class="certi_box" id="btn_reg">등록하기</button>
+							<button type="button" class="certi_box deepgray_bg" onclick="location.href='company_board_list.php?funding_idx=<?=$funding_idx?>'">취소</button>
+						</div>
+					</div>
+				</div><!-- recruit_wrap end -->
+
+				<? include_once "_right_info_chat_inc.php" ?>
+
+				<a class="top_btn"><i class="fas fa-angle-up"></i></a>
+			</div>
+		</div><!-- fs_article end -->
+		<div class="fs_article">
+			<div class="row_wrap">
+				<div class="fs_section full_section">
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+	<!-- container end -->
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<? include_once FX_SITE."/std/inc/php/footer.php" ?>
+	</div>
+	<!-- footer end -->
+  </div>
+  <!-- wrap end -->
+</form>
+</body>
+</html>
+
+<!-- progress script -->
+<script type="text/javascript" src="/std/inc/js/_common.js"></script>
+<script>
+$(document).ready(function(){
+
+	$("#btn_reg").on('click', function(e){
+		if ($('#cb_title').val() == "") {
+		  alert('제목을 입력해주세요.');
+		  $('#cb_title').focus();
+		  return false;
+		}
+
+		if ($('#cb_content').val() == "") {
+		  alert('내용을 입력해주세요.');
+		  $('#cb_content').focus();
+		  return false;
+		}
+
+		var str_option = $("#frm").serialize();
+		$.ajax({
+			url: "company_board_write.php",
+			data: str_option,
+			type: 'POST',
+			dataType: 'json',
+			traditional: true,
+			timeout: 60000,
+			error: function (request, status, error) {
+			},
+			success: function (response) {
+				if(response == 1){
+					alert("등록 되었습니다.");
+					location.href = 'company_board_list.php?funding_idx=<?=$funding_idx?>'
+				}
+				else if(response == -1001){
+					alert("욕설이 포함되어 있습니다.");
+				}
+				else
+				{
+					alert("등록 에러.");
+				}
+			}
+		});
+
+	});
+});
+</script>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>반응형 테이블 연구</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700|Roboto:100,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="all.css">
+</head>
+<body>
+<div class="wrap">
+<!--
+	<ul class="nav clear_fix">
+		<li class="active"><a href="table_responsive.html">Table</a></li>
+		<li><a href="input_field.html">Input</a></li>
+	</ul> -->
+
+	<h1 class="main_title_section">Form 변경01 - table</h1>
+	<div class="table_area trade_result"><!-- Form 변경 - table -->
+		<div class="t_table">
+			<ul class="t_row t_row_head t_remove">
+				<li class="t_cell"><span class="m_tc">번호</span></li>
+				<li class="t_cell"><span class="m_tc">시작시각</span></li>
+				<li class="t_cell"><span class="m_tc">시작가</span></li>
+				<li class="t_cell"><span class="m_tc">단위</span></li>
+				<li class="t_cell"><span class="m_tc">종료가</span></li>
+				<li class="t_cell"><span class="m_tc">종료시각</span></li>
+				<li class="t_cell"><span class="m_tc">보증금</span></li>
+				<li class="t_cell"><span class="m_tc">결과</span></li>
+				<li class="t_cell"><span class="m_tc">입금상태</span></li>
+			</ul>
+			<ul class="t_row clear_fix">
+				<li class="t_cell t_remove">
+					<h2 class="m_tt">번호</h2>
+					<span class="m_tc">520</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_50p">
+					<h2 class="m_tt">렌트시작시각</h2>
+					<span class="m_tc">2019-09-10 10:40</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_50p">
+					<h2 class="m_tt">렌트시작가</h2>
+					<span class="m_tc">1.80062</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">Stop/Limit단위</h2>
+					<span class="m_tc"><i class="fa fa-caret-up"></i>50/<b class="blue"><i class="fa fa-caret-down"></i>500</b></span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">렌트종료가</h2>
+					<span class="m_tc">1.79909</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">렌트종료시각</h2>
+					<span class="m_tc">2019-09-10 10:30</span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">렌트보증금(수량)</h2>
+					<span class="m_tc">500,000(10lot)</span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">결과</h2>
+					<span class="m_tc"><p class="red">실현</p></span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">입금상태</h2>
+					<span class="m_tc"><p class="green">입금완료</p></span>
+				</li>
+			</ul>
+			<ul class="t_row clear_fix">
+				<li class="t_cell t_remove">
+					<h2 class="m_tt">번호</h2>
+					<span class="m_tc">520</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_50p">
+					<h2 class="m_tt">렌트시작시각</h2>
+					<span class="m_tc">2019-09-10 10:40</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_50p">
+					<h2 class="m_tt">렌트시작가</h2>
+					<span class="m_tc">1.80062</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">Stop/Limit단위</h2>
+					<span class="m_tc"><i class="fa fa-caret-up"></i>50/<b class="blue"><i class="fa fa-caret-down"></i>500</b></span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">렌트종료가</h2>
+					<span class="m_tc">1.79909</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">렌트종료시각</h2>
+					<span class="m_tc">2019-09-10 10:30</span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">렌트보증금(수량)</h2>
+					<span class="m_tc">500,000(10lot)</span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">결과</h2>
+					<span class="m_tc"><p class="red">실현</p></span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">입금상태</h2>
+					<span class="m_tc"><p class="deep_green">입금완료</p></span>
+				</li>
+			</ul>
+			<ul class="t_row simple_list clear_fix">
+				<li class="t_cell t_remove">
+					<h2 class="m_tt">번호</h2>
+					<span class="m_tc">520</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_50p">
+					<h2 class="m_tt">렌트시작시각</h2>
+					<span class="m_tc">2019-09-10 10:40</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_50p">
+					<h2 class="m_tt">렌트시작가</h2>
+					<span class="m_tc">1.80062</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">Stop/Limit단위</h2>
+					<span class="m_tc"><i class="fa fa-caret-up"></i>50/<b class="blue"><i class="fa fa-caret-down"></i>500</b></span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">렌트종료가</h2>
+					<span class="m_tc">1.79909</span>
+				</li>
+				<li class="t_cell t_thtd tm_w_100p">
+					<h2 class="m_tt">렌트종료시각</h2>
+					<span class="m_tc">2019-09-10 10:30</span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">렌트보증금(수량)</h2>
+					<span class="m_tc">500,000(10lot)</span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">결과</h2>
+					<span class="m_tc"><p class="red">실현</p></span>
+				</li>
+				<li class="t_cell tm_w_33p">
+					<h2 class="m_tt">입금상태</h2>
+					<span class="m_tc"><p class="green">입금완료</p></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1 class="main_title_section">Form 변경02 - table</h1>
+	<div class="table_area api_situation"><!-- Form 변경 - table -->
+		<div class="t_table">
+			<ul class="t_row t_row_head t_remove">
+				<li class="t_cell"><span class="m_tc">등록</span></li>
+				<li class="t_cell"><span class="m_tc">시간</span></li>
+				<li class="t_cell"><span class="m_tc">시가</span></li>
+				<li class="t_cell"><span class="m_tc">고가</span></li>
+				<li class="t_cell"><span class="m_tc">저가</span></li>
+				<li class="t_cell"><span class="m_tc">종가</span></li>
+			</ul>
+			<ul class="t_row clear_fix">
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">등록</h2>
+					<span class="m_tc">1813482</span>
+				</li>
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">시간</h2>
+					<span class="m_tc">2019-09-19 09:54</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">시가</h2>
+					<span class="m_tc">1.82984</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">고가</h2>
+					<span class="m_tc">1.83004</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">저가</h2>
+					<span class="m_tc">1.84570</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">종가</h2>
+					<span class="m_tc">1.84611</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1 class="main_title_section">Form 변경03 - table</h1>
+	<div class="table_area pop_my_trade_result"><!-- Form 변경 - table -->
+		<div class="t_table">
+			<ul class="t_row t_row_head t_remove">
+				<li class="t_cell"><span class="m_tc">번호</span></li>
+				<li class="t_cell"><span class="m_tc">렌트시작시각</span></li>
+				<li class="t_cell"><span class="m_tc">구분</span></li>
+				<li class="t_cell"><span class="m_tc">Stop/Limit단위</span></li>
+				<li class="t_cell"><span class="m_tc">렌트보증금</span></li>
+				<li class="t_cell"><span class="m_tc">결과</span></li>
+			</ul>
+			<ul class="t_row clear_fix">
+				<li class="t_cell t_remove">
+					<h2 class="m_tt">번호</h2>
+					<span class="m_tc">520</span>
+				</li>
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">렌트시작시각</h2>
+					<span class="m_tc">2019-09-10, 10:40:00</span>
+				</li>
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">구분</h2>
+					<span class="m_tc">매수</span>
+				</li>
+				<li class="t_cell tm_w_30p">
+					<h2 class="m_tt">Stop/Limit단위</h2>
+					<span class="m_tc">50/<b class="red">500</b></span>
+				</li>
+				<li class="t_cell tm_w_40p">
+					<h2 class="m_tt">렌트보증금</h2>
+					<span class="m_tc">5,000</span>
+				</li>
+				<li class="t_cell tm_w_30p">
+					<h2 class="m_tt">결과</h2>
+					<span class="m_tc">실격</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1 class="main_title_section">Form 변경04 - table</h1>
+	<div class="table_area my_trade_result"><!-- Form 변경 - table -->
+		<div class="t_table">
+			<ul class="t_row t_row_head t_remove">
+				<li class="t_cell"><span class="m_tc">번호</span></li>
+				<li class="t_cell"><span class="m_tc">렌트시작시각(구분)</span></li>
+				<li class="t_cell"><span class="m_tc">렌트시작가</span></li>
+				<li class="t_cell"><span class="m_tc">렌트종료시각</span></li>
+				<li class="t_cell"><span class="m_tc">렌트종료가</span></li>
+				<li class="t_cell"><span class="m_tc">Stop/Limit단위</span></li>
+				<li class="t_cell"><span class="m_tc">렌트보증금</span></li>
+				<li class="t_cell"><span class="m_tc">결과</span></li>
+				<li class="t_cell"><span class="m_tc">입금상태</span></li>
+				<li class="t_cell"><span class="m_tc">약정서보기</span></li>
+				<li class="t_cell"><span class="m_tc">API데이터</span></li>
+			</ul>
+			<ul class="t_row clear_fix">
+				<li class="t_cell t_remove">
+					<h2 class="m_tt">번호</h2>
+					<span class="m_tc">141</span>
+				</li>
+				<li class="t_cell tm_w_100p t_thtd_25p">
+					<h2 class="m_tt">렌트시작시각(구분)</h2>
+					<span class="m_tc">2019-09-10 15:40:00(매수)</span>
+				</li>
+				<li class="t_cell tm_w_100p t_thtd_25p">
+					<h2 class="m_tt">렌트시작가</h2>
+					<span class="m_tc">1.80244</span>
+				</li>
+				<li class="t_cell tm_w_100p t_thtd_25p">
+					<h2 class="m_tt">렌트종료시각</h2>
+					<span class="m_tc">2019-09-10 15:40:00</span>
+				</li>
+				<li class="t_cell tm_w_100p t_thtd_25p">
+					<h2 class="m_tt">렌트종료가</h2>
+					<span class="m_tc">1.80176</span>
+				</li>
+				<li class="t_cell tm_w_50p t_thtd">
+					<h2 class="m_tt">Stop/Limit단위</h2>
+					<span class="m_tc">50/50</span>
+				</li>
+				<li class="t_cell tm_w_50p t_thtd">
+					<h2 class="m_tt">렌트보증금</h2>
+					<span class="m_tc">5,000</span>
+				</li>
+				<li class="t_cell tm_w_50p t_thtd">
+					<h2 class="m_tt">결과</h2>
+					<span class="m_tc">실격</span>
+				</li>
+				<li class="t_cell tm_w_50p t_thtd">
+					<h2 class="m_tt">입금상태</h2>
+					<span class="m_tc">입금완료</span>
+				</li>
+				<li class="t_cell tm_w_50p t_thtd">
+					<h2 class="m_tt">약정서보기</h2>
+					<span class="m_tc"><a href="#" class="btn_anchor btn_anchor_small">보기</a></span>
+				</li>
+				<li class="t_cell tm_w_50p t_thtd">
+					<h2 class="m_tt">API데이터</h2>
+					<span class="m_tc"><a href="#" class="btn_anchor btn_anchor_small">확인</a></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1 class="main_title_section">Form 변경05 - table</h1>
+	<div class="table_area my_user_deal"><!-- Form 변경 - table -->
+		<div class="t_table">
+			<ul class="t_row t_row_head t_remove">
+				<li class="t_cell"><span class="m_tc">번호</span></li>
+				<li class="t_cell"><span class="m_tc">거래일자</span></li>
+				<li class="t_cell"><span class="m_tc">상세내역</span></li>
+				<li class="t_cell"><span class="m_tc">서비스</span></li>
+				<li class="t_cell"><span class="m_tc">금</span></li>
+				<li class="t_cell"><span class="m_tc">차익금</span></li>
+				<li class="t_cell"><span class="m_tc">이익분배금</span></li>
+				<li class="t_cell"><span class="m_tc">사용료내역</span></li>
+				<li class="t_cell"><span class="m_tc">거래후보유액</span></li>
+			</ul>
+			<ul class="t_row clear_fix">
+				<li class="t_cell t_remove">
+					<h2 class="m_tt">번호</h2>
+					<span class="m_tc">6</span>
+				</li>
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">거래일자</h2>
+					<span class="m_tc">2019-10-01 23:00</span>
+				</li>
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">상세내역</h2>
+					<span class="m_tc">수익배분</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">서비스</h2>
+					<span class="m_tc"></span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">금</h2>
+					<span class="m_tc">0</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">차익금</h2>
+					<span class="m_tc">0</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">이익분배금</h2>
+					<span class="m_tc">0</span>
+				</li>
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">사용료내역</h2>
+					<span class="m_tc">0</span>
+				</li>
+				<li class="t_cell tm_w_50p">
+					<h2 class="m_tt">거래후보유액</h2>
+					<span class="m_tc">44,095,662</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1 class="main_title_section">Form 변경06 - text-overflow</h1>
+	<div class="table_area my_user_log"><!-- Form 변경 - text-overflow -->
+		<div class="t_table">
+			<ul class="t_row t_row_head t_remove">
+				<li class="t_cell"><span class="m_tc">Login</span></li>
+				<li class="t_cell"><span class="m_tc">Logout</span></li>
+				<li class="t_cell"><span class="m_tc">로그인유지시간</span></li>
+				<li class="t_cell"><span class="m_tc">IP</span></li>
+			</ul>
+			<ul class="t_row clear_fix">
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">Login</h2>
+					<span class="m_tc">2019-10-02 15:58:20</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">Logout</h2>
+					<span class="m_tc"></span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">로그인유지시간</h2>
+					<span class="m_tc">00시 40분 35초 사용</span>
+				</li>
+				<li class="t_cell tm_w_25p">
+					<h2 class="m_tt">IP</h2>
+					<span class="m_tc">222.107.***.213</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1 class="main_title_section">공지사항</h1>
+	<div class="table_area notice_board"><!-- 공지사항 -->
+		<table>
+			<tbody>
+				<tr class="t_remove">
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성일</th>
+					<th>조회수</th>
+				</tr>
+				<tr>
+					<td class="t_remove"><span class="red">긴급</span></td>
+					<td class="txt_L">
+						<a href="javascript:;" class="t_board_link">
+							<p>[프리랜서 불법 리딩행위 근절 요구]</p>
+							<em>2019.09.26</em>
+						</a>
+					</td>
+					<td class="t_remove">2019.08.14</td>
+					<td class="t_remove">56</td>
+				</tr>
+				<tr>
+					<td class="t_remove"><span class="red">긴급</span></td>
+					<td class="txt_L">
+						<a href="javascript:;" class="t_board_link">
+							<p>12/25 성탄절에 따른 렌트계약 시간 변경 안내</p>
+							<em>2019.09.26</em>
+						</a>
+					</td>
+					<td class="t_remove">2019.08.14</td>
+					<td class="t_remove">56</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!--- 관리자페이지 --->
+	<h1 class="main_title_section">--------관리자---------</h1>
+
+	<h1 class="main_title_section">Form 변경07 - 내용이 많은경우</h1>
+	<div class="table_area agent_table">
+		<table>
+			<thead>
+				<tr>
+					<th rowspan="2">번호</th>
+					<th rowspan="2">아이디</th>
+					<th rowspan="2">이름</th>
+					<th rowspan="2" class="bg_blue">제목<em class="orange">(A)</em></th>
+					<th rowspan="2" class="bg_blue t_accordion">금액A</th>
+					<th colspan="2" class="bg_blue t_accordion">금액B<em class="orange">(B)</em></th>
+					<th rowspan="2" class="bg_blue t_accordion">소득<em class="orange">(D)</em></th>
+					<th colspan="3" class="t_accordion">네이밍</th>
+					<th colspan="6" class="t_accordion">디테일<em class="orange">(E)</em></th>
+					<th rowspan="2" class="t_accordion">본사</th>
+					<th rowspan="2" class="result">정산</th>
+				</tr>
+				<tr>
+					<th class="bg_blue t_accordion">보증금</th>
+					<th class="bg_blue t_accordion">차익금</th>
+					<th class="t_accordion">1번째</th>
+					<th class="t_accordion">2번째</th>
+					<th class="t_accordion">3번째</th>
+					<th class="t_accordion">1번째(Tax포함)</th>
+					<th class="t_accordion">2번째(Tax포함)</th>
+					<th class="t_accordion">3번째(Tax공제)<em class="orange">(AA)</em></th>
+					<th class="t_accordion">T 세금<em class="orange">(BB)</em></th>
+					<th class="t_accordion">T 세금<em class="orange">(CC)</em></th>
+					<th class="t_accordion">T 세금<em class="orange">(DD)</em></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="total">
+					<td colspan="3">합계</td>
+					<td class="txt_R">85,310,945,000</td>
+					<td class="txt_R t_accordion">42,303,125,000</td>
+					<td class="txt_R t_accordion">43,009,820,000</td>
+					<td class="txt_R t_accordion">37,707,835,200</td>
+					<td class="txt_R t_accordion">6,138,484,800</td>
+					<td class="t_accordion">서울-서울</td>
+					<td class="t_accordion">경기-경기</td>
+					<td class="t_accordion">내용구분</td>
+					<td class="txt_R t_accordion">377,122,802</td>
+					<td class="txt_R t_accordion">126,938,980</td>
+					<td class="txt_R t_accordion">2,400,626,050</td>
+					<td class="txt_R t_accordion">126,938,980</td>
+					<td class="txt_R t_accordion">2,400,626,050</td>
+					<td class="txt_R t_accordion">30,404,930</td>
+					<td class="txt_R t_accordion">3,707,453,820</td>
+					<td class="txt_R">1,660,197,038</td>
+				</tr>
+				<tr class="bg_blue">
+					<td>1</td>
+					<td>seokgyeong</td>
+					<td>김석경</td>
+					<td class="txt_R">85,310,945,000</td>
+					<td class="txt_R t_accordion">42,303,125,000</td>
+					<td class="txt_R t_accordion">43,009,820,000</td>
+					<td class="txt_R t_accordion">37,707,835,200</td>
+					<td class="txt_R t_accordion">6,138,484,800</td>
+					<td class="t_accordion">대전-대전</td>
+					<td class="t_accordion">강원동-강원도</td>
+					<td class="t_accordion">내용구분</td>
+					<td class="txt_R t_accordion">377,122,802</td>
+					<td class="txt_R t_accordion">126,938,980</td>
+					<td class="txt_R t_accordion">2,400,626,050</td>
+					<td class="txt_R t_accordion">126,938,980</td>
+					<td class="txt_R t_accordion">2,400,626,050</td>
+					<td class="txt_R t_accordion">30,404,930</td>
+					<td class="txt_R t_accordion">3,707,453,820</td>
+					<td class="txt_R">1,660,197,038</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>seokgyeong</td>
+					<td>김석경</td>
+					<td class="txt_R">85,310,945,000</td>
+					<td class="txt_R t_accordion">42,303,125,000</td>
+					<td class="txt_R t_accordion">43,009,820,000</td>
+					<td class="txt_R t_accordion">37,707,835,200</td>
+					<td class="txt_R t_accordion">6,138,484,800</td>
+					<td class="t_accordion">부산-부산</td>
+					<td class="t_accordion">독도-독도</td>
+					<td class="t_accordion">내용구분</td>
+					<td class="txt_R t_accordion">377,122,802</td>
+					<td class="txt_R t_accordion">126,938,980</td>
+					<td class="txt_R t_accordion">126,938,980</td>
+					<td class="txt_R t_accordion">2,400,626,050</td>
+					<td class="txt_R t_accordion">2,400,626,050</td>
+					<td class="txt_R t_accordion">30,404,930</td>
+					<td class="txt_R t_accordion">3,707,453,820</td>
+					<td class="txt_R">1,660,197,038</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

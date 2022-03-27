@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>SUCCESTOCK</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../inc/css/style.css" />
+	<link rel="stylesheet" href="../inc/css/reset.css" />
+	<link rel="stylesheet" href="../inc/css/common.css" />
+	<link rel="stylesheet" href="../inc/css/swiper.min.css">
+
+	<!-- favicon -->
+	<link rel="icon" href="../images/favicon.ico" />
+
+	<!-- jQuery : 추가할시 jPark 에게 알려주세여 -->
+	<link rel="stylesheet" href="../inc/css/jquery-ui.css" />
+	<script type="text/javascript" src="../inc/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.alphanumeric.ex.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.timer.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.uploadPreview.js"></script>
+
+	<!-- js -->
+	<script type="text/javascript" src="../inc/js/script.js"></script>
+	<script type="text/javascript" src="../inc/js/focus.js"></script>
+	<script type="text/javascript" src="../inc/js/img_banner.js"></script>
+	<script type="text/javascript" src="../inc/js/swiper.min.js"></script>
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="gnb_section">
+			<div class="logo">
+				<a href="../../index.html"><img src="../images/logo.png" alt="logo" /></a>
+			</div>
+			<nav class="fs_gnb">
+				<ul>
+					<li><a href="join_funding.html" class="fs_lnb">펀딩참여하기</a></li>
+					<li><a href="../publish/pb_start.html" class="fs_lnb">펀딩발행하기</a></li>
+					<li><a href="company_list.html" class="fs_lnb">기업리스트</a></li>
+					<li><a href="../guide/guide_01.html" class="fs_lnb">이용가이드</a></li>
+					<li>
+						<a href="javascript:void(0);" class="fs_lnb"><i class="fas fa-ellipsis-h"></i></a>
+						<ul class="arrow_box">
+							<li><a href="javascript:void(0);">SUCCESTOCK 소개</a></li>
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">고객센터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="lojo_secetion">
+				<div class="login_link">
+					<ul class="login_lnb">
+						<li><a href="login.html" class="purple_main">김석경</a>님</a></li>
+						<li><a href="../join/select_type.html">회원가입</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- container -->
+	<div id="container"><!-- 각 페이지 별 전체를 감싸는 div -->
+		<div class="fs_article"><!-- 슬라이드 영역 및 바로가기 링크 영역 -->
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <ul id="ul_banner" class="swiper-wrapper">
+                    <li class="swiper-slide">
+						<a href="recruit_funding.html"><img src="../images/slide_img/new_slide_v02.jpg"></a>
+					</li>
+                    <li class="swiper-slide">
+						<a href="#"><img src="../images/slide_img/new_slide_v01.jpg"></a>
+					</li>
+                    <li class="swiper-slide">
+						<a href="#"><img src="../images/slide_img/new_slide_v03.jpg"></a>
+					</li>
+                </ul>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Swiper JS -->
+		</div><!-- fs_article end -->
+
+		<div class="fs_article">
+			<div class="row_wrap"><!-- 1140px -->
+			    <div class="fs_section full_section">
+					<div class="fund_full_wrap">
+						<h1 class="section_full_title_v2">주목받는 프로젝트</h1>
+						<div class="fund_slide fade">
+							<div class="funding_contents_v2">
+								<div class="join_funding_img">
+									<div class="tac_section tac_green">
+										<span class="tac_tit">주식형</span>
+										<span class="tac_mark">
+											<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+										</span>
+									</div>
+									<img src="../images/card_ui/sample/all_card_v05.jpg" alt="케이스타원케이" />
+								</div>
+								<div class="join_funding_text">
+									<div class="top_section">
+										<h3>(주)케이스타원더케이</h3>
+										<div class="funding_progressBar_wrap">
+											<div class="funding_progressBar">
+												<div class="funding_progressBar_bg">
+													<div class="funding_progressBar_inner percent"></div>
+												</div>
+											</div>
+											<div class="funding_progressBar_value">1636%</div>
+										</div><!-- funding_progressBar_wrap end -->
+									</div>
+									<div class="sub_section">
+										<ul class="sub_text_left">
+											<li><span>공연</span></li>
+										</ul>
+										<ul class="sub_text_right">
+											<li class="mgr35">목표금액 : 812,800,000원</li>
+											<li>20일 남음</li>
+										</ul>
+									</div>
+									<div class="mid_section">
+										<ul class="section_content_v2">
+											<li class="content_article_v2">2019 대만K-POP콘서트(18년 매진)</li>
+											<li class="content_article_v2">2018전석 매진공연이 돌아온다! 2019 WONDER K CONCERT in TAIPEI</li>
+										</ul>
+									</div>
+									<div class="bot_section_v2">
+										<a class="fund_prev" onclick="plusSlide(-1)"><i class="fas fa-caret-left"></i></a>
+										<a class="fund_next" onclick="plusSlide(1)"><i class="fas fa-caret-right"></i></a>
+									</div>
+								</div>
+							</div><!-- funding_contents_v2 end -->
+						</div>
+						<div class="fund_slide fade">
+							<div class="funding_contents_v2">
+								<div class="join_funding_img">
+									<div class="tac_section tac_orange">
+										<span class="tac_tit">채권형</span>
+										<span class="tac_mark">
+											<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+										</span>
+									</div>
+									<img src="../images/card_ui/sample/all_card_v06.jpg" alt="앙스모멍에프앤비" />
+								</div>
+								<div class="join_funding_text">
+									<div class="top_section">
+										<h3>(주)앙스모멍에프앤비</h3>
+										<div class="funding_progressBar_wrap">
+											<div class="funding_progressBar">
+												<div class="funding_progressBar_bg">
+													<div class="funding_progressBar_inner percent"></div>
+												</div>
+											</div>
+											<div class="funding_progressBar_value">82%</div>
+										</div><!-- funding_progressBar_wrap end -->
+									</div>
+									<div class="sub_section">
+										<ul class="sub_text_left">
+											<li><span>F&B</span></li>
+										</ul>
+										<ul class="sub_text_right">
+											<li class="mgr35">목표금액 : 400,000,000원</li>
+											<li>10일 남음</li>
+										</ul>
+									</div>
+									<div class="mid_section">
+										<ul class="section_content_v2">
+											<li class="content_article_v2">미슐랭의 맛과 멋 in홍대, 앙스모멍 3호점</li>
+											<li class="content_article_v2">앙스모멍과 함께 성장할 투자자를 모집합니다.</li>
+										</ul>
+									</div>
+									<div class="bot_section_v2">
+										<a class="fund_prev" onclick="plusSlide(-1)"><i class="fas fa-caret-left"></i></a>
+										<a class="fund_next" onclick="plusSlide(1)"><i class="fas fa-caret-right"></i></a>
+									</div>
+								</div>
+							</div><!-- funding_contents_v2 end -->
+						</div>
+						<div class="fund_slide fade">
+							<div class="funding_contents_v2">
+								<div class="join_funding_img">
+									<div class="tac_section tac_green">
+										<span class="tac_tit">주식형</span>
+										<span class="tac_mark">
+											<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+										</span>
+									</div>
+									<img src="../images/card_ui/sample/all_card_v07.jpg" alt="주식회사 라이또에프앤씨" />
+								</div>
+								<div class="join_funding_text">
+									<div class="top_section">
+										<h3>자선공조</h3>
+										<div class="funding_progressBar_wrap">
+											<div class="funding_progressBar">
+												<div class="funding_progressBar_bg">
+													<div class="funding_progressBar_inner percent"></div>
+												</div>
+											</div>
+											<div class="funding_progressBar_value">100%</div>
+										</div><!-- funding_progressBar_wrap end -->
+									</div>
+									<div class="sub_section">
+										<ul class="sub_text_left">
+											<li><span>라이프스타일</span></li>
+										</ul>
+										<ul class="sub_text_right">
+											<li class="mgr35">목표금액 : 50,000,000원</li>
+											<li>21일 남음</li>
+										</ul>
+									</div>
+									<div class="mid_section">
+										<ul class="section_content_v2">
+											<li class="content_article_v2">마이크로소프트 공식파트너 라이또 PC방</li>
+											<li class="content_article_v2">독점 Windows 렌탈사업을 통한 수익을 투자자와 나누겠습니다.</li>
+										</ul>
+									</div>
+									<div class="bot_section_v2">
+										<a class="fund_prev" onclick="plusSlide(-1)"><i class="fas fa-caret-left"></i></a>
+										<a class="fund_next" onclick="plusSlide(1)"><i class="fas fa-caret-right"></i></a>
+									</div>
+								</div>
+							</div><!-- funding_contents_v2 end -->
+						</div>
+					</div><!-- fund_full_wrap end -->
+
+					<div class="fund_full_wrap">
+						<h1 class="section_full_title_v2"></h1>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination swiper-pagination_v2"></div>
+						<div class="fund_swiper_wrap">
+							<!-- Swiper -->
+							<div class="swiper-container_v2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide no_bg">
+										<div class="cardbox">
+											<a href="recruit_funding.html">
+												<div class="cardimg">
+													<img src="../images/card_ui/main_img01.jpg" alt="">
+													<div class="tac_section tac_green">
+														<span class="tac_tit">주식형</span>
+														<span class="tac_mark"><button type="button" id="star_icon" class="star_toogle" onclick="setFavorite(1)"><i class="fas fa-star book_mark"></i></button></span>
+													</div>
+													<div class="cardimg_text">80%</div>
+												</div>
+												<div class="main_progressBar">
+													<div class="progressBar">
+														<div class="progress pg_body" style="width: 74%;"></div>
+													</div>
+												</div>
+												<div class="cardtext">
+													<h4>목표금액 : 72,475,000 원</h4><h5>13일 남음</h5>
+													<span class="articletitle">퍼플독</span>
+													<p class="articletext">와인 라이프스타일을 선도하다. 가장 스마트하게 와인을 즐기는 법, 매월 만나는 나를 위한 와인 버틀러 서비스</p>
+												</div>
+											</a>
+										</div>
+										<div class="cardbox">
+											<a href="#">
+												<div class="cardimg">
+													<img src="../images/card_ui/main_img02.png" alt="">
+													<div class="tac_section tac_green">
+														<span class="tac_tit">주식형</span>
+														<span class="tac_mark"><button type="button" id="star_icon" class="star_toogle" onclick="setFavorite(1)"><i class="fas fa-star book_mark"></i></button></span>
+													</div>
+													<div class="cardimg_text">40%</div>
+												</div>
+												<div class="main_progressBar">
+													<div class="progressBar">
+														<div class="progress pg_body" style="width: 74%;"></div>
+													</div>
+												</div>
+												<div class="cardtext">
+													<h4>목표금액 : 21,881,500 원</h4><h5>22일 남음</h5>
+													<span class="articletitle">쓰담별</span>
+													<p class="articletext">新문화가 될, 방문형 반려동물 장례 대행 서비스. 쓰담별</p>
+												</div>
+											</a>
+										</div>
+										<div class="cardbox">
+											<a href="#">
+												<div class="cardimg">
+													<img src="../images/card_ui/main_img03.jpg" alt="">
+													<div class="tac_section tac_green">
+														<span class="tac_tit">주식형</span>
+														<span class="tac_mark"><button type="button" id="star_icon" class="star_toogle" onclick="setFavorite(1)"><i class="fas fa-star book_mark"></i></button></span>
+													</div>
+													<div class="cardimg_text">74%</div>
+												</div>
+												<div class="main_progressBar">
+													<div class="progressBar">
+														<div class="progress pg_body" style="width: 74%;"></div>
+													</div>
+												</div>
+												<div class="cardtext">
+													<h4>목표금액 : 157,842,000 원</h4><h5>8일 남음</h5>
+													<span class="articletitle">펀디안(주)</span>
+													<p class="articletext">SKY폰 개발팀의 반격, 매달 만나는 명품 모바일디바이스</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide no_bg">
+										<div class="cardbox">
+											<a href="#">
+												<div class="cardimg">
+													<img src="../images/card_ui/main_img04.jpg" alt="">
+													<div class="tac_section tac_green">
+														<span class="tac_tit">주식형</span>
+														<span class="tac_mark"><button type="button" id="star_icon" class="star_toogle" onclick="setFavorite(1)"><i class="fas fa-star book_mark"></i></button></span>
+													</div>
+													<div class="cardimg_text">74%</div>
+												</div>
+												<div class="main_progressBar">
+													<div class="progressBar">
+														<div class="progress pg_body" style="width: 74%;"></div>
+													</div>
+												</div>
+												<div class="cardtext">
+													<h4>목표금액 : 17,500,000 원</h4><h5>28일 남음</h5>
+													<span class="articletitle">토리컴즈 주식회사</span>
+													<p class="articletext">중국에서 연재 2달만에 구독 2천만 명을 확보한 토리컴즈!</p>
+												</div>
+											</a>
+										</div>
+										<div class="cardbox">
+											<a href="#">
+												<div class="cardimg">
+													<img src="../images/card_ui/main_img05.jpg" alt="">
+													<div class="tac_section tac_green">
+														<span class="tac_tit">주식형</span>
+														<span class="tac_mark"><button type="button" id="star_icon" class="star_toogle" onclick="setFavorite(1)"><i class="fas fa-star book_mark"></i></button></span>
+													</div>
+													<div class="cardimg_text">1%</div>
+												</div>
+												<div class="main_progressBar">
+													<div class="progressBar">
+														<div class="progress pg_body" style="width: 74%;"></div>
+													</div>
+												</div>
+												<div class="cardtext">
+													<h4>목표금액 : 2,000,000 원</h4><h5>8일 남음</h5>
+													<span class="articletitle">(주)에어텍</span>
+													<p class="articletext">마블&amp;디즈니가 선택한 공기청정기, 에어텍</p>
+												</div>
+											</a>
+										</div>
+										<div class="cardbox">
+											<a href="#">
+												<div class="cardimg">
+													<img src="../images/card_ui/main_img06.jpg" alt="">
+													<div class="tac_section tac_green">
+														<span class="tac_tit">주식형</span>
+														<span class="tac_mark"><button type="button" id="star_icon" class="star_toogle" onclick="setFavorite(1)"><i class="fas fa-star book_mark"></i></button></span>
+													</div>
+													<div class="cardimg_text">29%</div>
+												</div>
+												<div class="main_progressBar">
+													<div class="progressBar">
+														<div class="progress pg_body" style="width: 74%;"></div>
+													</div>
+												</div>
+												<div class="cardtext">
+													<h4>목표금액 : 14,522,000 원</h4><h5>1일 남음</h5>
+													<span class="articletitle">(주)소닉더치코리아</span>
+													<p class="articletext">세계최조 5분만에 추출하는 콜드브루 커피머신, 소닉더치</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Swiper JS -->
+							<script src="../inc/js/swiper.min.js"></script>
+							<!-- Initialize Swiper -->
+							<script>
+								var swiper = new Swiper('.swiper-container', {
+									spaceBetween: 30
+									, centeredSlides: true
+									, autoplay: {
+										delay: 15000
+										, disableOnInteraction: false
+									, }
+									, pagination: {
+										el: '.swiper-pagination'
+										, clickable: true
+									, }
+									, navigation: {
+										nextEl: '.swiper-button-next'
+										, prevEl: '.swiper-button-prev'
+									, }
+								, });
+
+								var swiper = new Swiper('.swiper-container_v2', {
+									spaceBetween: 30
+									, centeredSlides: true
+									, autoplay: {
+										delay: 5000
+										, disableOnInteraction: false
+									, }
+									, pagination: {
+										el: '.swiper-pagination_v2'
+										, clickable: true
+									, }
+									, navigation: {
+										nextEl: '.swiper-button-next'
+										, prevEl: '.swiper-button-prev'
+									, }
+								, });
+							</script>
+						</div><!-- fund_swiper_wrap end -->
+					</div><!-- fund_full_wrap end -->
+                </div><!-- fs_section full_section end -->
+
+				<div class="fs_section">
+					<h1 class="section_full_title mgt30">전체 프로젝트</h1>
+					<div class="fund_item_wrap mgt30">
+						<div class="fund_item">
+							<div class="itemimg itemimg01">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을<br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg02">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg03">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg04">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg01">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg02">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg03">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg04">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg01">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg02">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg03">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg04">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg01">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg02">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg03">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+						<div class="fund_item">
+							<div class="itemimg itemimg04">
+								<div class="tac_section tac_green">
+									<span class="tac_tit">주식형</span>
+									<span class="tac_mark">
+										<button type="button" class="star_toogle" onclick="location.href='#'"><i class="fas fa-star book_mark"></i></button>
+									</span>
+								</div>
+							</div>
+							<div class="itemtext">
+								<h3>(주)자선공조</h3>
+								<h4>56.8%</h4>
+								<p class="mgt10">스마트관리의 FXRENT 사업권을 <br />보유한 FXRENT 글로벌</p>
+								<span class="goal">목표 150,000,000원</span>
+								<span class="date">19일 남음</span>
+							</div>
+						</div>
+					</div>
+					<div class="pagination mgt30 mgb20">
+						<ul class="page_num">
+							<li>
+								<a href='javascript:void(0);' class="page_btn pre_v2"></a>
+								<a href='javascript:void(0);' class="page_btn pre_v1"></a>
+							</li>
+							<li><a href="#" class='pgnt_hover'>1</a></li>
+							<li><a href="#" class='pgnt_hover'>2</a></li>
+							<li><a href="#" class='pgnt_hover'>3</a></li>
+							<li><a href="#" class='pgnt_hover'>4</a></li>
+							<li><a href="#" class='pgnt_hover'>5</a></li>
+							<li><a href="#" class='pgnt_hover'>6</a></li>
+							<li><a href="#" class='pgnt_hover'>7</a></li>
+							<li><a href="#" class='pgnt_hover'>8</a></li>
+							<li><a href="#" class='pgnt_hover'>9</a></li>
+							<li><a href="#" class='pgnt_hover'>10</a></li>
+							<li>
+								<a href='javascript:void(0);' class="page_btn next_v1"></a>
+								<a href='javascript:void(0);' class="page_btn next_v2"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- row_wrap end -->
+		</div><!-- fs_article -->
+	</div>
+    </div>
+	<!-- container end -->
+	<!-- footer -->
+	<div id="footer"><!-- 푸터링크 영역 및 푸터컨텐츠 영역 -->
+		<div class="fs_section row_wrap fs_private">
+            <div class="footer_logo"><a href="/index.html"><img src="../images/logo_white.png" alt="로고" /></a></div>
+            <div class="footer_info">
+                <ul>
+                    <li><button type="button" onclick="window.location.href='../company/about_ss.html'">회사소개</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/subscription.html'">청약약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/stipulation.html'">회원이용약관</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/private.html'">개인정보처리방침</button></li>
+					<li><button type="button" onclick="window.location.href='../policy/investment_note.html'">투자유의사항</button></li>
+                </ul>
+            </div>
+        </div>
+		<div class="fs_section row_wrap fs_copyright">
+			<ul class="sns_icon">
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_youtube.png" alt="유튜브 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_kakaoplus.png" alt="카톡플러스친구 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_facebook.png" alt="페이스북 아이콘" /></a></li>
+				<li><a href="javascript:void(0);" target="_blank"><img src="../images/icon/icon_naverblog.png" alt="네이버블로그 아이콘" /></a></li>
+			</ul>
+            <div class="copy_txt">
+                <ul class="copy_addr">
+                    <li>주식회사 스마트시큐리티 <span>ㅣ</span> <b>대표 : 조정식</b></li>
+                    <li>대표번호 : <b>00-000-0000</b> <span>ㅣ</span> FAX : <b>00-000-0000</b></li>
+                    <li><b>서울특별시 동대문구 왕산로 122 8층 829호(용두동, 한방천하 포스빌)</b></li>
+                </ul>
+                <ul class="copy_addr">
+                    <li>사업자 등록번호 : <b>000-00-00000</b> <span>ㅣ</span> 통신판매업 신고번호 : <b>2018-서울동대문 0000호</b></li>
+                    <li>COPYRIGHT 2018 FXSTOCK ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<!-- footer end -->
+  </div>
+  <!-- wrap end -->
+</body>
+</html>
+
+<!-- 1단 배너 영역 스크립트 -->
+<script type="text/javascript">
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlide(n) {
+	  showSlides((slideIndex += n));
+	}
+
+	function currentSlide(n) {
+	  showSlides((slideIndex = n));
+	}
+
+	function showSlides (n){
+		var i;
+		var slides = document.getElementsByClassName("fund_slide");
+
+		if (n > slides.length) {
+			slideIndex = 1
+		}
+		if (n < 1) {
+			slideIndex = slides.length
+		}
+		for (i = 0; i < slides.length; i++){
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex-1].style.display = "block";
+	}
+
+	function slideTime(n){
+	 n=1
+	 showSlides(slideIndex += n);
+	 }
+
+	setInterval(slideTime, 5000);
+
+	// progress script
+	$(document).ready(function(){
+		$('.percent').animate({width:'100%'},2000);
+	});
+</script>

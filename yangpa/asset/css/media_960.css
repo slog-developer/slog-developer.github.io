@@ -1,0 +1,51 @@
+@media screen and (max-width: 960px) {
+	.quick, .gnb, #footer{
+		display: none;
+	}
+	.gnb_section{
+		position: relative;
+		padding: 10px 20px;
+		border-top: none;
+		background-color: #30271e;
+	}
+	.logo{
+		float: none;
+		text-align: center;
+	}
+	.nav_open{
+		position: absolute;
+		display: block;
+	}
+
+	/* main */
+	.news_table{
+		float: none;
+		width: 100%;
+	}
+	.notice_table{
+		float: none;
+		width: 100%;
+		margin-top: 0;
+	}
+	.nt_cont{
+		float: none;
+		width: 95%;
+		margin: 0 auto 20px;
+	}
+	.nt_cont_mg{
+		margin: 0 auto 20px;
+	}
+	.nt_cont > ul > li{
+		padding: 10px 0;
+	}
+
+	/* company */
+	.active_box > div{
+		height: 200px;
+		padding: 30px;
+		word-break: keep-all;
+	}
+	.active_box > div{
+		font-size: 14px;
+	}
+}
