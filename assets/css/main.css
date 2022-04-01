@@ -29,7 +29,7 @@ nav a:last-child {
 /* MAIN */
 .main__banner {
     position: relative;
-    padding: 0 var(--sp-1-5);
+    padding: var(--sp-2-5) var(--sp-1-5);
     overflow: hidden;
     border-bottom: 1px solid #f4f4f4;
 }
@@ -59,10 +59,6 @@ nav a:last-child {
     border: 1px solid #F4F4F4;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-}
-.main__banner,
-.section__banner {
-    padding: var(--sp-2-5) 0;
 }
 .main__banner .inner,
 .section__banner .inner {
@@ -156,7 +152,7 @@ nav a:last-child {
 /* sectionbanner */
 .section__banner {
     margin-bottom: var(--sp-2);
-    padding: var(--sp-1-5) 0;
+    padding: var(--sp-2-5) 0;
     text-align: center;
     background: var(--main-color-dark);
     color: #fff;
@@ -192,7 +188,7 @@ nav a:last-child {
 }
 .section__about .inner {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 250px;
 }
 .about__slogan {
     font-size: var(--biggest-font-size);
@@ -220,7 +216,7 @@ nav a:last-child {
 }
 .slide {
     position: relative;
-    height: 42px;
+    height: 46px;
 }
 .slide__wrap {
     position: absolute;
@@ -302,6 +298,53 @@ nav a:last-child {
         opacity:0
     }
 }
+
+.aside-about {
+    margin-top: var(--sp-2);
+}
+.aside-about h3 {
+    margin-bottom: var(--sp-0-5);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+}
+.about__content {
+    padding: 20px;
+    border-radius: var(--sp-0-5);
+    box-shadow: var(--box-shadow);
+    background-color: var(--container-color);
+}
+.about__title {
+    display: flex;
+    gap: var(--sp-0-5);
+}
+.about__title ul {
+    width: 100%;
+}
+.about__title ul li:first-child {
+    font-weight: 600;
+}
+.about__title ul li:last-child {
+    font-size: var(--smaller-font-size);
+    color: var(--main-color);
+}
+
+.about__profile {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-gray9);
+}
+.about__profile li {
+    margin: var(--sp-0-5) 0;
+    padding: var(--sp-0-5);
+    border-radius: var(--sp-0-5);
+    background-color: var(--content-color);
+    transition: all ease .3s;
+}
+.about__profile li:hover {
+    background-color: var(--main-color);
+    color: var(--text-color-white);
+}
+
+
 /* footer */
 footer {
     padding: var(--sp-2-5) var(--sp-1-5);
