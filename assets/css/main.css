@@ -344,6 +344,10 @@ nav a:last-child {
     color: var(--text-color-white);
 }
 
+/* PORTFOLIO */
+.sub__container {
+    min-height: 50vh;
+}
 
 /* footer */
 footer {

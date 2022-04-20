@@ -182,6 +182,11 @@ header .sub-menu li a:hover {
 }
 
 
+#toggle-btn {
+    display: none;
+}
+
+
 /* VISUAL */
 .section--visual {
     background-image: url("../img/bg.jpg");
@@ -415,6 +420,7 @@ footer .logo:hover svg {
         
     }
     #toggle-btn {
+        display: block;
         background: url("../img/toggle-btn.svg");
         width: 18px;
         height: 24px;
