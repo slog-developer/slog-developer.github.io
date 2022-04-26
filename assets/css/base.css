@@ -83,6 +83,10 @@ ul,ol,li {
     color: var(--text-color-white);
 }
 
+.btn__gray {
+    background: #999;
+}
+
 /* ELLIPSIS */
 .ell__wrap {
 	width: 100%;
