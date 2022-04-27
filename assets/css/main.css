@@ -29,7 +29,7 @@ nav a:last-child {
 /* MAIN */
 .main__banner {
     position: relative;
-    padding: var(--sp-2-5) var(--sp-1-5);
+    padding: var(--sp-2-5) 0;
     overflow: hidden;
     border-bottom: 1px solid #f4f4f4;
 }
@@ -180,7 +180,7 @@ nav a:last-child {
 
 /* section about */
 .section__about {
-    padding: var(--sp-2-5) var(--sp-1-5);
+    padding: var(--sp-2-5) 0;
     background-image: url('../images/bg/bg-newmo-icon.png');
     background-position: right center;
     background-repeat: no-repeat;
@@ -189,6 +189,9 @@ nav a:last-child {
 .section__about .inner {
     display: grid;
     grid-template-columns: 1fr 250px;
+}
+.section__about .inner .aside {
+    margin-top: var(--sp-1);
 }
 .about__slogan {
     font-size: var(--biggest-font-size);
@@ -202,6 +205,9 @@ nav a:last-child {
 .about__label {
     color: var(--main-color);
     letter-spacing: -1px;
+}
+.about__label span {
+    white-space: pre;
 }
 .slide__title {
     font-size: var(--h1-font-size);
@@ -381,12 +387,15 @@ footer p {
     color: var(--text-color-gray9);
 }
 /* MEDIAQUERY */
-@media only screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
     
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
+    .section__about .inner {
+        grid-template-columns: 1fr;
+    }
 }
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     
 }
