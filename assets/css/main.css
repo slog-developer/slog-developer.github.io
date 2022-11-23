@@ -1,3 +1,4 @@
+/* 테스트용 주석 */
 /* HEADER */
 header {
     padding: var(--sp-1-5);
@@ -111,9 +112,7 @@ nav a:last-child {
 .main__content {
     margin-top: var(--sp-1);
 }
-.main__title {
 
-}
 .thum__img {
     display: block;
     border-radius: var(--sp-0-75);
