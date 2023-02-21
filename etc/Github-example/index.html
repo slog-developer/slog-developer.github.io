@@ -158,6 +158,32 @@
 
     </section>
 
+    <div class="list_item">
+        <ul>
+            <li class="handle"></li>
+            <li class="handle"></li>
+            <li class="handle"></li>
+            <li class="handle"></li>
+        </ul>
+        <div class="form_group">
+            <div class="cell">
+                <input type="text" name="" id="inputLevel01" class="form_text">
+            </div>
+            <div class="cell">
+                <input type="text" name="" id="inputLevel02" class="form_text">
+            </div>
+            <div class="cell">
+                <input type="text" name="" id="inputLevel03" class="form_text">
+            </div>
+            <div class="cell">
+                <input type="text" name="" id="inputLevel04" class="form_text">
+            </div>
+            <div class="cell">
+                <input type="text" name="" id="inputLevel05" class="form_text">
+            </div>
+        </div>
+    </div>
+
     <!-- Pricing card -->
     <section class="section section--pricing">
         <div class="inner">
@@ -202,29 +228,39 @@
 
         </div>
     </footer>
+    
 </div>
 
 <script>
-    function initMap() {
-        const myLatLng = {
-            lat: 37.782293,
-            lng: -122.391240
-        }
-        const map = new google.maps.Map(
-            document.getElementById('map'),
-            {
-                center: myLatLng,
-                scrollwheel: false,
-                zoom: 18
-            }
-        );
-        const marker = new google.maps.Map.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'GitHub'
-        });
+    var arr = ['html5', 'EDM', 'Coca Cola', 'creativity'];
+    var index = 0;
+    for(var i = 0; i < arr.length; i++) {
+        console.log(arr[index++]);
+        
+        $('.handle').append(arr[1]);
     }
+
+
+//     function initMap() {
+//         const myLatLng = {
+//             lat: 37.782293,
+//             lng: -122.391240
+//         }
+//         const map = new google.maps.Map(
+//             document.getElementById('map'),
+//             {
+//                 center: myLatLng,
+//                 scrollwheel: false,
+//                 zoom: 18
+//             }
+//         );
+//         const marker = new google.maps.Map.Marker({
+//             position: myLatLng,
+//             map: map,
+//             title: 'GitHub'
+//         });
+//     }
+// 
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
 </body>
 </html>
