@@ -53,7 +53,6 @@
         </section>
     </header>
     <main>
-        <span>이부분이 변경사항이다.두번째 변경사항</span>
         <div class="main__banner">
             <section class="inner">
                 <h1>복잡한건&nbsp;우리가<br>누구에게나&nbsp;&#35;쉬운디자인</h1>
@@ -150,5 +149,47 @@
             <p class="">© 2022 SLOG. All rights reserved.</p>
         </section>
     </footer>
+    <style>
+        .gnb > li > a {color: lightcoral}
+    </style>
+    <div class="nav">
+        <ul class="gnb">
+            
+        </ul>
+    </div>
+    <script>
+        const $nav = [
+            {
+                gnb: "purple",
+                lnb: ['one', 'tow', 'three']
+            },
+            {
+                gnb: "dog",
+                lnb: ['포메', '만두' ]
+            },
+            {
+                gnb: "cat",
+                lnb: ['영롱이']
+            },
+        ];
+
+        $.each($nav, function(n) {
+            $('.gnb').append(`
+                <li>
+                    <a href="#none">${$nav[n].gnb}</a>
+                    <ul class="lnb">
+                    </ul>
+                </li>
+            `);
+            $.each($nav[n].lnb, function(i) {
+                $(`.gnb li:nth-child(${n+1}) .lnb`).append(`
+                    <li>
+                        <a href="#none">${$nav[n].lnb[i]}</a>
+                    </li>
+                `);
+            });
+        });
+        
+    </script>
 </body>
 </html>
